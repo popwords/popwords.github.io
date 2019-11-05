@@ -1,0 +1,51 @@
+.slides {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Staatliches', cursive;
+  }
+
+.panel .sections .menu li {
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.panel .sections .menu li a {
+  padding: 0 1px;
+  opacity: 0.8;
+}
+
+.slides.animated .kenBurns .background,
+.slides.animated .kenBurns.zoomin .background,
+.slides.animateOnEvent .kenBurns .background,
+.slides.animateOnEvent .kenBurns.zoomin .background {
+  opacity: 0.9;
+}
+
+
+#logo {
+}
+
+h1 {
+  font-family: 'Futura';
+  font-size: 3em;
+}
+
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1em;
+}
+
+.fade-6 .content {
+  background: rgba(0, 0, 0, 0);
+}
+#lalala {
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+  bottom: 0;
+  left: 0;
+}
+
+#lalala h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
