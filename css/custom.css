@@ -22,10 +22,6 @@
   opacity: 0.9;
 }
 
-
-#logo {
-}
-
 h1 {
   font-family: 'Futura';
   font-size: 3em;
@@ -48,4 +44,20 @@ p {
 
 #lalala h1 {
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+#hometop {
+  position: fixed;
+  top: 4em;
+  left: 4em;
+}
+
+#closer {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 4em;
+}
+
+#maintitle {
+  color: red;
 }
