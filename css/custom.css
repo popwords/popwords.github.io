@@ -83,6 +83,11 @@ p {
   margin-bottom: 2em;
 }
 
+#editor {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+}
 
 code {
 }
