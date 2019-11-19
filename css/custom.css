@@ -61,3 +61,28 @@ p {
 #maintitle {
   color: red;
 }
+
+.sidebar .subList li {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-size: 18px;
+  line-height: 36px;
+  padding-left: 1em;
+}
+
+.topmargin {
+  margin-bottom: 10em;
+}
+
+.lastofslide {
+  margin-bottom: 15em;
+}
+
+.smallmarginbottom {
+  margin-bottom: 2em;
+}
+
+
+code {
+}
