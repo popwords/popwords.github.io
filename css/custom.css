@@ -89,5 +89,6 @@ p {
     height: 400px;
 }
 
-code {
+p > a {
+  text-decoration: underline;
 }

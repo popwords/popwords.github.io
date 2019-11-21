@@ -620,7 +620,7 @@
 					<h1 class="ae-1">Lexical Space Analysis</h1>
 					<p class="ae-3 fromLeft"><span class="opacity-8"></span>We wanted to determine what the complexity of the speeches was. As such, we automatically assessed the reading level and the Dale Chall score for each of the speeches. We also analyzed the amount of unique words in each speech. You can find our python code below.</p>
 
-					<!-- Python code Top Pop Words-->
+					<!-- Python code Lexical Space Analysis-->
 
 					<div class="fix-12-12 topmargin">
 						<ul class="grid">
@@ -910,131 +910,120 @@
 
 				<div class="fix-10-12 topmargin">
 					<h1 class="ae-1">Sentiment Analysis</h1>
-					<p class="ae-3 fromLeft"><span class="opacity-8"></span>We performed sentiment analysis to see what the emotional valence of the speeches was. We based on a python script ????????????. You can find our python code below.</p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8"></span>We performed sentiment analysis to see what the emotional valence of the speeches was.</p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8"></span>First of all, we analyzed the sentiment for every speech by using an easy-to-use library for Python called <a href="https://github.com/AYLIEN/aylien_textapi_python">AYLIEN</a>. This tool returns a sentiment analysis in natural language (positive, negative, neutral, etc). You can find the Python code below.</p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8"></span>	We then wanted something more sophisticated, that could provide us with a more complex and comparable result. We decided to use <a href="https://textblob.readthedocs.io/en/dev/">TextBlob</a>, which -differently from Aylien - can return numeric results both for the sentiment and for the objectivity. In particular, the results of this tool are in the range:<br>
+						Polarity: How positive or negative a word is. -1 is very negative. +1 is very positive.<br>
+						Subjectivity: How subjective, or opinionated a word is. 0 is fact. +1 is very much an opinion.</p>
+
+				</div>
+					<!-- Python code Top Pop Words-->
+
+					<div class="fix-12-12 topmargin">
+						<ul class="grid">
+							<li class="col-12-12 center ae-5 fromCenter">
+								<a href="assets/pythonfiles/sentiment_aylien.py"><button class="button black gradient ae-4">Download the Python file using Aylien</button></a>
+								<a href="assets/pythonfiles/sentiment_textblob.py"><button class="button black gradient ae-4">Download the Python file using TextBlob</button></a>
+
+							</li>
+						</ul>
+					</div>
+
+					<div class="fix-10-12 topmargin">
 					<ul class="grid grid-83 noSpaces equal ae-2 fadeIn">
 						<li class="col-6-12 ae-3" style="background: #F5FBFE">
 							<h3>Trump's Inaugural Speech</h3>
-							<div class="price ae-5">0.5</div>
+							<div class="price ae-5">0.19</div>
 							<div class="ae-5">
-								<h6 class="uppercase bold small opacity-4">Sentiment Score</h6>
+								<h6 class="uppercase bold small opacity-4">Polarity Score</h6>
 							</div>
-							<div class="margin-top-3 margin-bottom-3 equalElement ae-6">
-								<ul class="p tiny">
-									<li><strong>Some informationSome information</strong></li>
-									<li class="opacity-7">Some information</li>
-								</ul>
+							<div class="price ae-5">0.55</div>
+							<div class="ae-5">
+								<h6 class="uppercase bold small opacity-4">Subjectivity Score</h6>
 							</div>
-							<a href="" class="button gradient wide cropSides cropBottom ae-7">Some information</a>
 						</li>
 						<li class="col-6-12 ae-3" style="background: #F5FBFE">
 							<h3>Trump's Minnesota Rally Speech</h3>
-							<div class="price ae-5">0.5</div>
+							<div class="price ae-5">0.16</div>
 							<div class="ae-5">
-								<h6 class="uppercase bold small opacity-4">Sentiment Score</h6>
+								<h6 class="uppercase bold small opacity-4">Polarity Score</h6>
 							</div>
-							<div class="margin-top-3 margin-bottom-3 equalElement ae-6">
-								<ul class="p tiny">
-									<li><strong>Some informationSome information</strong></li>
-									<li class="opacity-7">Some information</li>
-								</ul>
+							<div class="price ae-5">0.41</div>
+							<div class="ae-5">
+								<h6 class="uppercase bold small opacity-4">Subjectivity Score</h6>
 							</div>
-							<a href="" class="button gradient wide cropSides cropBottom ae-7">Some information</a>
 						</li>
 						<li class="col-6-12 ae-3" style="background: #F5FBFE">
 							<h3>Salvini's Speech to the Senate</h3>
-							<div class="price ae-5">0.5</div>
+							<div class="price ae-5">0.08</div>
 							<div class="ae-5">
-								<h6 class="uppercase bold small opacity-4">Sentiment Score</h6>
+								<h6 class="uppercase bold small opacity-4">Polarity Score</h6>
 							</div>
-							<div class="margin-top-3 margin-bottom-3 equalElement ae-6">
-								<ul class="p tiny">
-									<li><strong>Some informationSome information</strong></li>
-									<li class="opacity-7">Some information</li>
-								</ul>
+							<div class="price ae-5">0.47</div>
+							<div class="ae-5">
+								<h6 class="uppercase bold small opacity-4">Subjectivity Score</h6>
 							</div>
-							<a href="" class="button gradient wide cropSides cropBottom ae-7">Some information</a>
 						</li>
 						<li class="col-6-12 ae-3" style="background: #F5FBFE">
 							<h3>Salvini's Piazza Duomo Speech</h3>
-							<div class="price ae-5">0.5</div>
+							<div class="price ae-5">0.19</div>
 							<div class="ae-5">
-								<h6 class="uppercase bold small opacity-4">Sentiment Score</h6>
+								<h6 class="uppercase bold small opacity-4">Polarity Score</h6>
 							</div>
-							<div class="margin-top-3 margin-bottom-3 equalElement ae-6">
-								<ul class="p tiny">
-									<li><strong>Some informationSome information</strong></li>
-									<li class="opacity-7">Some information</li>
-								</ul>
+							<div class="price ae-5">0.41</div>
+							<div class="ae-5">
+								<h6 class="uppercase bold small opacity-4">Subjectivity Score</h6>
 							</div>
-							<a href="" class="button gradient wide cropSides cropBottom ae-7">Some information</a>
 						</li>
 						<li class="col-6-12 ae-3" style="background: #F5FBFE">
 							<h3>Bolsonaro's Inaugural Speech</h3>
-							<div class="price ae-5">0.5</div>
+							<div class="price ae-5">0.19</div>
 							<div class="ae-5">
-								<h6 class="uppercase bold small opacity-4">Sentiment Score</h6>
+								<h6 class="uppercase bold small opacity-4">Polarity Score</h6>
 							</div>
-							<div class="margin-top-3 margin-bottom-3 equalElement ae-6">
-								<ul class="p tiny">
-									<li><strong>Some informationSome information</strong></li>
-									<li class="opacity-7">Some information</li>
-								</ul>
+							<div class="price ae-5">0.51</div>
+							<div class="ae-5">
+								<h6 class="uppercase bold small opacity-4">Subjectivity Score</h6>
 							</div>
-							<a href="" class="button gradient wide cropSides cropBottom ae-7">Some information</a>
 						</li>
 						<li class="col-6-12 ae-3" style="background: #F5FBFE">
 							<h3>Bolsorano's Speech to the UN</h3>
-							<div class="price ae-5">0.5</div>
+							<div class="price ae-5">0.19</div>
 							<div class="ae-5">
-								<h6 class="uppercase bold small opacity-4">Sentiment Score</h6>
+								<h6 class="uppercase bold small opacity-4">Polarity Score</h6>
 							</div>
-							<div class="margin-top-3 margin-bottom-3 equalElement ae-6">
-								<ul class="p tiny">
-									<li><strong>Some informationSome information</strong></li>
-									<li class="opacity-7">Some information</li>
-								</ul>
+							<div class="price ae-5">0.44</div>
+							<div class="ae-5">
+								<h6 class="uppercase bold small opacity-4">Subjectivity Score</h6>
 							</div>
-							<a href="" class="button gradient wide cropSides cropBottom ae-7">Some information</a>
 						</li>
 					</ul>
 				</div>
-				<!-- Python code Sentiment Analysis-->
+
 
 				<div class="fix-12-12 topmargin">
 					<ul class="grid">
+						<h1 class="ae-2 fromLeft">Polarity-Subjectivity</h1>
 						<li class="col-4-12 left">
-							<p class="ae-3 fromLeft"><span class="opacity-8">Here you can find the python code we developed for the sentiment analysis</span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8">While using Text Blob, we also divided every text in 10 equal parts (=TIME), in order to analyze the sentiment throughout time. The results were then put in a graph where the x axis represents the part of the speech (the x axis is labelled time to be more general, but the number from 1 to 10 represent parts of the speech), while the y axis represent the polarity.</span></p>
 						</li>
 						<li class="col-6-12 left ae-5 fromCenter">
 							<div class="shadow rounded">
-								<code>
-									import re <br>
-									import numpy as np<br>
-									import pandas as pd<br>
-									from pprint import pprint<br>
+								<img class="wide" src="assets/img/distantreading/sentimentanalysis/polarity_subjectivity.png"/>
+							</div>
+						</li>
+					</ul>
+				</div>
 
-									# Gensim<br>
-									import gensim<br>
-									import gensim.corpora as corpora<br>
-									from gensim.utils import simple_preprocess<br>
-									from gensim.models import CoherenceModel<br>
-
-									# spacy for lemmatization<br>
-									import spacy<br>
-
-									# Plotting tools<br>
-									import pyLDAvis<br>
-									import pyLDAvis.gensim  # don't skip this<br>
-									import matplotlib.pyplot as plt<br>
-									%matplotlib inline<br>
-
-									# Enable logging for gensim - optional
-									import logging
-									logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.ERROR)
-
-									import warnings
-									warnings.filterwarnings("ignore",category=DeprecationWarning)
-								</code>
+				<div class="fix-12-12 topmargin">
+					<ul class="grid">
+						<h1 class="ae-2 fromLeft">Sentiment Through Time</h1>
+						<li class="col-4-12 left">
+							<p class="ae-3 left fromLeft"><span class="opacity-8"></span>We put the results in a graph to be easily compared and analyzed. Nevertheless results from the 2 different tools are similar (so we sort of confirmed them).</p>
+						</li>
+						<li class="col-6-12 left ae-5 fromCenter">
+							<div class="shadow rounded">
+								<img class="wide" src="assets/img/distantreading/sentimentanalysis/sentiment_time_all.png"/>
 							</div>
 						</li>
 					</ul>
