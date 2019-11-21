@@ -92,3 +92,75 @@ p {
 p > a {
   text-decoration: underline;
 }
+
+.text_1 .text_2 .text_3 .text_4 .text_5 .text_6 .text_7{
+  display: none;
+}
+
+
+.metaph {
+  display: none;
+  background-color: yellow;
+}
+
+.simile {
+  display: none;
+  background-color: tomato;
+}
+
+.thirdp {
+  display: none;
+  background-color: turquoise;
+}
+
+.quotes {
+  display: none;
+  background-color: green;
+}
+
+.person {
+  display: none;
+  background-color: rgb(88, 64, 224);
+}
+
+.retquest {
+  display: none;
+  background-color: rgb(224, 64, 216);
+}
+
+.nick {
+  display: none;
+  background-color: rgb(64, 224, 144);
+}
+
+.vs {
+  display: none;
+  background-color: rgb(200, 224, 64);
+}
+
+.paradox {
+  display: none;
+  background-color: rgb(211, 21, 21);
+}
+
+.foul {
+  display: none;
+  background-color: rgb(100, 99, 40);
+}
+
+.relig {
+  display: none;
+  background-color: rgb(255, 255, 255);
+}
+
+.cores {
+  display: none;
+  background-color: rgb(107, 64, 224);
+}
+
+div .text_corpus {
+  height: 80vh;
+  width: 80vw;
+  overflow-y: scroll;
+  text-align: justify !important;
+}
