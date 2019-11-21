@@ -68,23 +68,46 @@ for index, comedian in enumerate(data.columns):
 
 plt.show()
 
-#  AMOUNT OF RELIGION
-data_holy_words = data.transpose()[['god', 'mary', 'bible', 'gospel']]
-data_religion = pd.concat([data_holy_words.god + data_holy_words.mary, data_holy_words.bible + data_holy_words.gospel], axis=1)
-data_religion.columns = ['god_mary', 'bible_gospel']
-print(data_religion)
+#  NUMBER OF UNIQUE WORDS
+unique_list = []
+for comedian in data.columns:
+    uniques = data[comedian].nonzero()[0].size
+    unique_list.append(uniques)
 
-plt.rcParams['figure.figsize'] = [10, 8]
+# Create a new dataframe that contains this unique word count
+data_words = pd.DataFrame(list(zip(full_names, unique_list)), columns=['politician', 'unique_words'])
+data_unique_sort = data_words.sort_values(by='unique_words')
+print(data_unique_sort)
 
-for i, comedian in enumerate(data_religion.index):
-    x = data_religion.god_mary.loc[politician]
-    y = data_religion.bible_gospel.loc[politician]
-    plt.scatter(x, y, color='red')
-    plt.text(x + 1.5, y + 0.5, full_names[i], fontsize=10)
-    plt.xlim(-5, 155)
+#  WORDS PER MINUTE
+# total_list = []
+# for politician in data.columns:
+#     totals = sum(data[politician])
+#     total_list.append(totals)
+#
+# # times in minutes
+# run_times = [60, 59, 80, 60, 67, 73, 77, 63, 62, 58, 76, 79]
+#
+# # Let's add some columns to our dataframe
+# data_words['total_words'] = total_list
+# data_words['run_times'] = run_times
+# data_words['words_per_minute'] = data_words['total_words'] / data_words['run_times']
+#
+# # Sort the dataframe by words per minute to see who talks the slowest and fastest
+# data_wpm_sort = data_words.sort_values(by='words_per_minute')
+# print(data_wpm_sort)
 
-plt.title('Number of Religion Words Used in Routine', fontsize=20)
-plt.xlabel('Number of god_mary', fontsize=15)
-plt.ylabel('Number of bible_gospel', fontsize=15)
+y_pos = np.arange(len(data_words))
 
+plt.subplot(1, 2, 1)
+plt.barh(y_pos, data_unique_sort.unique_words, align='center')
+plt.yticks(y_pos, data_unique_sort.politician)
+plt.title('Number of Unique Words', fontsize=20)
+
+# plt.subplot(1, 2, 2)
+# plt.barh(y_pos, data_wpm_sort.words_per_minute, align='center')
+# plt.yticks(y_pos, data_wpm_sort.politician)
+# plt.title('Number of Words Per Minute', fontsize=20)
+
+plt.tight_layout()
 plt.show()
