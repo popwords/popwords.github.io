@@ -964,26 +964,35 @@
             <p class="margin-bottom-2 ae-1"><span class="opacity-6"></p>
             <h1 class="ae-2 huge fromAbove margin-bottom-2">Topic Modelling</h1>
           </div>
-					<p class="ae-3 fromLeft"><span class="opacity-8"></span>We performed topic modelling based on a python script ????????????. You can find our python code below.</p>
+					<p class="ae-3 fromLeft"><span class="opacity-8"></span>We performed topic modelling based on a python script ????????????. You can find our python code below. We found 4 main topics in our corpus.</p>
+
+
+					<!-- Python code Lexical Space Analysis-->
+
+					<div class="fix-12-12 topmargin">
+						<ul class="grid">
+							<li class="col-12-12 center ae-5 fromCenter">
+								<a href="assets/pythonfiles/topicmodelling.py"><button class="button black gradient ae-4">Download the Python file</button></a>
+
+							</li>
+						</ul>
+					</div>
+
 
 					<div class="fix-12-12 toCenter topmargin">
-						<h1 class="ae-2 left fromLeft">Main Topics in Trump</h1>
+						<h1 class="ae-2 left fromLeft">Main Topics in our Corpus</h1>
 						<ul class="grid fixedSpaces left margin-top-10">
-	            <li class="col-4-12 col-tablet-1-2 col-phablet-1-1 ae-4 fromLeft">
-	             <h3>Topic 1</h3>
-							 <div class="price ae-5"><img src="assets/img/distantreading.png"/></div>
-	             <p class="tiny opacity-6">Defined by top words: WORD, WORD, WORD, WORD</p>
+							<li class="col-12-12 col-tablet-1-2 col-phablet-1-1 ae-4 fromLeft">
+							 <h3>Word Clouds </h3>
+							 <div class="price ae-5"><img src="assets/img/distantreading/topicmodelling/wordclouds.png"/></div>
+							 <p class="tiny opacity-6">Explanation of what is included in this image.</p>
+							</li>
+	            <li class="col-12-12 col-tablet-1-2 col-phablet-1-1 ae-4 fromLeft">
+	             <h3>Topic Count Weights </h3>
+							 <div class="price ae-5"><img src="assets/img/distantreading/topicmodelling/topiccountweights.png"/></div>
+							 <p class="tiny opacity-6">Explanation of what is included in this image.</p>
 	            </li>
-	            <li class="col-4-12 col-tablet-1-2 col-phablet-1-1 ae-5 fromLeft">
-	             <h3>Immigration</h3>
-							 <div class="price ae-5"><img src="assets/img/distantreading.png"/></div>
-							 <p class="tiny opacity-6">Defined by top words: WORD, WORD, WORD, WORD</p>
-	            </li>
-	            <li class="col-4-12 col-tablet-1-2 col-phablet-1-1 ae-6 fromLeft">
-	             <h3>Patriotism</h3>
-							 <div class="price ae-5"><img src="assets/img/distantreading.png"/></div>
-							 <p class="tiny opacity-6">Defined by top words: WORD, WORD, WORD, WORD</p>
-	            </li>
+
 	          </ul>
 					</div>
 
@@ -1008,71 +1017,17 @@
 						</ul>
 					</div>
 
+
 					<div class="fix-12-12 toCenter topmargin">
-						<h1 class="ae-2 left fromLeft">Main Topics in Bolsonaro</h1>
-						<ul class="grid fixedSpaces left margin-top-10">
-							<li class="col-4-12 col-tablet-1-2 col-phablet-1-1 ae-4 fromLeft">
-							 <h3>Topic 1</h3>
-							 <div class="price ae-5"><img src="assets/img/distantreading.png"/></div>
-							 <p class="tiny opacity-6">Defined by top words: WORD, WORD, WORD, WORD</p>
-							</li>
-							<li class="col-4-12 col-tablet-1-2 col-phablet-1-1 ae-5 fromLeft">
-							 <h3>Immigration</h3>
-							 <div class="price ae-5"><img src="assets/img/distantreading.png"/></div>
-							 <p class="tiny opacity-6">Defined by top words: WORD, WORD, WORD, WORD</p>
-							</li>
-							<li class="col-4-12 col-tablet-1-2 col-phablet-1-1 ae-6 fromLeft">
-							 <h3>Patriotism</h3>
-							 <div class="price ae-5"><img src="assets/img/distantreading.png"/></div>
-							 <p class="tiny opacity-6">Defined by top words: WORD, WORD, WORD, WORD</p>
-							</li>
-						</ul>
+						<h1 class="ae-2 left fromLeft">An Interactive Topic Modelling Representation</h1>
+						<p class="tiny opacity-6">Explanation of what is included in this section.</p>
+						<iframe></iframe>
+					</div>
+
+
 					</div>
 
         </div>
-
-
-				<!-- Python code Toic Modelling-->
-
-				<div class="fix-12-12 topmargin">
-					<ul class="grid">
-						<li class="col-4-12 left">
-							<p class="ae-3 fromLeft"><span class="opacity-8">Here you can find the python code we developed for the topic modelling analysis</span></p>
-						</li>
-						<li class="col-6-12 left ae-5 fromCenter">
-							<div class="shadow rounded">
-								<code>
-									import re <br>
-									import numpy as np<br>
-									import pandas as pd<br>
-									from pprint import pprint<br>
-
-									# Gensim<br>
-									import gensim<br>
-									import gensim.corpora as corpora<br>
-									from gensim.utils import simple_preprocess<br>
-									from gensim.models import CoherenceModel<br>
-
-									# spacy for lemmatization<br>
-									import spacy<br>
-
-									# Plotting tools<br>
-									import pyLDAvis<br>
-									import pyLDAvis.gensim  # don't skip this<br>
-									import matplotlib.pyplot as plt<br>
-									%matplotlib inline<br>
-
-									# Enable logging for gensim - optional
-									import logging
-									logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.ERROR)
-
-									import warnings
-									warnings.filterwarnings("ignore",category=DeprecationWarning)
-								</code>
-							</div>
-						</li>
-					</ul>
-				</div>
 
 
       </div>
