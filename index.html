@@ -179,16 +179,16 @@
 
 <!-- Slide 2 (#60) About: The Pop Words Project-->
 <section class="slide fade-6 kenBurns" id="aboutproject">
-  <div class="content">
+  <div class="content vhh">
     <div class="container">
-      <div class="wrap vhh">
+      <div class="wrap">
 
         <div class="fix-12-12 topmargin">
           <ul class="grid">
             <li class="col-6-12 left">
               <h1 class="ae-2 fromLeft">The Pop Words Project</h1>
               <p class="ae-3 fromLeft"><span class="opacity-8">Right wing populist leaders have sprung across the world, unprecedently amassing millions of fans and followers. These leaders are thought to share very similar ways of communicating with their intended audiences. But exactly what political strategies and rhetorics underlie their popularity?</span></p>
-							<p class="ae-3 fromLeft"><span class="opacity-8">Pop Words tackles these questions by analyzing a corpus of speeches by populist right-wing leaders like Trump, Salvini and Bolsonaro. We work in the domain of political rhetoric analysis through close and distant reading methods such as rhetorical, topic modelling, sentiment, and lexical analysis. We then create a formal ontology to conceptualize and formalize rhetorical strategies employed by Right wing populists (RWPs). While we first analyze and formalize the speech acts of RWPs, this ontology can be exploited for a variety of political content and speech acts, regardless of political affiliation.</span></p>
+							<p class="ae-3 fromLeft"><span class="opacity-8">Pop Words tackles these questions by analyzing a corpus of speeches by populist right-wing leaders like Trump, Salvini and Bolsonaro. We work in the domain of political rhetoric analysis through close and distant reading methods such as rhetorical device analysis, topic modelling, sentiment analysis, and lexical space (complexity) analysis. We then create a formal ontology to conceptualize and formalize rhetorical strategies employed by Right wing populists (RWPs). While we first analyze and formalize the speech acts of RWPs, this ontology can be exploited for a variety of political content and speech acts, regardless of political affiliation.</span></p>
 
               <ul class="tabs controller uppercase bold ae-4 fromCenter" data-slider-id="60-1">
                 <li class="selected">Trump</li>
@@ -229,9 +229,9 @@
 
 <!-- Slide 3 (#27) The Initial Corpus--->
 <section class="slide fade-6 kenBurns" id="corpus">
-  <div class="content">
+  <div class="content vhh">
     <div class="container">
-      <div class="wrap vhh">
+      <div class="wrap">
 
 				<div class="fix-12-12 topmargin">
           <ul class="grid">
@@ -1226,57 +1226,6 @@
 					<p class="ae-3 fromLeft"><span class="opacity-8"></span>We developed an automatic speech generator based on our corpus to generate populist speeches. Play aorund with our code, with you can find below.</p>
 				</div>
 
-
-				<!-- ace live code-->
-
-				<div id="editor">some text</div>
-				<script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
-				<script>
-				    var editor = ace.edit("editor");
-				</script>
-				<script src="src/theme-twilight.js" type="text/javascript" charset="utf-8"></script>
-
-			<!-- Python code automatic speech generator-->
-
-				<div class="fix-12-12 topmargin">
-					<ul class="grid">
-						<li class="col-4-12 left">
-							<p class="ae-3 fromLeft"><span class="opacity-8">Here you can find the python code we developed for the automatic speech generator</span></p>
-						</li>
-						<li class="col-6-12 left ae-5 fromCenter">
-							<div class="shadow rounded">
-								<code>
-									import re <br>
-									import numpy as np<br>
-									import pandas as pd<br>
-									from pprint import pprint<br>
-
-									# Gensim<br>
-									import gensim<br>
-									import gensim.corpora as corpora<br>
-									from gensim.utils import simple_preprocess<br>
-									from gensim.models import CoherenceModel<br>
-
-									# spacy for lemmatization<br>
-									import spacy<br>
-
-									# Plotting tools<br>
-									import pyLDAvis<br>
-									import pyLDAvis.gensim  # don't skip this<br>
-									import matplotlib.pyplot as plt<br>
-									%matplotlib inline<br>
-
-									# Enable logging for gensim - optional
-									import logging
-									logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.ERROR)
-
-									import warnings
-									warnings.filterwarnings("ignore",category=DeprecationWarning)
-								</code>
-							</div>
-						</li>
-					</ul>
-				</div>
 
 
       </div>
