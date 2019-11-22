@@ -97,10 +97,10 @@ p > a {
   display: none;
 }
 
-
+/* styling of highlighted text */
 .metaph {
   display: none;
-  background-color: yellow;
+  background-color: rgb(252, 186, 3);
 }
 
 .simile {
@@ -135,7 +135,7 @@ p > a {
 
 .vs {
   display: none;
-  background-color: rgb(200, 224, 64);
+  background-color: rgb(153, 171, 50);
 }
 
 .paradox {
@@ -150,7 +150,7 @@ p > a {
 
 .relig {
   display: none;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(138, 134, 125);
 }
 
 .cores {
@@ -158,8 +158,59 @@ p > a {
   background-color: rgb(107, 64, 224);
 }
 
+/* styling of rhetorical device buttons */
+.bmetaph {
+  background-color: rgb(252, 186, 3);
+}
+
+.bsimile {
+  background-color: tomato;
+}
+
+.bthirdp {
+  background-color: turquoise;
+}
+
+.bquotes {
+  background-color: green;
+}
+
+.bperson {
+  background-color: rgb(88, 64, 224);
+}
+
+.bretquest {
+  display: none;
+  background-color: rgb(224, 64, 216);
+}
+
+.bnick {
+  background-color: rgb(64, 224, 144);
+}
+
+.bvs {
+  background-color: rgb(153, 171, 50);
+}
+
+.bparadox {
+  background-color: rgb(211, 21, 21);
+}
+
+.bfoul {
+  background-color: rgb(100, 99, 40);
+}
+
+.brelig {
+  background-color: rgb(138, 134, 125);
+}
+
+.bcores {
+  background-color: rgb(107, 64, 224);
+}
+
+
+
 div .text_corpus {
-  height: 80vh;
   width: 80vw;
   overflow-y: scroll;
   text-align: justify !important;
