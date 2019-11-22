@@ -211,7 +211,6 @@ p > a {
 
 
 div .text_corpus {
-  width: 80vw;
   overflow-y: scroll;
   text-align: justify !important;
 }
