@@ -175,8 +175,8 @@ h1 {
 
 iframe {
   margin-left: -5vw;
-  height: 80vh;
-  width: 90vw;
-  background-color: white;
-  overflow: scroll;
+  height: 150vh;
+  width: 100vw;
+  background-color: #202020;
+  overflow: hidden;
 } 

@@ -17,7 +17,7 @@ document.getElementById('btn_2').onclick = function() {
   }*/
 
 $(document).ready(function() {
-    $("#txt_1, #txt_2, #txt_3, #txt_4, #txt_5, #txt_6, #txt_7").hide();
+    $("#txt_2, #txt_3, #txt_4, #txt_5, #txt_6, #txt_7").hide();
 });
 
 $("#btn_1").on('click', function() {
