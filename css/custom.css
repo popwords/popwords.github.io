@@ -179,4 +179,9 @@ iframe {
   width: 90vw;
   background-color: white;
   overflow: scroll;
-} 
+}
+
+.examplespeech {
+  font-style: italic;
+  background-color: grey;
+}
