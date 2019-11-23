@@ -1432,7 +1432,7 @@
       </div>
     </div>
   </div>
-  <div class="background" style="background-image:url(assets/img/background/img.jpg)"></div>
+<div class="background" style="background-image:url(assets/img/background/img.jpg)"></div>
 </section>
 
 <!-- Slide 5 (#91) The Ontology-->
@@ -1441,11 +1441,57 @@
     <div class="container">
       <div class="wrap">
 
+				<!-- ontology -->
+
 				<div class="fix-10-12 topmargin">
-					<h1 class="ae-1">The Ontology</h1>
-					<p class="ae-3 fromLeft"><span class="opacity-8"></span>This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. </p>
-					<p class="ae-3 fromLeft"><span class="opacity-8"></span>This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. This is a paragraph about the ontology. </p>
+					<h1 class="ae-1 huge">The ASAP Ontology</h1>
+					<h1 class="ae-1">Domain and Scope</h1>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">The primary aim of the Pop Words project is to create an <em>ontological and technical infrastructure to investigate the rhetorics of political speech acts</em>. As such, our first objective was to conceptualize and formalize in an ontology the context and content of speech acts by politicians. We decided to name our ontology ASAP <em>(Analyzed Speech Acts by Politicians)</em>.</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">The secondary aim of Pop Words is to use this ontology and framework to <em>investigate speech acts by right wing populist leaders</em> of the present moment. As such, we created an initial corpus with speeches by President Donald Trump (USA), President Jair Bolsonaro (Brazil) and (ex) Minister of the Interior Matteo Salvini (Italy).</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">For these purposes, we work in the domain of <em>political rhetoric analysis</em> through close and distant reading methods such as rhetorical device analysis, word frequency analysis, topic modelling, sentiment analysis, and lexical space (complexity) analysis.</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8"></span></p>
 				</div>
+
+				<!-- competency questions -->
+
+				<div class="fix-10-12 topmargin">
+					<h1 class="ae-1">Competency Questions</h1>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">The starting point of developing the ASAP ontology and Pop Words as a whole was through asking ourselves interesting questions. These were the questions behind our analysis and the infrastructure of our ontology:</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">Is there a shared rhetorical strategy in speeches by politicians?</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">Is there as shared rhetorical strategy in speeches by right wing populist (RWP) politicians?</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">What are the <em>rhetorical devices</em> used in RWP speeches?</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">Are the same rhetorical devices used by different speakers for the same topics?</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">What are the <em>most common words and phrases</em> in speeches by RWP?</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">Are there <em>recurrent topics</em> between RWP speeches?</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">Is there a <em>shared logical order</em> between RWP speeches?</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">What are the <em>sentiments</em> expressed in the speeches?</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">Is there a proliferation of an appeal to pathos in the speeches?</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">How complex is the language of RWP speeches?</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">When compared to other political speeches, is there <em>lexical constraint</em> in RWP speeches?</span></p>
+				</div>
+
+				<!-- definitions of classes and properties  -->
+
+				<div class="fix-10-12 topmargin">
+					<h1 class="ae-1">Definitions of Classes and Properties </h1>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">We decided for the ontology to have a central focus point in a class defined by us in ASAP: “Speech act”. A speech act, in general is an utterance considered as an action, particularly with regard to its intention, purpose, or effect. We decided this was a good way to define the breadth of communication strategies that are emitted in the 21st century directly by political leaders. Specifically, we thought that the concept of speech act was helpful because it could include traditional forms such as speeches and press conferences, as well as more modern and harder to categorize ones like tweets and facebook posts and live feeds. </span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">From the central class of speech act, we decided it was important to represent both the context and the content of speech acts. This is why we decided to represent the these aspects in ASAP through other classes and attributes, relying on previous knowledge of several ontologies like DC, FRBR and FOAF, as well as ontologies and definitions focused on political rhetorics or rhetorical analysis in general, like PROLES and ? . We also relied on already existing URIs for individuals and other agents. </span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">In terms of context, we decided that most important clues about the context, were centered on the when, where, by who, why, and how of speech act deliverance. For example, for the context of “by who”, we not only represent the person with their URI (if they have one), but also what they role is (example, president, politician, etc) as well as what party this speech giver belongs to (if any) political party. </span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">For the content, after an initial search for latent knowledge in our initial corpus, we decided that formalizing the rhetorical figures and topics present in the analyzed speech acts were most critical. For this, we decided to use ?????. </span></p>
+				</div>
+
+
+				<!-- knowledge base  -->
+
+				<div class="fix-10-12 topmargin">
+					<h1 class="ae-1">Knowledge Base </h1>
+		<p class="ae-3 left fromLeft"><span class="opacity-8">Once ASAP was finished as a logical and error-free ontology, we decided to populate it with parts of our initial corpus. Because we are especially interested in Right wing populist rhetorics and speeches, we decided to formalize the knowledge in three speeches:</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">Trump’s Inaugural Speech</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">Bolsonaro’s Inaugural Speech</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">Salvini’s Speech to the Senate</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">We analyzed these speeches through close reading, word frequency analysis, topic modelling, sentiment analysis, and lexical space (complexity) analysis. With these results, we filled in the content part of the ontology. With independent research, we filled in the context part.</span></p>
+				</div>
+
 
 				<!-- ontology documentation-->
 

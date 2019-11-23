@@ -240,3 +240,8 @@ iframe {
 .terms {
   color: white !important;
 }
+
+em {
+  color: rgb(148, 209, 247);
+  font-style: normal;
+}
