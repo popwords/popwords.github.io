@@ -213,6 +213,7 @@ p > a {
 div .text_corpus {
   overflow-y: scroll;
   text-align: justify !important;
+  height: 80vh;
 }
 
 div .vhh {
