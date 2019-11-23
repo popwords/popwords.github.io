@@ -235,3 +235,7 @@ iframe {
   font-style: italic;
   background-color: grey;
 }
+
+.terms {
+  color: white !important;
+}
