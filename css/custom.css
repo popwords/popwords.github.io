@@ -257,3 +257,7 @@ p > span > a {
   background-color: white;
   color: black;
 }
+
+#aboutproject {
+  height: 100vh;
+}
