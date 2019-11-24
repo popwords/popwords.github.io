@@ -98,63 +98,51 @@ p > a {
 }
 
 /* styling of highlighted text */
-.metaph {
-  display: none;
+.hmetaph {
   background-color: rgb(252, 186, 3);
 }
 
-.simile {
-  display: none;
+.hsimile {
   background-color: tomato;
 }
 
-.thirdp {
-  display: none;
+.hthirdp {
   background-color: turquoise;
 }
 
-.quotes {
-  display: none;
+.hquotes {
   background-color: green;
 }
 
-.person {
-  display: none;
+.hperson {
   background-color: rgb(88, 64, 224);
 }
 
-.retquest {
-  display: none;
+.hretquest {
   background-color: rgb(224, 64, 216);
 }
 
-.nick {
-  display: none;
+.hnick {
   background-color: rgb(64, 224, 144);
 }
 
-.vs {
-  display: none;
+.hvs {
   background-color: rgb(153, 171, 50);
 }
 
-.paradox {
-  display: none;
+.hparadox {
   background-color: rgb(211, 21, 21);
 }
 
-.foul {
-  display: none;
+.hfoul {
   background-color: rgb(100, 99, 40);
 }
 
-.relig {
-  display: none;
+.hrelig {
   background-color: rgb(138, 134, 125);
 }
 
-.cores {
-  display: none;
+.hcores {
   background-color: rgb(107, 64, 224);
 }
 
@@ -180,7 +168,6 @@ p > a {
 }
 
 .bretquest {
-  display: none;
   background-color: rgb(224, 64, 216);
 }
 

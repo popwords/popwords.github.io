@@ -18,35 +18,131 @@ document.getElementById('btn_2').onclick = function() {
 
 $(document).ready(function() {
     $("#txt_2, #txt_3, #txt_4, #txt_5, #txt_6, #txt_7").hide();
+    $(".metaph").removeClass("metaph");
+    $(".thirdp").removeClass("hthirdp");
+    $(".quotes").removeClass("hquotes");
+    $(".person").removeClass("hperson");
+    $(".retquest").removeClass("hrequest");
+    $(".nick").removeClass("hnick");
+    $(".vs").removeClass("hvs");
+    $(".paradox").removeClass("hparadox");
+    $(".foul").removeClass("hfoul");
+    $(".relig").removeClass("hrelig");
+    $(".simile").removeClass("hsimile");
+    $(".cores").removeClass("hcores");
 });
 
 $("#btn_1").on('click', function() {
     $("#txt_1").show();
     $("#txt_2, #txt_3, #txt_4, #txt_5, #txt_6, #txt_7").hide();
+    $(".metaph").removeClass("metaph");
+    $(".thirdp").removeClass("hthirdp");
+    $(".quotes").removeClass("hquotes");
+    $(".person").removeClass("hperson");
+    $(".retquest").removeClass("hrequest");
+    $(".nick").removeClass("hnick");
+    $(".vs").removeClass("hvs");
+    $(".paradox").removeClass("hparadox");
+    $(".foul").removeClass("hfoul");
+    $(".relig").removeClass("hrelig");
+    $(".simile").removeClass("hsimile");
+    $(".cores").removeClass("hcores");
  });
  $("#btn_2").on('click', function() {
     $("#txt_2").show();
     $("#txt_1, #txt_3, #txt_4, #txt_5, #txt_6, #txt_7").hide();
+    $(".metaph").removeClass("metaph");
+    $(".thirdp").removeClass("hthirdp");
+    $(".quotes").removeClass("hquotes");
+    $(".person").removeClass("hperson");
+    $(".retquest").removeClass("hrequest");
+    $(".nick").removeClass("hnick");
+    $(".vs").removeClass("hvs");
+    $(".paradox").removeClass("hparadox");
+    $(".foul").removeClass("hfoul");
+    $(".relig").removeClass("hrelig");
+    $(".simile").removeClass("hsimile");
+    $(".cores").removeClass("hcores");
  });
  $("#btn_3").on('click', function() {
     $("#txt_3").show();
     $("#txt_2, #txt_1, #txt_4, #txt_5, #txt_6, #txt_7").hide();
+    $(".metaph").removeClass("metaph");
+    $(".thirdp").removeClass("hthirdp");
+    $(".quotes").removeClass("hquotes");
+    $(".person").removeClass("hperson");
+    $(".retquest").removeClass("hrequest");
+    $(".nick").removeClass("hnick");
+    $(".vs").removeClass("hvs");
+    $(".paradox").removeClass("hparadox");
+    $(".foul").removeClass("hfoul");
+    $(".relig").removeClass("hrelig");
+    $(".simile").removeClass("hsimile");
+    $(".cores").removeClass("hcores");
  });
  $("#btn_4").on('click', function() {
     $("#txt_4").show();
     $("#txt_2, #txt_3, #txt_1, #txt_5, #txt_6, #txt_7").hide();
+    $(".metaph").removeClass("metaph");
+    $(".thirdp").removeClass("hthirdp");
+    $(".quotes").removeClass("hquotes");
+    $(".person").removeClass("hperson");
+    $(".retquest").removeClass("hrequest");
+    $(".nick").removeClass("hnick");
+    $(".vs").removeClass("hvs");
+    $(".paradox").removeClass("hparadox");
+    $(".foul").removeClass("hfoul");
+    $(".relig").removeClass("hrelig");
+    $(".simile").removeClass("hsimile");
+    $(".cores").removeClass("hcores");
  });
  $("#btn_5").on('click', function() {
     $("#txt_5").show();
     $("#txt_2, #txt_3, #txt_4, #txt_1, #txt_6, #txt_7").hide();
+    $(".metaph").removeClass("metaph");
+    $(".thirdp").removeClass("hthirdp");
+    $(".quotes").removeClass("hquotes");
+    $(".person").removeClass("hperson");
+    $(".retquest").removeClass("hrequest");
+    $(".nick").removeClass("hnick");
+    $(".vs").removeClass("hvs");
+    $(".paradox").removeClass("hparadox");
+    $(".foul").removeClass("hfoul");
+    $(".relig").removeClass("hrelig");
+    $(".simile").removeClass("hsimile");
+    $(".cores").removeClass("hcores");
  });
  $("#btn_6").on('click', function() {
     $("#txt_6").show();
     $("#txt_2, #txt_3, #txt_4, #txt_5, #txt_1, #txt_7").hide();
+    $(".metaph").removeClass("metaph");
+    $(".thirdp").removeClass("hthirdp");
+    $(".quotes").removeClass("hquotes");
+    $(".person").removeClass("hperson");
+    $(".retquest").removeClass("hrequest");
+    $(".nick").removeClass("hnick");
+    $(".vs").removeClass("hvs");
+    $(".paradox").removeClass("hparadox");
+    $(".foul").removeClass("hfoul");
+    $(".relig").removeClass("hrelig");
+    $(".simile").removeClass("hsimile");
+    $(".cores").removeClass("hcores");
  });
  $("#btn_7").on('click', function() {
     $("#txt_7").show();
     $("#txt_2, #txt_3, #txt_4, #txt_5, #txt_6, #txt_1").hide();
+    $(".metaph").removeClass("metaph");
+    $(".thirdp").removeClass("hthirdp");
+    $(".quotes").removeClass("hquotes");
+    $(".person").removeClass("hperson");
+    $(".retquest").removeClass("hrequest");
+    $(".nick").removeClass("hnick");
+    $(".vs").removeClass("hvs");
+    $(".paradox").removeClass("hparadox");
+    $(".foul").removeClass("hfoul");
+    $(".relig").removeClass("hrelig");
+    $(".simile").removeClass("hsimile");
+    $(".cores").removeClass("hcores");
  });
  
 
@@ -54,62 +150,182 @@ $("#btn_1").on('click', function() {
 //RETHORICAL DEVICES
 
  $("#metaph").on('click', function() {
-    $(".metaph").show();
-    $(".simile, .thirdp, .quotes, .person, .retquest, .nick, .vs, .paradox, .foul, .relig, .cores").hide();
+    $(".metaph").addClass("hmetaph");
+    $(".simile").removeClass("hsimile");
+    $(".thirdp").removeClass("hthirdp");
+    $(".quotes").removeClass("hquotes");
+    $(".person").removeClass("hperson");
+    $(".retquest").removeClass("hrequest");
+    $(".nick").removeClass("hnick");
+    $(".vs").removeClass("hvs");
+    $(".paradox").removeClass("hparadox");
+    $(".foul").removeClass("hfoul");
+    $(".relig").removeClass("hrelig");
+    $(".cores").removeClass("hcores");
  });
 
  $("#simile").on('click', function() {
-   $(".simile").show();
-   $(".metaph, .thirdp, .quotes, .person, .retquest, .nick, .vs, .paradox, .foul, .relig, .cores").hide();
+   $(".simile").addClass("hsimile");
+   $(".metaph").removeClass("metaph");
+   $(".thirdp").removeClass("hthirdp");
+   $(".quotes").removeClass("hquotes");
+   $(".person").removeClass("hperson");
+   $(".retquest").removeClass("hrequest");
+   $(".nick").removeClass("hnick");
+   $(".vs").removeClass("hvs");
+   $(".paradox").removeClass("hparadox");
+   $(".foul").removeClass("hfoul");
+   $(".relig").removeClass("hrelig");
+   $(".cores").removeClass("hcores");
 });
 
 $("#thirdp").on('click', function() {
-   $(".thirdp").show();
-   $(".simile, .metaph, .quotes, .person, .retquest, .nick, .vs, .paradox, .foul, .relig, .cores").hide();
+   $(".thirdp").addClass("hthirdp");
+   $(".metaph").removeClass("metaph");
+   $(".simile").removeClass("hsimile");
+   $(".quotes").removeClass("hquotes");
+   $(".person").removeClass("hperson");
+   $(".retquest").removeClass("hrequest");
+   $(".nick").removeClass("hnick");
+   $(".vs").removeClass("hvs");
+   $(".paradox").removeClass("hparadox");
+   $(".foul").removeClass("hfoul");
+   $(".relig").removeClass("hrelig");
+   $(".cores").removeClass("hcores");
 });
 
 $("#quotes").on('click', function() {
-   $(".quotes").show();
-   $(".simile, .thirdp, .metaph, .person, .retquest, .nick, .vs, .paradox, .foul, .relig, .cores").hide();
+   $(".quotes").addClass("hquotes");
+   $(".metaph").removeClass("metaph");
+   $(".thirdp").removeClass("hthirdp");
+   $(".simile").removeClass("hsimile");
+   $(".person").removeClass("hperson");
+   $(".retquest").removeClass("hrequest");
+   $(".nick").removeClass("hnick");
+   $(".vs").removeClass("hvs");
+   $(".paradox").removeClass("hparadox");
+   $(".foul").removeClass("hfoul");
+   $(".relig").removeClass("hrelig");
+   $(".cores").removeClass("hcores");
 });
 
 $("#person").on('click', function() {
-   $(".person").show();
-   $(".simile, .thirdp, .quotes, .metaph, .retquest, .nick, .vs, .paradox, .foul, .relig, .cores").hide();
+   $(".person").addClass("hperson");
+   $(".metaph").removeClass("metaph");
+   $(".thirdp").removeClass("hthirdp");
+   $(".quotes").removeClass("hquotes");
+   $(".simile").removeClass("hsimile");
+   $(".retquest").removeClass("hrequest");
+   $(".nick").removeClass("hnick");
+   $(".vs").removeClass("hvs");
+   $(".paradox").removeClass("hparadox");
+   $(".foul").removeClass("hfoul");
+   $(".relig").removeClass("hrelig");
+   $(".cores").removeClass("hcores");
 });
 
 $("#retquest").on('click', function() {
-   $(".retquest").show();
-   $(".simile, .thirdp, .quotes, .person, .metaph, .nick, .vs, .paradox, .foul, .relig, .cores").hide();
+   $(".retquest").addClass("hrequest");
+   $(".metaph").removeClass("metaph");
+   $(".thirdp").removeClass("hthirdp");
+   $(".quotes").removeClass("hquotes");
+   $(".person").removeClass("hperson");
+   $(".simile").removeClass("hsimile");
+   $(".nick").removeClass("hnick");
+   $(".vs").removeClass("hvs");
+   $(".paradox").removeClass("hparadox");
+   $(".foul").removeClass("hfoul");
+   $(".relig").removeClass("hrelig");
+   $(".cores").removeClass("hcores");
 });
 
 $("#nick").on('click', function() {
-   $(".nick").show();
-   $(".simile, .thirdp, .quotes, .person, .metaph, .retquest, .vs, .paradox, .foul, .relig, .cores").hide();
+   $(".nick").addClass("hnick");
+   $(".metaph").removeClass("metaph");
+   $(".thirdp").removeClass("hthirdp");
+   $(".quotes").removeClass("hquotes");
+   $(".person").removeClass("hperson");
+   $(".retquest").removeClass("hrequest");
+   $(".simile").removeClass("hsimile");
+   $(".vs").removeClass("hvs");
+   $(".paradox").removeClass("hparadox");
+   $(".foul").removeClass("hfoul");
+   $(".relig").removeClass("hrelig");
+   $(".cores").removeClass("hcores");
 });
 
 $("#vs").on('click', function() {
-   $(".vs").show();
-   $(".simile, .thirdp, .quotes, .person, .retquest, .metaph, .metaph, .paradox, .foul, .relig, .cores").hide();
+   $(".vs").addClass("hvs");
+   $(".metaph").removeClass("metaph");
+   $(".thirdp").removeClass("hthirdp");
+   $(".quotes").removeClass("hquotes");
+   $(".person").removeClass("hperson");
+   $(".retquest").removeClass("hrequest");
+   $(".nick").removeClass("hnick");
+   $(".simile").removeClass("hsimile");
+   $(".paradox").removeClass("hparadox");
+   $(".foul").removeClass("hfoul");
+   $(".relig").removeClass("hrelig");
+   $(".cores").removeClass("hcores");
 });
 
 $("#paradox").on('click', function() {
-   $(".paradox").show();
-   $(".simile, .thirdp, .quotes, .person, .retquest, .nick, .vs, .metaph, .foul, .relig, .cores").hide();
+   $(".paradox").addClass("hparadox");
+   $(".metaph").removeClass("metaph");
+   $(".thirdp").removeClass("hthirdp");
+   $(".quotes").removeClass("hquotes");
+   $(".person").removeClass("hperson");
+   $(".retquest").removeClass("hrequest");
+   $(".nick").removeClass("hnick");
+   $(".vs").removeClass("hvs");
+   $(".simile").removeClass("hsimile");
+   $(".foul").removeClass("hfoul");
+   $(".relig").removeClass("hrelig");
+   $(".cores").removeClass("hcores");
 });
 
 $("#foul").on('click', function() {
-   $(".foul").show();
-   $(".simile, .thirdp, .quotes, .person, .retquest, .nick, .vs, .paradox, .metaph, .relig, .cores").hide();
+   $(".foul").addClass("hfoul");
+   $(".metaph").removeClass("metaph");
+   $(".thirdp").removeClass("hthirdp");
+   $(".quotes").removeClass("hquotes");
+   $(".person").removeClass("hperson");
+   $(".retquest").removeClass("hrequest");
+   $(".nick").removeClass("hnick");
+   $(".vs").removeClass("hvs");
+   $(".paradox").removeClass("hparadox");
+   $(".simile").removeClass("hsimile");
+   $(".relig").removeClass("hrelig");
+   $(".cores").removeClass("hcores");
 });
 
 $("#relig").on('click', function() {
-   $(".relig").show();
-   $(".simile, .thirdp, .quotes, .person, .retquest, .nick, .vs, .paradox, .foul, .metaph, .cores").hide();
+   $(".relig").addClass("hrelig");
+   $(".metaph").removeClass("metaph");
+   $(".thirdp").removeClass("hthirdp");
+   $(".quotes").removeClass("hquotes");
+   $(".person").removeClass("hperson");
+   $(".retquest").removeClass("hrequest");
+   $(".nick").removeClass("hnick");
+   $(".vs").removeClass("hvs");
+   $(".paradox").removeClass("hparadox");
+   $(".foul").removeClass("hfoul");
+   $(".simile").removeClass("hsimile");
+   $(".cores").removeClass("hcores");
 });
 
 $("#cores").on('click', function() {
-   $(".cores").show();
-   $(".simile, .thirdp, .quotes, .person, .retquest, .nick, .vs, .paradox, .foul, .relig, .metaph").hide();
+   $(".cores").addClass("hcores");
+   $(".metaph").removeClass("metaph");
+   $(".thirdp").removeClass("hthirdp");
+   $(".quotes").removeClass("hquotes");
+   $(".person").removeClass("hperson");
+   $(".retquest").removeClass("hrequest");
+   $(".nick").removeClass("hnick");
+   $(".vs").removeClass("hvs");
+   $(".paradox").removeClass("hparadox");
+   $(".foul").removeClass("hfoul");
+   $(".relig").removeClass("hrelig");
+   $(".simile").removeClass("hsimile");
 });
 
