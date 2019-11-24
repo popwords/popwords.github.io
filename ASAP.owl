@@ -45,10 +45,22 @@
         <Literal xml:lang="en">1.0.0</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Country"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://dbpedia.org/ontology/Place"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/PoliticalParty"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://dbpedia.org/ontology/Politician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/PopultedPlace"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://dbpedia.org/ontology/VicePrimeMinister"/>
@@ -81,12 +93,6 @@
         <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#City"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Country"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#FoulLanguage"/>
     </Declaration>
     <Declaration>
@@ -117,13 +123,7 @@
         <Class IRI="#Polarity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PoliticalParty"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#PoliticalRoleInTime"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PopulatedPlace"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PressConference"/>
@@ -150,7 +150,7 @@
         <Class IRI="#Subjectivity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Top_Word"/>
+        <Class IRI="#TopWord"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Topic"/>
@@ -186,12 +186,9 @@
         <ObjectProperty IRI="#hasSentiment"/>
     </Declaration>
     <Declaration>
-<<<<<<< HEAD
         <ObjectProperty IRI="#hasSubjectivity"/>
     </Declaration>
     <Declaration>
-=======
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <ObjectProperty IRI="#hasTopWord"/>
     </Declaration>
     <Declaration>
@@ -207,15 +204,6 @@
         <ObjectProperty IRI="#relatesToSpeechAct"/>
     </Declaration>
     <Declaration>
-<<<<<<< HEAD
-=======
-        <DataProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://purl.org/dc/elements/1.1/title"/>
-    </Declaration>
-    <Declaration>
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <DataProperty IRI="#hasDaleChallScore"/>
     </Declaration>
     <Declaration>
@@ -228,12 +216,6 @@
         <DataProperty IRI="#hasRepresentativeWords"/>
     </Declaration>
     <Declaration>
-<<<<<<< HEAD
-=======
-        <DataProperty IRI="#hasSubjectivity"/>
-    </Declaration>
-    <Declaration>
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <DataProperty IRI="#hasSubjectivityValue"/>
     </Declaration>
     <Declaration>
@@ -258,8 +240,24 @@
         <AnnotationProperty IRI="http://purl.org/vocab/frbr/core#Rights"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/City"/>
+        <Class IRI="http://dbpedia.org/ontology/PopultedPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Country"/>
+        <Class IRI="http://dbpedia.org/ontology/PopultedPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/PoliticalParty"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://dbpedia.org/ontology/Politician"/>
         <Class IRI="http://purl.org/vocab/frbr/core#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/PopultedPlace"/>
+        <Class IRI="http://dbpedia.org/ontology/Place"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://dbpedia.org/ontology/VicePrimeMinister"/>
@@ -274,7 +272,6 @@
         <Class IRI="http://dbpedia.org/ontology/Politician"/>
     </SubClassOf>
     <SubClassOf>
-<<<<<<< HEAD
         <Class IRI="http://purl.org/vocab/frbr/core#Concept"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
@@ -283,8 +280,6 @@
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-=======
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <Class IRI="http://purl.org/vocab/frbr/core#Person"/>
         <Class IRI="http://purl.org/dc/terms/Agent"/>
     </SubClassOf>
@@ -295,14 +290,6 @@
     <SubClassOf>
         <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
         <Class IRI="http://purl.org/dc/terms/Agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#City"/>
-        <Class IRI="#PopulatedPlace"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Country"/>
-        <Class IRI="#PopulatedPlace"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FoulLanguage"/>
@@ -345,14 +332,6 @@
         <Class IRI="#Sentiment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PoliticalParty"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PopulatedPlace"/>
-        <Class IRI="http://dbpedia.org/ontology/Place"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#PressConference"/>
         <Class IRI="#SpeechAct"/>
     </SubClassOf>
@@ -385,7 +364,7 @@
         <Class IRI="#Sentiment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Top_Word"/>
+        <Class IRI="#TopWord"/>
         <Class IRI="http://purl.org/vocab/frbr/core#Concept"/>
     </SubClassOf>
     <SubClassOf>
@@ -445,13 +424,10 @@
         <Class IRI="#SpeechAct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-<<<<<<< HEAD
         <ObjectProperty IRI="#hasSubjectivity"/>
         <Class IRI="#SpeechAct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-=======
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <ObjectProperty IRI="#hasTopWord"/>
         <Class IRI="#SpeechAct"/>
     </ObjectPropertyDomain>
@@ -512,15 +488,12 @@
         <Class IRI="#Sentiment"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-<<<<<<< HEAD
         <ObjectProperty IRI="#hasSubjectivity"/>
         <Class IRI="#Subjectivity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-=======
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <ObjectProperty IRI="#hasTopWord"/>
-        <Class IRI="#Top_Word"/>
+        <Class IRI="#TopWord"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTopic"/>
@@ -555,44 +528,26 @@
         <Class IRI="#Topic"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-<<<<<<< HEAD
-=======
-        <DataProperty IRI="#hasSubjectivity"/>
-        <Class IRI="#Subjectivity"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <DataProperty IRI="#hasSubjectivityValue"/>
         <Class IRI="#Subjectivity"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasTopTenCouples"/>
-        <Class IRI="#Top_Word"/>
+        <Class IRI="#TopWord"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasTopTenTriples"/>
-        <Class IRI="#Top_Word"/>
+        <Class IRI="#TopWord"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasTopTenWords"/>
-        <Class IRI="#Top_Word"/>
+        <Class IRI="#TopWord"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#textualReference"/>
         <Class IRI="#RhetoricalFigure"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-<<<<<<< HEAD
-=======
-        <DataProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="http://purl.org/dc/elements/1.1/title"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <DataProperty IRI="#hasDaleChallScore"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
@@ -609,13 +564,6 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-<<<<<<< HEAD
-=======
-        <DataProperty IRI="#hasSubjectivity"/>
-        <Datatype abbreviatedIRI="xsd:decimal"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <DataProperty IRI="#hasSubjectivityValue"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
@@ -636,14 +584,41 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <AnnotationAssertion>
-<<<<<<< HEAD
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/ontology/City</IRI>
+        <Literal xml:lang="en">large and permanent human settlement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://dbpedia.org/ontology/City</IRI>
+        <Literal>http://dbpedia.org/ontology/City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/City</IRI>
+        <Literal>City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/ontology/Country</IRI>
+        <Literal xml:lang="en">It refers to a region that is identified as a distinct national entity in political geography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://dbpedia.org/ontology/Country</IRI>
+        <Literal>http://dbpedia.org/ontology/Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/Country</IRI>
+        <Literal>Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://dbpedia.org/ontology/Place</IRI>
         <Literal xml:lang="en">Immobile things or locations</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-=======
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>http://dbpedia.org/ontology/Place</IRI>
         <Literal>http://dbpedia.org/ontology/Place</Literal>
@@ -652,6 +627,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://dbpedia.org/ontology/Place</IRI>
         <Literal xml:lang="en">Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/ontology/PoliticalParty</IRI>
+        <Literal xml:lang="en">group of people who come together to contest elections and hold power in the government. The party agrees on some proposed policies and programmes, with a view to promoting the collective good or furthering their supporters&apos; interests.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://dbpedia.org/ontology/PoliticalParty</IRI>
+        <Literal>http://dbpedia.org/ontology/PoliticalParty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/PoliticalParty</IRI>
+        <Literal>Political Party</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -670,8 +660,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/ontology/PopultedPlace</IRI>
+        <Literal xml:lang="en">place or area with clustered or scattered buildings and a permanent human population (city, settlement, town, or village) referenced with geographic coordinates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://dbpedia.org/ontology/PopultedPlace</IRI>
+        <Literal>http://dbpedia.org/ontology/PopultedPlace</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/PopultedPlace</IRI>
+        <Literal>Populated Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://dbpedia.org/ontology/VicePrimeMinister</IRI>
-        <Literal></Literal>
+        <Literal xml:lang="en">It refers to a government minister who can take the position of acting prime minister when the prime minister is temporarily absent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -686,7 +691,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://live.dbpedia.org/ontology/President</IRI>
-        <Literal></Literal>
+        <Literal xml:lang="en">Leader of a country or a division or part of a country, typically a republic, a democracy, or a dictatorship.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -701,7 +706,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://live.dbpedia.org/ontology/PrimeMinister</IRI>
-        <Literal></Literal>
+        <Literal xml:lang="en">Head of an elected government; the principle minister of a sovereign or a state</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -715,39 +720,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-<<<<<<< HEAD
-=======
-        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
-        <Literal xml:lang="en">An entity primarily responsible for making the resource.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
-        <Literal xml:lang="en">http://purl.org/dc/elements/1.1/creator</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
-        <Literal xml:lang="en">Creator</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
-        <Literal xml:lang="en">A name given to the resource</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
-        <IRI>http://purl.org/dc/elements/1.1</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
-        <Literal xml:lang="en">Title</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <IRI>http://purl.org/dc/terms/Agent</IRI>
         <Literal xml:lang="en">A resource that acts or has the power to act</Literal>
     </AnnotationAssertion>
@@ -777,14 +749,11 @@
         <Literal>holds role in time</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-<<<<<<< HEAD
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.org/spar/pro/relatesToDocument</IRI>
         <Literal xml:lang="en">It relates the Speech Act with the document in which it is contained the transcription</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-=======
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>http://purl.org/spar/pro/relatesToDocument</IRI>
         <Literal xml:lang="en">http://purl.org/spar/pro/relatesToDocument</Literal>
@@ -795,14 +764,11 @@
         <Literal xml:lang="en">relates to doc</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-<<<<<<< HEAD
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.org/spar/pro/relatesToOrganization</IRI>
         <Literal xml:lang="en">It relates the Political Role to a certain political organization</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-=======
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>http://purl.org/spar/pro/relatesToOrganization</IRI>
         <Literal>http://purl.org/spar/pro/relatesToOrganization</Literal>
@@ -858,14 +824,11 @@
         <Literal xml:lang="en">Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-<<<<<<< HEAD
-=======
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval</IRI>
-        <Literal></Literal>
+        <Literal xml:lang="en">It refers to any Region in a dimensional space that aims at representing time. It should be used when you want to talk about time as an object having some characteristics.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval</IRI>
         <Literal>http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval</Literal>
@@ -876,14 +839,11 @@
         <Literal xml:lang="en">Time Interval</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-<<<<<<< HEAD
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://xmlns.com/foaf/spec/#term_Document</IRI>
         <Literal xml:lang="en">The Document class represents those things which are, broadly conceived, &apos;documents&apos;.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-=======
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>http://xmlns.com/foaf/spec/#term_Document</IRI>
         <Literal>http://xmlns.com/foaf/spec/#term_Document</Literal>
@@ -907,36 +867,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://xmlns.com/foaf/spec/#term_Organization</IRI>
         <Literal>Organization</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#City</IRI>
-        <Literal></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#City</IRI>
-        <Literal>http://dbpedia.org/ontology/City</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#City</IRI>
-        <Literal>City</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Country</IRI>
-        <Literal></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#Country</IRI>
-        <Literal>http://dbpedia.org/ontology/Country</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Country</IRI>
-        <Literal>Country</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -1070,21 +1000,6 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#PoliticalParty</IRI>
-        <Literal></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#PoliticalParty</IRI>
-        <Literal>http://dbpedia.org/ontology/PoliticalParty</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#PoliticalParty</IRI>
-        <Literal>Political Party</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PoliticalRoleInTime</IRI>
         <Literal xml:lang="en">It represents the (reified) relationship between the agent holding a role and the role itself, within the boundaries of a particular timeinterval and applicable context for that role</Literal>
     </AnnotationAssertion>
@@ -1097,21 +1012,6 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#PoliticalRoleInTime</IRI>
         <Literal>http://www.essepuntato.it/2013/10/politicalroles#PoliticalRoleInTime</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#PopulatedPlace</IRI>
-        <Literal></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#PopulatedPlace</IRI>
-        <Literal>http://dbpedia.org/ontology/PopultedPlace</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#PopulatedPlace</IRI>
-        <Literal>Populated Place</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -1220,12 +1120,12 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Top_Word</IRI>
+        <IRI>#TopWord</IRI>
         <Literal xml:lang="en">Refers to the most recurrent words present in a speech act</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Top_Word</IRI>
+        <IRI>#TopWord</IRI>
         <Literal xml:lang="en">Top Word</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1253,53 +1153,41 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
         <Literal xml:lang="en">Tweet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-<<<<<<< HEAD
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#deliveredAt</IRI>
         <Literal xml:lang="en">It relates the Speech Act with the place of deliverance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-=======
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#deliveredAt</IRI>
         <Literal xml:lang="en">delivered at</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-<<<<<<< HEAD
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#deliveredBy</IRI>
         <Literal xml:lang="en">It relates the Speech Act with its Agent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-=======
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#deliveredBy</IRI>
         <Literal xml:lang="en">delivered by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-<<<<<<< HEAD
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#deliveredWhen</IRI>
         <Literal xml:lang="en">It relates the Speech Act with the interval of time it has been delivered</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-=======
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#deliveredWhen</IRI>
         <Literal xml:lang="en">delivered when</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-<<<<<<< HEAD
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasDaleChallScore</IRI>
         <Literal xml:lang="en">It relates the speech act to the decimal value of the Dale Chall readability formula</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-=======
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasDaleChallScore</IRI>
         <Literal xml:lang="en">has Dale Chall score</Literal>
@@ -1366,7 +1254,6 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-<<<<<<< HEAD
         <IRI>#hasSubjectivity</IRI>
         <Literal xml:lang="en">It relates the speech act to che subjectivity of the text</Literal>
     </AnnotationAssertion>
@@ -1377,8 +1264,6 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-=======
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <IRI>#hasSubjectivityValue</IRI>
         <Literal xml:lang="en">Refers to the decimal value of the subjectivity related to a specific speech act</Literal>
     </AnnotationAssertion>
@@ -1458,14 +1343,11 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
         <Literal xml:lang="en">is present in</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-<<<<<<< HEAD
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#relatesToSpeechAct</IRI>
         <Literal xml:lang="en">It relates some important entities (Agent, Document, Political Role In Time) to the speech act itself</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-=======
->>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#relatesToSpeechAct</IRI>
         <Literal xml:lang="en">relates to speech act</Literal>
