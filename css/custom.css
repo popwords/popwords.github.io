@@ -242,3 +242,7 @@ em {
 p > span > a {
   text-decoration: underline;
 }
+
+.smallmargin {
+  margin-bottom: 5em;
+}
