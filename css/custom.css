@@ -250,3 +250,10 @@ p > span > a {
 .counter {
   border: 1px solid white;
 }
+
+.flash {
+  /* font-family: 'Coda Caption', sans-serif; */
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+}
