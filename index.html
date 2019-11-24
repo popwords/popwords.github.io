@@ -1325,7 +1325,7 @@
 					</p>
 
 					<div class="fix-12-12 toCenter topmargin">
-						<p class="ae-3 left fromLeft"><span class="opacity-8">For the topic modelling itself we used an LDA algorithm, by using the <a href=”https://radimrehurek.com/gensim/”>gensim library</a>. We decided to create 4 topics for the whole collection of documents. Each topic is created with unsupervised learning, and is defined by a set of words, each with a weight. We named the four resulting topics as: 0. Respect the country, 1. Work and go vote, 2. People's greatness, and 3. National power and activity.</span></p>
+						<p class="ae-3 left fromLeft"><span class="opacity-8">For the topic modelling itself we used an LDA algorithm, by using the <a href=”https://radimrehurek.com/gensim/” target="_blank">gensim library</a>. We decided to create 4 topics for the whole collection of documents. Each topic is created with unsupervised learning, and is defined by a set of words, each with a weight. We named the four resulting topics as: 0. Respect the country, 1. Work and go vote, 2. People's greatness, and 3. National power and activity.</span></p>
 					</div>
 
 					<div class="fix-12-12 toCenter topmargin">
@@ -1383,8 +1383,8 @@
 				<div class="fix-10-12 topmargin">
 					<h1 class="ae-1">Sentiment Analysis</h1>
 					<p class="ae-3 left fromLeft"><span class="opacity-8"></span>We performed sentiment analysis to see what the emotional valence of the speeches was.</p>
-					<p class="ae-3 left fromLeft"><span class="opacity-8"></span>First of all, we analyzed the sentiment for every speech by using an easy-to-use library for Python called <a href="https://github.com/AYLIEN/aylien_textapi_python">AYLIEN</a>. This tool returns a sentiment analysis in natural language (positive, negative, neutral, etc). You can find the Python code below.</p>
-					<p class="ae-3 left fromLeft"><span class="opacity-8"></span>	We then wanted something more sophisticated, that could provide us with a more complex and comparable result. We decided to use <a href="https://textblob.readthedocs.io/en/dev/">TextBlob</a>, which -differently from Aylien - can return numeric results both for the sentiment and for the objectivity. In particular, the results of this tool are in the range:<br>
+					<p class="ae-3 left fromLeft"><span class="opacity-8"></span>First of all, we analyzed the sentiment for every speech by using an easy-to-use library for Python called <a href="https://github.com/AYLIEN/aylien_textapi_python" target="_blank">AYLIEN</a>. This tool returns a sentiment analysis in natural language (positive, negative, neutral, etc). You can find the Python code below.</p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8"></span>	We then wanted something more sophisticated, that could provide us with a more complex and comparable result. We decided to use <a href="https://textblob.readthedocs.io/en/dev/" target="_blank">TextBlob</a>, which -differently from Aylien - can return numeric results both for the sentiment and for the objectivity. In particular, the results of this tool are in the range:<br>
 						Polarity: How positive or negative a word is. -1 is very negative. +1 is very positive.<br>
 						Subjectivity: How subjective, or opinionated a word is. 0 is fact. +1 is very much an opinion.</p>
 
@@ -1598,7 +1598,7 @@
 				<div class="fix-10-12 ">
 					<h1 class="ae-1">Definitions of Classes and Properties </h1>
 					<p class="ae-3 left fromLeft"><span class="opacity-8">We decided for the ontology to have a central focus point in a class defined by us in ASAP: “Speech act”. A speech act, in general is an utterance considered as an action, particularly with regard to its intention, purpose, or effect. We decided this was a good way to define the breadth of communication strategies that are emitted in the 21st century directly by political leaders. Specifically, we thought that the concept of speech act was helpful because it could include traditional forms such as speeches and press conferences, as well as more modern and harder to categorize ones like tweets and facebook posts and live feeds. </span></p>
-					<p class="ae-3 left fromLeft"><span class="opacity-8">From the central class of speech act, we decided it was important to represent both the context and the content of speech acts. This is why we decided to represent the these aspects in ASAP through other classes and attributes, relying on previous knowledge of several ontologies like owl, DC, FOAF, FRBR, and DBpedia. Furthermore, we relied on ontologies and other sources of knowledge and definitions focused on political rhetorics or rhetorical analysis in general, like <a href=“http://speroni.web.cs.unibo.it/publications/daquino-2014-political-roles-ontology.pdf">PROLES (Political Roles Ontology)</a>, the <a href=“https://dictionary.cambridge.org/">Cambridge Dictionary</a> and Blassnig et al.’s 2018 academic paper, <a href=“https://doi.org/10.1007/s10503-018-9461-2”>Populism and Informal Fallacies: An Analysis of Right-Wing Populist Rhetoric in Election Campaigns.</a> We also relied on already existing URIs for individuals and other agents.</span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8">From the central class of speech act, we decided it was important to represent both the context and the content of speech acts. This is why we decided to represent the these aspects in ASAP through other classes and attributes, relying on previous knowledge of several ontologies like owl, DC, FOAF, FRBR, and DBpedia. Furthermore, we relied on ontologies and other sources of knowledge and definitions focused on political rhetorics or rhetorical analysis in general, like <a href="http://speroni.web.cs.unibo.it/publications/daquino-2014-political-roles-ontology.pdf" target="_blank">PROLES (Political Roles Ontology)</a>, the <a href="https://dictionary.cambridge.org/" target="_blank">Cambridge Dictionary</a> and Blassnig et al.’s 2018 academic paper, <a href="https://doi.org/10.1007/s10503-018-9461-2"  target="_blank">Populism and Informal Fallacies: An Analysis of Right-Wing Populist Rhetoric in Election Campaigns.</a> We also relied on already existing URIs for individuals and other agents.</span></p>
 					<p class="ae-3 left fromLeft"><span class="opacity-8">In terms of context, we decided that most important clues about the context, were centered on the when, where, by who, why, and how of speech act deliverance. For example, for the context of “by who”, we not only represent the person with their URI (if they have one), but also what they role is (example, president, politician, etc) as well as what party this speech giver belongs to (if any) political party. </span></p>
 					<p class="ae-3 left fromLeft"><span class="opacity-8">For the content, after an initial search for latent knowledge in our initial corpus, we decided to formalize most of the close and distant reading concepts we analyzed. As such, we formalized the way speech act may contain rhetorical figures, topics, lexical complexity, and top words. For this, we created our own classes with data properties attached to them. </span></p>
 				</div>
@@ -1639,7 +1639,7 @@
 					<h1 class="ae-2 fromLeft">Knowledge Base OWL File</h1>
 					<ul class="grid">
 						<li class="col-6-12 left">
-							<p class="ae-3 fromLeft"><span class="opacity-8">Here you can access the OWL file for the Knowledge Base for the ASAP ontology in OWL format. We developed this file through the use of <a href="https://protege.stanford.edu/">Protege</a>.</span></p>
+							<p class="ae-3 fromLeft"><span class="opacity-8">Here you can access the OWL file for the Knowledge Base for the ASAP ontology in OWL format. We developed this file through the use of <a href="https://protege.stanford.edu/"  target="_blank">Protege</a>.</span></p>
 						</li>
 
 						<li class="col-6-12 left ae-5 fromCenter">
@@ -1673,14 +1673,14 @@
 
 				<div class="fix-10-12 ">
 					<h1 class="ae-1">ASAP Documentation</h1>
-					<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="">Check out</a> to see the ontology generated by <a href="https://github.com/dgarijo/Widoco">Widoco</a></span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="">Check out</a> to see the ontology generated by <a href="https://github.com/dgarijo/Widoco"  target="_blank">Widoco</a></span></p>
 				</div>
 
 				<!-- ASAP Documentation  -->
 
 				<div class="fix-10-12 ">
 					<h1 class="ae-1">ASAP Evaluation</h1>
-					<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="">Check out</a> our ontology's evaluation by the OntOlogy Pitfall Scanner! <a href="http://oops.linkeddata.es/">(OOPS!)</a></span></p>
+					<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="">Check out</a> our ontology's evaluation by the OntOlogy Pitfall Scanner! <a href="http://oops.linkeddata.es/" target="_blank">(OOPS!)</a></span></p>
 				</div>
 
 
@@ -1706,7 +1706,7 @@
 					<h1 class="ae-3 left fromLeft ">Academic Papers and News<span class="opacity-8"></span></h1>
 					<ul class="grid">
 						<li class="col-12-12 center ae-5 fromCenter">
-							<p class="ae-3 left fromLeft"><span class="opacity-8">Blassnig, S., Büchel, F., Ernst, N. et al. (2018). Populism and Informal Fallacies: An Analysis of Right-Wing Populist Rhetoric in Election Campaigns. 33: 107. <a href="https://doi.org/10.1007/s10503-018-9461-2">https://doi.org/10.1007/s10503-018-9461-2</a></span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8">Blassnig, S., Büchel, F., Ernst, N. et al. (2018). Populism and Informal Fallacies: An Analysis of Right-Wing Populist Rhetoric in Election Campaigns. 33: 107. <a href="https://doi.org/10.1007/s10503-018-9461-2"  target="_blank">https://doi.org/10.1007/s10503-018-9461-2</a></span></p>
 							<p class="ae-3 left fromLeft"><span class="opacity-8">“Bolsonaro Propõe 'Pacto Nacional' e Fala Em 'Reconstruir' o País Ao Tomar Posse No Congresso.” G1, 1 Jan. 2019, g1.globo.com/politica/noticia/2019/01/01/bolsonaro-propoe-pacto-nacional-ao-tomar-posse-no-congresso-nacional.ghtml.</span></p>
 							<p class="ae-3 left fromLeft"><span class="opacity-8">“Brazilian President Speaks out against 'Media Lies' Surrounding Amazon Fires | UN News.” United Nations, United Nations, 24 Sept. 2019, news.un.org/en/story/2019/09/1047192.</span></p>
 							<p class="ae-3 left fromLeft"><span class="opacity-8">Daquino, M., Peroni, S., Tomasi, F., & Vitali, F. (2014). Political Roles Ontology (PRoles): enhancing archival authority records through Semantic Web technologies. Procedia computer science, 38, 60-67.</span></p>
@@ -1728,10 +1728,10 @@
 					<ul class="grid">
 						<li class="col-12-12 center ae-5 fromCenter">
 				<p class="ae-3 left fromLeft"><span class="opacity-8"></span></p>
-							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://github.com/adashofdata/nlp-in-python-tutorial">Adashofdata's Natural Language Processing in Python Tutorial</a></span></p>
-							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/">Machine Learning Plus: Topic modeling visualization </a></span></p>
-							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://www.datacamp.com/community/tutorials/wordcloud-python">Data Camp: Generating Word Clouds in Python</a></span></p>
-							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://voyant-tools.org/">Voyant Tools: See Through Your Text </a></span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://github.com/adashofdata/nlp-in-python-tutorial" target="_blank">Adashofdata's Natural Language Processing in Python Tutorial</a></span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/" target="_blank">Machine Learning Plus: Topic modeling visualization </a></span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://www.datacamp.com/community/tutorials/wordcloud-python" target="_blank">Data Camp: Generating Word Clouds in Python</a></span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://voyant-tools.org/" target="_blank">Voyant Tools: See Through Your Text </a></span></p>
 
 						</li>
 					</ul>
@@ -1741,15 +1741,15 @@
 					<h1 class="ae-3 left fromLeft ">Python Libraries<span class="opacity-8"></span></h1>
 					<ul class="grid">
 						<li class="col-12-12 center ae-5 fromCenter">
-							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://pandas.pydata.org/">Pandas</a></span></p>
-							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://scikit-learn.org/stable/">Sklearn</a></span></p>
-							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://pypi.org/project/wordcloud/">Wordcloud</a></span></p>
-							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://matplotlib.org/">Matplotlib</a></span></p>
-							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://numpy.org/">Numpy</a></span></p>
-							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://github.com/AYLIEN/aylien_textapi_python">Aylien</a></span></p>
-							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://textblob.readthedocs.io/en/dev/">Textblob</a></span></p>
-							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://radimrehurek.com/gensim/">Gensim</a></span></p>
-							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://www.nltk.org/">NLTK</a></span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://pandas.pydata.org/" target="_blank">Pandas</a></span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://scikit-learn.org/stable/" target="_blank">Sklearn</a></span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://pypi.org/project/wordcloud/" target="_blank">Wordcloud</a></span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://matplotlib.org/" target="_blank">Matplotlib</a></span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://numpy.org/" target="_blank">Numpy</a></span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://github.com/AYLIEN/aylien_textapi_python" target="_blank">Aylien</a></span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://textblob.readthedocs.io/en/dev/" target="_blank">Textblob</a></span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://radimrehurek.com/gensim/" target="_blank">Gensim</a></span></p>
+							<p class="ae-3 left fromLeft"><span class="opacity-8"><a href="https://www.nltk.org/" target="_blank">NLTK</a></span></p>
 						</li>
 					</ul>
 				</div>
@@ -1785,7 +1785,7 @@
                   <li class="opacity-7">Information Management</li>
                 </ul>
               </div>
-              <a href="https://www.linkedin.com/in/maria-chiara-frangipane-92853b15b/" class="button gradient wide cropSides cropBottom ae-7">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/maria-chiara-frangipane-92853b15b/"  target="_blank" class="button gradient wide cropSides cropBottom ae-7">LinkedIn</a>
             </li>
             <li class="col-4-12 ae-4">
               <h3>Delfina Sol Pandiani</h3>
@@ -1802,7 +1802,7 @@
                   <li class="opacity-8">Digital Activism</li>
                 </ul>
               </div>
-              <a href="https://www.linkedin.com/in/dmartinezpandiani/" class="button gradient wide cropSides cropBottom ae-8">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/dmartinezpandiani/"  target="_blank" class="button gradient wide cropSides cropBottom ae-8">LinkedIn</a>
             </li>
             <li class="col-4-12 ae-5">
               <h3>Andrea Poltronieri</h3>
@@ -1818,7 +1818,7 @@
                   <li class="opacity-7">Pattern Recognition</li>
                 </ul>
               </div>
-              <a href="https://www.linkedin.com/in/andrea-poltronieri21/" class="button gradient wide cropSides cropBottom ae-9">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/andrea-poltronieri21/"  target="_blank" class="button gradient wide cropSides cropBottom ae-9">LinkedIn</a>
             </li>
           </ul>
         </div>
