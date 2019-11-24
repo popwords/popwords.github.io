@@ -162,6 +162,8 @@ $("#btn_1").on('click', function() {
     $(".foul").removeClass("hfoul");
     $(".relig").removeClass("hrelig");
     $(".cores").removeClass("hcores");
+    var numItems = $('.metaph').length;
+    $(".counter").append(numItems);
  });
 
  $("#simile").on('click', function() {
