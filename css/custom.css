@@ -200,6 +200,7 @@ p > a {
 div .text_corpus {
   overflow-y: scroll;
   text-align: justify !important;
+  height: 80vh;
 }
 
 div .vhh {
@@ -225,4 +226,19 @@ iframe {
 
 .terms {
   color: white !important;
+}
+
+em {
+  color: rgb(148, 209, 247);
+  font-style: normal;
+}
+
+#webvowl {
+  height: 80vh;
+  width: 100%;
+  align-self: center;
+}
+
+p > span > a {
+  text-decoration: underline;
 }
