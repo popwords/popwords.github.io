@@ -246,3 +246,7 @@ p > span > a {
 .smallmargin {
   margin-bottom: 5em;
 }
+
+.counter {
+  border: 1px solid white;
+}
