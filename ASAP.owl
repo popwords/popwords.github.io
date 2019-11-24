@@ -1,0 +1,1498 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://popwords.github.io/asap.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://popwords.github.io/asap.owl"
+     versionIRI="https://popwords.github.io/asap.owl">
+    <Prefix name="" IRI="https://ourontology.com/asap.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="pro" IRI="http://purl.org/spar/pro#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="proles" IRI="http://www.essepuntato.it/2013/10/politicalroles#"/>
+    <Prefix name="ontology" IRI="https://ourontology.com/ontology.owl#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en">Andrea Poltronieri</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en">Delfina Sol Pandiani</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en">Maria Chiara Frangipane</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="en">ASAP Ontology - Analyze Speech Acts by Politicians</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/vocab/frbr/core#Rights"/>
+        <Literal xml:lang="en">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Ontology (ASAP) is a rhetorics based ontology that expresses in a formal way the rhetorical discourse behind politician&apos;s speech acts.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">1.0.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Politician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/VicePrimeMinister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://live.dbpedia.org/ontology/President"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://live.dbpedia.org/ontology/PrimeMinister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/vocab/frbr/core#Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/vocab/frbr/core#Expression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/vocab/frbr/core#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FoulLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Illeism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InauguralSpeech"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LexicalComplexity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metaphor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NegativeNickname"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Opposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paradox"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Polarity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliticalParty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliticalRoleInTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PopulatedPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PressConference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quotation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RethoricalQuestion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RhetoricalFigure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sentiment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Simile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpeechAct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subjectivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Top_Word"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Topic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tweet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/spar/pro/holdsRoleInTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/spar/pro/relatesToDocument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/spar/pro/relatesToOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deliveredAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deliveredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deliveredWhen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLexicalComplexity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRhetoricalFigure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSentiment"/>
+    </Declaration>
+    <Declaration>
+<<<<<<< HEAD
+        <ObjectProperty IRI="#hasSubjectivity"/>
+    </Declaration>
+    <Declaration>
+=======
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <ObjectProperty IRI="#hasTopWord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTopic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEmployedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPresentIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relatesToSpeechAct"/>
+    </Declaration>
+    <Declaration>
+<<<<<<< HEAD
+=======
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <DataProperty IRI="#hasDaleChallScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumberOfUniqueWords"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPolarityValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRepresentativeWords"/>
+    </Declaration>
+    <Declaration>
+<<<<<<< HEAD
+=======
+        <DataProperty IRI="#hasSubjectivity"/>
+    </Declaration>
+    <Declaration>
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <DataProperty IRI="#hasSubjectivityValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTopTenCouples"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTopTenTriples"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTopTenWords"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#textualReference"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/vocab/frbr/core#Rights"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Politician"/>
+        <Class IRI="http://purl.org/vocab/frbr/core#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/VicePrimeMinister"/>
+        <Class IRI="http://dbpedia.org/ontology/Politician"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://live.dbpedia.org/ontology/President"/>
+        <Class IRI="http://dbpedia.org/ontology/Politician"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://live.dbpedia.org/ontology/PrimeMinister"/>
+        <Class IRI="http://dbpedia.org/ontology/Politician"/>
+    </SubClassOf>
+    <SubClassOf>
+<<<<<<< HEAD
+        <Class IRI="http://purl.org/vocab/frbr/core#Concept"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/vocab/frbr/core#Expression"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+=======
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <Class IRI="http://purl.org/vocab/frbr/core#Person"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Document"/>
+        <Class IRI="http://purl.org/vocab/frbr/core#Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#PopulatedPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#PopulatedPlace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoulLanguage"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Illeism"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InauguralSpeech"/>
+        <Class IRI="#SpeechAct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LexicalComplexity"/>
+        <Class IRI="http://purl.org/vocab/frbr/core#Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metaphor"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NegativeNickname"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Opposition"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paradox"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personification"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Polarity"/>
+        <Class IRI="#Sentiment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalParty"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PopulatedPlace"/>
+        <Class IRI="http://dbpedia.org/ontology/Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PressConference"/>
+        <Class IRI="#SpeechAct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quotation"/>
+        <Class IRI="#RethoricalQuestion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RethoricalQuestion"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RhetoricalFigure"/>
+        <Class IRI="http://purl.org/vocab/frbr/core#Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sentiment"/>
+        <Class IRI="http://purl.org/vocab/frbr/core#Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Simile"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpeechAct"/>
+        <Class IRI="http://purl.org/vocab/frbr/core#Expression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subjectivity"/>
+        <Class IRI="#Sentiment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Top_Word"/>
+        <Class IRI="http://purl.org/vocab/frbr/core#Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Topic"/>
+        <Class IRI="http://purl.org/vocab/frbr/core#Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tweet"/>
+        <Class IRI="#SpeechAct"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+        <Class IRI="http://purl.org/vocab/frbr/core#Expression"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRhetoricalFigure"/>
+        <ObjectProperty IRI="#isEmployedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTopic"/>
+        <ObjectProperty IRI="#isPresentIn"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/spar/pro/holdsRoleInTime"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/spar/pro/relatesToDocument"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/spar/pro/relatesToOrganization"/>
+        <Class IRI="#PoliticalRoleInTime"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#deliveredAt"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#deliveredBy"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#deliveredWhen"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLexicalComplexity"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRhetoricalFigure"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSentiment"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+<<<<<<< HEAD
+        <ObjectProperty IRI="#hasSubjectivity"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+=======
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <ObjectProperty IRI="#hasTopWord"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTopic"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEmployedIn"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPresentIn"/>
+        <Class IRI="#Topic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relatesToSpeechAct"/>
+        <ObjectUnionOf>
+            <Class IRI="http://purl.org/dc/terms/Agent"/>
+            <Class IRI="http://xmlns.com/foaf/spec/#term_Document"/>
+            <Class IRI="#PoliticalRoleInTime"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/spar/pro/holdsRoleInTime"/>
+        <Class IRI="#PoliticalRoleInTime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/spar/pro/relatesToDocument"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/spar/pro/relatesToOrganization"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#deliveredAt"/>
+        <Class IRI="http://dbpedia.org/ontology/Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#deliveredBy"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#deliveredWhen"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLexicalComplexity"/>
+        <Class IRI="#LexicalComplexity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRhetoricalFigure"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSentiment"/>
+        <Class IRI="#Sentiment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+<<<<<<< HEAD
+        <ObjectProperty IRI="#hasSubjectivity"/>
+        <Class IRI="#Subjectivity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+=======
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <ObjectProperty IRI="#hasTopWord"/>
+        <Class IRI="#Top_Word"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTopic"/>
+        <Class IRI="#Topic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEmployedIn"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPresentIn"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relatesToSpeechAct"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDaleChallScore"/>
+        <Class IRI="#LexicalComplexity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumberOfUniqueWords"/>
+        <Class IRI="#LexicalComplexity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPolarityValue"/>
+        <Class IRI="#Polarity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRepresentativeWords"/>
+        <Class IRI="#Topic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+<<<<<<< HEAD
+=======
+        <DataProperty IRI="#hasSubjectivity"/>
+        <Class IRI="#Subjectivity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <DataProperty IRI="#hasSubjectivityValue"/>
+        <Class IRI="#Subjectivity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTopTenCouples"/>
+        <Class IRI="#Top_Word"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTopTenTriples"/>
+        <Class IRI="#Top_Word"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTopTenWords"/>
+        <Class IRI="#Top_Word"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#textualReference"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+<<<<<<< HEAD
+=======
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <DataProperty IRI="#hasDaleChallScore"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumberOfUniqueWords"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPolarityValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRepresentativeWords"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+<<<<<<< HEAD
+=======
+        <DataProperty IRI="#hasSubjectivity"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <DataProperty IRI="#hasSubjectivityValue"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTopTenCouples"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTopTenTriples"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTopTenWords"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#textualReference"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+<<<<<<< HEAD
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/ontology/Place</IRI>
+        <Literal xml:lang="en">Immobile things or locations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+=======
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://dbpedia.org/ontology/Place</IRI>
+        <Literal>http://dbpedia.org/ontology/Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/Place</IRI>
+        <Literal xml:lang="en">Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/ontology/Politician</IRI>
+        <Literal>A political figure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://dbpedia.org/ontology/Politician</IRI>
+        <Literal>http://dbpedia.org/ontology/Politician</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/Politician</IRI>
+        <Literal>Politician</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/ontology/VicePrimeMinister</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://dbpedia.org/ontology/VicePrimeMinister</IRI>
+        <Literal>http://dbpedia.org/ontology/VicePrimeMinister</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/VicePrimeMinister</IRI>
+        <Literal>Vice Prime Minister</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://live.dbpedia.org/ontology/President</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://live.dbpedia.org/ontology/President</IRI>
+        <Literal>http://live.dbpedia.org/ontology/President</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://live.dbpedia.org/ontology/President</IRI>
+        <Literal>President</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://live.dbpedia.org/ontology/PrimeMinister</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://live.dbpedia.org/ontology/PrimeMinister</IRI>
+        <Literal>http://live.dbpedia.org/ontology/PrimeMinister</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://live.dbpedia.org/ontology/PrimeMinister</IRI>
+        <Literal>Prime Minister</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+<<<<<<< HEAD
+=======
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal xml:lang="en">An entity primarily responsible for making the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal xml:lang="en">http://purl.org/dc/elements/1.1/creator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/creator</IRI>
+        <Literal xml:lang="en">Creator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <Literal xml:lang="en">A name given to the resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <IRI>http://purl.org/dc/elements/1.1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/elements/1.1/title</IRI>
+        <Literal xml:lang="en">Title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <IRI>http://purl.org/dc/terms/Agent</IRI>
+        <Literal xml:lang="en">A resource that acts or has the power to act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/Agent</IRI>
+        <Literal>http://purl.org/dc/terms/Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/Agent</IRI>
+        <Literal xml:lang="en">Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/spar/pro/holdsRoleInTime</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/spar/pro/holdsRoleInTime</IRI>
+        <Literal>http://purl.org/spar/pro/holdsRoleInTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/spar/pro/holdsRoleInTime</IRI>
+        <Literal>holds role in time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+<<<<<<< HEAD
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/spar/pro/relatesToDocument</IRI>
+        <Literal xml:lang="en">It relates the Speech Act with the document in which it is contained the transcription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+=======
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/spar/pro/relatesToDocument</IRI>
+        <Literal xml:lang="en">http://purl.org/spar/pro/relatesToDocument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/spar/pro/relatesToDocument</IRI>
+        <Literal xml:lang="en">relates to doc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+<<<<<<< HEAD
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/spar/pro/relatesToOrganization</IRI>
+        <Literal xml:lang="en">It relates the Political Role to a certain political organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+=======
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/spar/pro/relatesToOrganization</IRI>
+        <Literal>http://purl.org/spar/pro/relatesToOrganization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/spar/pro/relatesToOrganization</IRI>
+        <Literal xml:lang="en">relates to organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/vocab/frbr/core#Concept</IRI>
+        <Literal xml:lang="en">An abstract idea or notion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/vocab/frbr/core#Concept</IRI>
+        <Literal>http://purl.org/vocab/frbr/core#Concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/vocab/frbr/core#Concept</IRI>
+        <Literal xml:lang="en">Concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/vocab/frbr/core#Expression</IRI>
+        <Literal xml:lang="en">A realization of a single work usually in a physical form.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/vocab/frbr/core#Expression</IRI>
+        <Literal xml:lang="en">http://purl.org/vocab/frbr/core#Expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/vocab/frbr/core#Expression</IRI>
+        <Literal xml:lang="en">Expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/vocab/frbr/core#Person</IRI>
+        <Literal xml:lang="en">A living or dead individual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/vocab/frbr/core#Person</IRI>
+        <Literal>http://purl.org/vocab/frbr/core#Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/vocab/frbr/core#Person</IRI>
+        <Literal xml:lang="en">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+<<<<<<< HEAD
+=======
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval</IRI>
+        <Literal>http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval</IRI>
+        <Literal xml:lang="en">Time Interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+<<<<<<< HEAD
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/spec/#term_Document</IRI>
+        <Literal xml:lang="en">The Document class represents those things which are, broadly conceived, &apos;documents&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+=======
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/spec/#term_Document</IRI>
+        <Literal>http://xmlns.com/foaf/spec/#term_Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/spec/#term_Document</IRI>
+        <Literal xml:lang="en">Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/spec/#term_Organization</IRI>
+        <Literal>A kind of Agent corresponding to social instititutions such as companies, societies etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/spec/#term_Organization</IRI>
+        <Literal>http://xmlns.com/foaf/spec/#term_Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/spec/#term_Organization</IRI>
+        <Literal>Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#City</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#City</IRI>
+        <Literal>http://dbpedia.org/ontology/City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#City</IRI>
+        <Literal>City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Country</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Country</IRI>
+        <Literal>http://dbpedia.org/ontology/Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Country</IRI>
+        <Literal>Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+            <Literal>https://dictionary.cambridge.org/dictionary/english/foul</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FoulLanguage</IRI>
+        <Literal xml:lang="en">Foul language refers to when a speech or other language is offensive, rude, or shocking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FoulLanguage</IRI>
+        <Literal xml:lang="en">Foul Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+            <Literal>https://en.wiktionary.org/wiki/illeism</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Illeism</IRI>
+        <Literal xml:lang="en">Illeism refers to the practice of referring to oneself in the third person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Illeism</IRI>
+        <Literal xml:lang="en">Illeism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InauguralSpeech</IRI>
+        <Literal xml:lang="en">It refers to the speech given during the inuguration of an elected leader, informing the people of their intention as a leader</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InauguralSpeech</IRI>
+        <Literal xml:lang="en">Inaugural Speech</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LexicalComplexity</IRI>
+        <Literal xml:lang="en">It refers to the lexical space occupied by a speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LexicalComplexity</IRI>
+        <Literal xml:lang="en">Lexical Complexity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+            <Literal>https://dictionary.cambridge.org/dictionary/english/metaphor</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Metaphor</IRI>
+        <Literal xml:lang="en">Metaphor refers to an expression that describes a person or object by referring to something that is considered to have similar characteristics to that person or object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Metaphor</IRI>
+        <Literal xml:lang="en">Metaphor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+            <Literal>https://www.researchgate.net/publication/325134882_Populism_and_Informal_Fallacies_An_Analysis_of_Right-Wing_Populist_Rhetoric_in_Election_Campaigns</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NegativeNickname</IRI>
+        <Literal xml:lang="en">Negative Nickname refers to an informal name for someone or something, usually based on your real name or your character, used to defame a political opponent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NegativeNickname</IRI>
+        <Literal xml:lang="en">Negative Nicknames</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+            <Literal>https://www.researchgate.net/publication/325134882_Populism_and_Informal_Fallacies_An_Analysis_of_Right-Wing_Populist_Rhetoric_in_Election_Campaigns</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Opposition</IRI>
+        <Literal xml:lang="en">Opposition refers to the &quot;black and white rhetoric&quot;, that creates and opposes two polarities
+
+e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’’ and the ‘‘evil elite’’</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Opposition</IRI>
+        <Literal xml:lang="en">Opposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+            <Literal>https://dictionary.cambridge.org/dictionary/english/paradox</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Paradox</IRI>
+        <Literal xml:lang="en">Paradox refers to a situation or statement that seems impossible or is difficult to understand because it contains two opposite facts or characteristics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Paradox</IRI>
+        <Literal xml:lang="en">Paradox</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+            <Literal>https://dictionary.cambridge.org/dictionary/english/personification</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Personification</IRI>
+        <Literal xml:lang="en">Personification refers to the act of giving a human quality or characteristic to something which is not human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Personification</IRI>
+        <Literal xml:lang="en">Personification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Polarity</IRI>
+        <Literal xml:lang="en">Polarity refers to the value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Polarity</IRI>
+        <Literal xml:lang="en">Polarity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PoliticalParty</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#PoliticalParty</IRI>
+        <Literal>http://dbpedia.org/ontology/PoliticalParty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PoliticalParty</IRI>
+        <Literal>Political Party</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PoliticalRoleInTime</IRI>
+        <Literal xml:lang="en">It represents the (reified) relationship between the agent holding a role and the role itself, within the boundaries of a particular timeinterval and applicable context for that role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PoliticalRoleInTime</IRI>
+        <Literal xml:lang="en">Political Role In Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#PoliticalRoleInTime</IRI>
+        <Literal>http://www.essepuntato.it/2013/10/politicalroles#PoliticalRoleInTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PopulatedPlace</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#PopulatedPlace</IRI>
+        <Literal>http://dbpedia.org/ontology/PopultedPlace</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PopulatedPlace</IRI>
+        <Literal>Populated Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+            <Literal>https://dictionary.cambridge.org/dictionary/english/press-conference</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PressConference</IRI>
+        <Literal xml:lang="en">It refers to a meeting at which a person or organization makes a public statement and reporters can ask questions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PressConference</IRI>
+        <Literal xml:lang="en">Press Conference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+            <Literal>https://dictionary.cambridge.org/dictionary/english/quotation</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Quotation</IRI>
+        <Literal xml:lang="en">Quotation refers to a phrase or short piece of writing taken from a longer work of literature, poetry, etc. or what someone else has said</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Quotation</IRI>
+        <Literal xml:lang="en">Quotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+            <Literal>https://dictionary.cambridge.org/dictionary/english/rhetorical-question</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RethoricalQuestion</IRI>
+        <Literal xml:lang="en">Rhetorical question refers to a question, asked in order to make a statement, that does not expect an answer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RethoricalQuestion</IRI>
+        <Literal xml:lang="en">Rethorical Question</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RhetoricalFigure</IRI>
+        <Literal xml:lang="en">The class of some common tropes in political speech acts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RhetoricalFigure</IRI>
+        <Literal xml:lang="en">Rhetorical Figure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+            <Literal>DOI: 10.1145/1878450.1878471</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#RhetoricalFigure</IRI>
+        <Literal>https://www.researchgate.net/publication/220961451_Toward_an_ontology_of_rhetorical_figures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sentiment</IRI>
+        <Literal xml:lang="en">The values connected to the outcome from sentiment analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sentiment</IRI>
+        <Literal xml:lang="en">Sentiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+            <Literal>https://dictionary.cambridge.org/dictionary/english/simile</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Simile</IRI>
+        <Literal xml:lang="en">Simile refers to the use of an expression comparing one thing with another, always including the words &quot;as&quot; or &quot;like&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Simile</IRI>
+        <Literal xml:lang="en">Simile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SpeechAct</IRI>
+        <Literal xml:lang="en">an utterance considered as an action, particularly with regard to its intention, purpose, or effect.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SpeechAct</IRI>
+        <Literal xml:lang="en">Speech Act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Subjectivity</IRI>
+        <Literal xml:lang="en">Subjectivity refers to the value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Subjectivity</IRI>
+        <Literal xml:lang="en">Subjectivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Top_Word</IRI>
+        <Literal xml:lang="en">Refers to the most recurrent words present in a speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Top_Word</IRI>
+        <Literal xml:lang="en">Top Word</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Topic</IRI>
+        <Literal xml:lang="en">Topic refers to the retrieved topic of a single speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Topic</IRI>
+        <Literal xml:lang="en">Topic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+            <Literal>https://dictionary.cambridge.org/dictionary/english/tweet</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tweet</IRI>
+        <Literal xml:lang="en">a short remark or piece of information published on Twitter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tweet</IRI>
+        <Literal xml:lang="en">Tweet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+<<<<<<< HEAD
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#deliveredAt</IRI>
+        <Literal xml:lang="en">It relates the Speech Act with the place of deliverance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+=======
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deliveredAt</IRI>
+        <Literal xml:lang="en">delivered at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+<<<<<<< HEAD
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#deliveredBy</IRI>
+        <Literal xml:lang="en">It relates the Speech Act with its Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+=======
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deliveredBy</IRI>
+        <Literal xml:lang="en">delivered by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+<<<<<<< HEAD
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#deliveredWhen</IRI>
+        <Literal xml:lang="en">It relates the Speech Act with the interval of time it has been delivered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+=======
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deliveredWhen</IRI>
+        <Literal xml:lang="en">delivered when</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+<<<<<<< HEAD
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDaleChallScore</IRI>
+        <Literal xml:lang="en">It relates the speech act to the decimal value of the Dale Chall readability formula</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+=======
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDaleChallScore</IRI>
+        <Literal xml:lang="en">has Dale Chall score</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLexicalComplexity</IRI>
+        <Literal xml:lang="en">It relates a speech act with its lexical complexity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLexicalComplexity</IRI>
+        <Literal xml:lang="en">has lexical complexity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNumberOfUniqueWords</IRI>
+        <Literal xml:lang="en">It refers to the number of unique words present in a speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNumberOfUniqueWords</IRI>
+        <Literal xml:lang="en">has number of unique words</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPolarityValue</IRI>
+        <Literal xml:lang="en">Refers to the decimal value of the polarity related to a specific speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPolarityValue</IRI>
+        <Literal xml:lang="en">has polarity value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRepresentativeWords</IRI>
+        <Literal xml:lang="en">The words able to describe the semantic space of a toic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRepresentativeWords</IRI>
+        <Literal xml:lang="en">has representative words</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRhetoricalFigure</IRI>
+        <Literal xml:lang="en">This property relates a literary text that contains a rhetorical figure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRhetoricalFigure</IRI>
+        <Literal xml:lang="en">has rhetorical figure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSentiment</IRI>
+        <Literal xml:lang="en">It relates the sentiment value with its speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSentiment</IRI>
+        <Literal xml:lang="en">has sentiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+<<<<<<< HEAD
+        <IRI>#hasSubjectivity</IRI>
+        <Literal xml:lang="en">It relates the speech act to che subjectivity of the text</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSubjectivity</IRI>
+        <Literal xml:lang="en">has subjectivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+=======
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <IRI>#hasSubjectivityValue</IRI>
+        <Literal xml:lang="en">Refers to the decimal value of the subjectivity related to a specific speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSubjectivityValue</IRI>
+        <Literal xml:lang="en">has subjectivity value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTopTenCouples</IRI>
+        <Literal xml:lang="en">It refers to the ten most recurrent couples of words of a speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTopTenCouples</IRI>
+        <Literal xml:lang="en">has top ten couples</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTopTenTriples</IRI>
+        <Literal xml:lang="en">It refers to the ten most recurrent triples of words of a speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTopTenTriples</IRI>
+        <Literal xml:lang="en">has top ten triples</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTopTenWords</IRI>
+        <Literal xml:lang="en">It refers to the ten most recurrent words of a speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTopTenWords</IRI>
+        <Literal xml:lang="en">has top ten words</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTopWord</IRI>
+        <Literal xml:lang="en">It relates a speech act with its top words</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTopWord</IRI>
+        <Literal xml:lang="en">has top word</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTopic</IRI>
+        <Literal xml:lang="en">It relates a speech act with its topic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTopic</IRI>
+        <Literal xml:lang="en">has topic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isEmployedIn</IRI>
+        <Literal xml:lang="en">This property relates a rhetorical figure with a particular speech act in which it is present.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isEmployedIn</IRI>
+        <Literal xml:lang="en">is employed in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPresentIn</IRI>
+        <Literal xml:lang="en">It relates a topic to the speech act in which it is present</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPresentIn</IRI>
+        <Literal xml:lang="en">is present in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+<<<<<<< HEAD
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#relatesToSpeechAct</IRI>
+        <Literal xml:lang="en">It relates some important entities (Agent, Document, Political Role In Time) to the speech act itself</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+=======
+>>>>>>> 4abf079b6d84fa80651718100396a2f11080ef3e
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#relatesToSpeechAct</IRI>
+        <Literal xml:lang="en">relates to speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#textualReference</IRI>
+        <Literal xml:lang="en">Relates a concept to a text that includes its textual string reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#textualReference</IRI>
+        <Literal xml:lang="en">has textual embodiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AnonymousIndividual nodeID="_:genid-c1f2ca63-a473-4534-8021-2c6fb04e5a79"/>
+        <Literal>https://dictionary.cambridge.org/dictionary/english/simile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AnonymousIndividual nodeID="_:genid-fef0bf0f-a1a1-41ab-bcd2-06959132e9b4"/>
+        <Literal>https://dictionary.cambridge.org/dictionary/english/simile</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
