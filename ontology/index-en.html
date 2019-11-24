@@ -1,0 +1,2278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>ASAP Ontology - Analyze Speech Acts by Politicians</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://popwords.github.io/asap.owl","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://popwords.github.io/asap.owl","name":"ASAP Ontology - Analyze Speech Acts by Politicians", "headline":"Document describing the ontology https://popwords.github.io/asap.owl", "datePublished":"Mon Nov 25 00:47:12 CET 2019", "version":"1.0.0", "author":[{"@type":"Person","name":"Andrea Poltronieri"},{"@type":"Person","name":"Delfina Sol Pandiani"},{"@type":"Person","name":"Maria Chiara Frangipane"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+ $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>ASAP Ontology - Analyze Speech Acts by Politicians</h1>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="https://popwords.github.io/asap.owl">https://popwords.github.io/asap.owl</a></dd>
+<dt>Revision:</dt>
+<dd>1.0.0</dd>
+<dt>Authors:</dt>
+<dd>Andrea Poltronieri</dd><dd>Delfina Sol Pandiani</dd><dd>Maria Chiara Frangipane</dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<dt>Cite as:</dt>
+<dd>Andrea Poltronieri,Delfina Sol Pandiani,Maria Chiara Frangipane. ASAP Ontology - Analyze Speech Acts by Politicians. Revision: 1.0.0. Retrieved from: https://popwords.github.io/asap.owl</dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a place holder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;https://popwords.github.io/asap.owl&gt;</td></tr>
+<tr><td><b>core</b></td><td>&lt;http://purl.org/vocab/frbr/core&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+<tr><td><b>popwords-github-io</b></td><td>&lt;https://popwords.github.io&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+<tr><td><b>timeinterval-owl</b></td><td>&lt;http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl&gt;</td></tr>
+<tr><td><b>pro</b></td><td>&lt;http://purl.org/spar/pro&gt;</td></tr>
+<tr><td><b>ontology</b></td><td>&lt;http://dbpedia.org/ontology&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">ASAP Ontology - Analyze Speech Acts by Politicians: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul class="hlist">
+   <li>
+      <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
+   </li>
+   <li>
+      <a href="#http://dbpedia.org/ontology/City" title="http://dbpedia.org/ontology/City">City</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/frbr/core#Concept" title="http://purl.org/vocab/frbr/core#Concept">Concept</a>
+   </li>
+   <li>
+      <a href="#http://dbpedia.org/ontology/Country" title="http://dbpedia.org/ontology/Country">Country</a>
+   </li>
+   <li>
+      <a href="#http://xmlns.com/foaf/spec/#term_Document" title="http://xmlns.com/foaf/spec/#term_Document">Document</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/frbr/core#Expression" title="http://purl.org/vocab/frbr/core#Expression">Expression</a>
+   </li>
+   <li>
+      <a href="#FoulLanguage" title="https://popwords.github.io/asap.owl#FoulLanguage">Foul Language</a>
+   </li>
+   <li>
+      <a href="#Illeism" title="https://popwords.github.io/asap.owl#Illeism">Illeism</a>
+   </li>
+   <li>
+      <a href="#InauguralSpeech"
+         title="https://popwords.github.io/asap.owl#InauguralSpeech">Inaugural Speech</a>
+   </li>
+   <li>
+      <a href="#LexicalComplexity"
+         title="https://popwords.github.io/asap.owl#LexicalComplexity">Lexical Complexity</a>
+   </li>
+   <li>
+      <a href="#Metaphor" title="https://popwords.github.io/asap.owl#Metaphor">Metaphor</a>
+   </li>
+   <li>
+      <a href="#NegativeNickname"
+         title="https://popwords.github.io/asap.owl#NegativeNickname">Negative Nicknames</a>
+   </li>
+   <li>
+      <a href="#Opposition" title="https://popwords.github.io/asap.owl#Opposition">Opposition</a>
+   </li>
+   <li>
+      <a href="#http://xmlns.com/foaf/spec/#term_Organization" title="http://xmlns.com/foaf/spec/#term_Organization">Organization</a>
+   </li>
+   <li>
+      <a href="#Paradox" title="https://popwords.github.io/asap.owl#Paradox">Paradox</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/frbr/core#Person" title="http://purl.org/vocab/frbr/core#Person">Person</a>
+   </li>
+   <li>
+      <a href="#Personification"
+         title="https://popwords.github.io/asap.owl#Personification">Personification</a>
+   </li>
+   <li>
+      <a href="#http://dbpedia.org/ontology/Place" title="http://dbpedia.org/ontology/Place">Place</a>
+   </li>
+   <li>
+      <a href="#Polarity" title="https://popwords.github.io/asap.owl#Polarity">Polarity</a>
+   </li>
+   <li>
+      <a href="#http://dbpedia.org/ontology/PoliticalParty" title="http://dbpedia.org/ontology/PoliticalParty">Political Party</a>
+   </li>
+   <li>
+      <a href="#PoliticalRoleInTime"
+         title="https://popwords.github.io/asap.owl#PoliticalRoleInTime">Political Role In Time</a>
+   </li>
+   <li>
+      <a href="#http://dbpedia.org/ontology/Politician" title="http://dbpedia.org/ontology/Politician">Politician</a>
+   </li>
+   <li>
+      <a href="#http://dbpedia.org/ontology/PopultedPlace" title="http://dbpedia.org/ontology/PopultedPlace">Populated Place</a>
+   </li>
+   <li>
+      <a href="#http://live.dbpedia.org/ontology/President" title="http://live.dbpedia.org/ontology/President">President</a>
+   </li>
+   <li>
+      <a href="#PressConference"
+         title="https://popwords.github.io/asap.owl#PressConference">Press Conference</a>
+   </li>
+   <li>
+      <a href="#http://live.dbpedia.org/ontology/PrimeMinister" title="http://live.dbpedia.org/ontology/PrimeMinister">Prime Minister</a>
+   </li>
+   <li>
+      <a href="#Quotation" title="https://popwords.github.io/asap.owl#Quotation">Quotation</a>
+   </li>
+   <li>
+      <a href="#RethoricalQuestion"
+         title="https://popwords.github.io/asap.owl#RethoricalQuestion">Rethorical Question</a>
+   </li>
+   <li>
+      <a href="#RhetoricalFigure"
+         title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+   </li>
+   <li>
+      <a href="#Sentiment" title="https://popwords.github.io/asap.owl#Sentiment">Sentiment</a>
+   </li>
+   <li>
+      <a href="#Simile" title="https://popwords.github.io/asap.owl#Simile">Simile</a>
+   </li>
+   <li>
+      <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+   </li>
+   <li>
+      <a href="#Subjectivity"
+         title="https://popwords.github.io/asap.owl#Subjectivity">Subjectivity</a>
+   </li>
+   <li>
+      <a href="#http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+         title="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval">Time Interval</a>
+   </li>
+   <li>
+      <a href="#TopWord" title="https://popwords.github.io/asap.owl#TopWord">Top Word</a>
+   </li>
+   <li>
+      <a href="#Topic" title="https://popwords.github.io/asap.owl#Topic">Topic</a>
+   </li>
+   <li>
+      <a href="#Tweet" title="https://popwords.github.io/asap.owl#Tweet">Tweet</a>
+   </li>
+   <li>
+      <a href="#http://dbpedia.org/ontology/VicePrimeMinister" title="http://dbpedia.org/ontology/VicePrimeMinister">Vice Prime Minister</a>
+   </li>
+</ul><h4>Object Properties</h4><ul class="hlist">
+   <li>
+      <a href="#deliveredAt" title="https://popwords.github.io/asap.owl#deliveredAt">delivered at</a>
+   </li>
+   <li>
+      <a href="#deliveredBy" title="https://popwords.github.io/asap.owl#deliveredBy">delivered by</a>
+   </li>
+   <li>
+      <a href="#deliveredWhen"
+         title="https://popwords.github.io/asap.owl#deliveredWhen">delivered when</a>
+   </li>
+   <li>
+      <a href="#hasLexicalComplexity"
+         title="https://popwords.github.io/asap.owl#hasLexicalComplexity">has lexical complexity</a>
+   </li>
+   <li>
+      <a href="#hasRhetoricalFigure"
+         title="https://popwords.github.io/asap.owl#hasRhetoricalFigure">has rhetorical figure</a>
+   </li>
+   <li>
+      <a href="#hasSentiment" title="https://popwords.github.io/asap.owl#hasSentiment">has sentiment</a>
+   </li>
+   <li>
+      <a href="#hasSubjectivity"
+         title="https://popwords.github.io/asap.owl#hasSubjectivity">has subjectivity</a>
+   </li>
+   <li>
+      <a href="#hasTopWord" title="https://popwords.github.io/asap.owl#hasTopWord">has top word</a>
+   </li>
+   <li>
+      <a href="#hasTopic" title="https://popwords.github.io/asap.owl#hasTopic">has topic</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/spar/pro/holdsRoleInTime" title="http://purl.org/spar/pro/holdsRoleInTime">holds role in time</a>
+   </li>
+   <li>
+      <a href="#isEmployedIn" title="https://popwords.github.io/asap.owl#isEmployedIn">is employed in</a>
+   </li>
+   <li>
+      <a href="#isPresentIn" title="https://popwords.github.io/asap.owl#isPresentIn">is present in</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/spar/pro/relatesToDocument" title="http://purl.org/spar/pro/relatesToDocument">relates to doc</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/spar/pro/relatesToOrganization" title="http://purl.org/spar/pro/relatesToOrganization">relates to organization</a>
+   </li>
+   <li>
+      <a href="#relatesToSpeechAct"
+         title="https://popwords.github.io/asap.owl#relatesToSpeechAct">relates to speech act</a>
+   </li>
+</ul><h4>Data Properties</h4><ul class="hlist">
+   <li>
+      <a href="#hasDaleChallScore"
+         title="https://popwords.github.io/asap.owl#hasDaleChallScore">has Dale Chall score</a>
+   </li>
+   <li>
+      <a href="#hasNumberOfUniqueWords"
+         title="https://popwords.github.io/asap.owl#hasNumberOfUniqueWords">has number of unique words</a>
+   </li>
+   <li>
+      <a href="#hasPolarityValue"
+         title="https://popwords.github.io/asap.owl#hasPolarityValue">has polarity value</a>
+   </li>
+   <li>
+      <a href="#hasRepresentativeWords"
+         title="https://popwords.github.io/asap.owl#hasRepresentativeWords">has representative words</a>
+   </li>
+   <li>
+      <a href="#hasSubjectivityValue"
+         title="https://popwords.github.io/asap.owl#hasSubjectivityValue">has subjectivity value</a>
+   </li>
+   <li>
+      <a href="#textualReference"
+         title="https://popwords.github.io/asap.owl#textualReference">has textual embodiment</a>
+   </li>
+   <li>
+      <a href="#hasTopTenCouples"
+         title="https://popwords.github.io/asap.owl#hasTopTenCouples">has top ten couples</a>
+   </li>
+   <li>
+      <a href="#hasTopTenTriples"
+         title="https://popwords.github.io/asap.owl#hasTopTenTriples">has top ten triples</a>
+   </li>
+   <li>
+      <a href="#hasTopTenWords"
+         title="https://popwords.github.io/asap.owl#hasTopTenWords">has top ten words</a>
+   </li>
+</ul><h4>Annotation Properties</h4><ul class="hlist">
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
+         <span>creator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/frbr/core#Rights" title="http://purl.org/vocab/frbr/core#Rights">
+         <span>rights</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+         <span>title</span>
+      </a>
+   </li>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">ASAP Ontology - Analyze Speech Acts by Politicians: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+
+</div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross reference for ASAP Ontology - Analyze Speech Acts by Politicians classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by ASAP Ontology - Analyze Speech Acts by Politicians.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
+      </li>
+      <li>
+         <a href="#http://dbpedia.org/ontology/City" title="http://dbpedia.org/ontology/City">City</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/vocab/frbr/core#Concept" title="http://purl.org/vocab/frbr/core#Concept">Concept</a>
+      </li>
+      <li>
+         <a href="#http://dbpedia.org/ontology/Country" title="http://dbpedia.org/ontology/Country">Country</a>
+      </li>
+      <li>
+         <a href="#http://xmlns.com/foaf/spec/#term_Document" title="http://xmlns.com/foaf/spec/#term_Document">Document</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/vocab/frbr/core#Expression" title="http://purl.org/vocab/frbr/core#Expression">Expression</a>
+      </li>
+      <li>
+         <a href="#FoulLanguage" title="https://popwords.github.io/asap.owl#FoulLanguage">Foul Language</a>
+      </li>
+      <li>
+         <a href="#Illeism" title="https://popwords.github.io/asap.owl#Illeism">Illeism</a>
+      </li>
+      <li>
+         <a href="#InauguralSpeech"
+            title="https://popwords.github.io/asap.owl#InauguralSpeech">Inaugural Speech</a>
+      </li>
+      <li>
+         <a href="#LexicalComplexity"
+            title="https://popwords.github.io/asap.owl#LexicalComplexity">Lexical Complexity</a>
+      </li>
+      <li>
+         <a href="#Metaphor" title="https://popwords.github.io/asap.owl#Metaphor">Metaphor</a>
+      </li>
+      <li>
+         <a href="#NegativeNickname"
+            title="https://popwords.github.io/asap.owl#NegativeNickname">Negative Nicknames</a>
+      </li>
+      <li>
+         <a href="#Opposition" title="https://popwords.github.io/asap.owl#Opposition">Opposition</a>
+      </li>
+      <li>
+         <a href="#http://xmlns.com/foaf/spec/#term_Organization" title="http://xmlns.com/foaf/spec/#term_Organization">Organization</a>
+      </li>
+      <li>
+         <a href="#Paradox" title="https://popwords.github.io/asap.owl#Paradox">Paradox</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/vocab/frbr/core#Person" title="http://purl.org/vocab/frbr/core#Person">Person</a>
+      </li>
+      <li>
+         <a href="#Personification"
+            title="https://popwords.github.io/asap.owl#Personification">Personification</a>
+      </li>
+      <li>
+         <a href="#http://dbpedia.org/ontology/Place" title="http://dbpedia.org/ontology/Place">Place</a>
+      </li>
+      <li>
+         <a href="#Polarity" title="https://popwords.github.io/asap.owl#Polarity">Polarity</a>
+      </li>
+      <li>
+         <a href="#http://dbpedia.org/ontology/PoliticalParty" title="http://dbpedia.org/ontology/PoliticalParty">Political Party</a>
+      </li>
+      <li>
+         <a href="#PoliticalRoleInTime"
+            title="https://popwords.github.io/asap.owl#PoliticalRoleInTime">Political Role In Time</a>
+      </li>
+      <li>
+         <a href="#http://dbpedia.org/ontology/Politician" title="http://dbpedia.org/ontology/Politician">Politician</a>
+      </li>
+      <li>
+         <a href="#http://dbpedia.org/ontology/PopultedPlace" title="http://dbpedia.org/ontology/PopultedPlace">Populated Place</a>
+      </li>
+      <li>
+         <a href="#http://live.dbpedia.org/ontology/President" title="http://live.dbpedia.org/ontology/President">President</a>
+      </li>
+      <li>
+         <a href="#PressConference"
+            title="https://popwords.github.io/asap.owl#PressConference">Press Conference</a>
+      </li>
+      <li>
+         <a href="#http://live.dbpedia.org/ontology/PrimeMinister" title="http://live.dbpedia.org/ontology/PrimeMinister">Prime Minister</a>
+      </li>
+      <li>
+         <a href="#Quotation" title="https://popwords.github.io/asap.owl#Quotation">Quotation</a>
+      </li>
+      <li>
+         <a href="#RethoricalQuestion"
+            title="https://popwords.github.io/asap.owl#RethoricalQuestion">Rethorical Question</a>
+      </li>
+      <li>
+         <a href="#RhetoricalFigure"
+            title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+      </li>
+      <li>
+         <a href="#Sentiment" title="https://popwords.github.io/asap.owl#Sentiment">Sentiment</a>
+      </li>
+      <li>
+         <a href="#Simile" title="https://popwords.github.io/asap.owl#Simile">Simile</a>
+      </li>
+      <li>
+         <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+      </li>
+      <li>
+         <a href="#Subjectivity"
+            title="https://popwords.github.io/asap.owl#Subjectivity">Subjectivity</a>
+      </li>
+      <li>
+         <a href="#http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+            title="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval">Time Interval</a>
+      </li>
+      <li>
+         <a href="#TopWord" title="https://popwords.github.io/asap.owl#TopWord">Top Word</a>
+      </li>
+      <li>
+         <a href="#Topic" title="https://popwords.github.io/asap.owl#Topic">Topic</a>
+      </li>
+      <li>
+         <a href="#Tweet" title="https://popwords.github.io/asap.owl#Tweet">Tweet</a>
+      </li>
+      <li>
+         <a href="#http://dbpedia.org/ontology/VicePrimeMinister" title="http://dbpedia.org/ontology/VicePrimeMinister">Vice Prime Minister</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/terms/Agent">
+      <h3>Agent<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/Agent</p>
+      <div class="comment">
+         <span class="markdown">A resource that acts or has the power to act</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://xmlns.com/foaf/spec/#term_Organization" title="http://xmlns.com/foaf/spec/#term_Organization">Organization</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://purl.org/vocab/frbr/core#Person" title="http://purl.org/vocab/frbr/core#Person">Person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://purl.org/spar/pro/holdsRoleInTime" title="http://purl.org/spar/pro/holdsRoleInTime">holds role in time</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#deliveredBy" title="https://popwords.github.io/asap.owl#deliveredBy">delivered by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://purl.org/vocab/frbr/core#Expression" title="http://purl.org/vocab/frbr/core#Expression">Expression</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://dbpedia.org/ontology/City">
+      <h3>City<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dbpedia.org/ontology/City</p>
+      <div class="comment">
+         <span class="markdown">large and permanent human settlement.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://dbpedia.org/ontology/PopultedPlace" title="http://dbpedia.org/ontology/PopultedPlace">Populated Place</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/vocab/frbr/core#Concept">
+      <h3>Concept<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/vocab/frbr/core#Concept</p>
+      <div class="comment">
+         <span class="markdown">An abstract idea or notion</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LexicalComplexity"
+               title="https://popwords.github.io/asap.owl#LexicalComplexity">Lexical Complexity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RhetoricalFigure"
+               title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Sentiment" title="https://popwords.github.io/asap.owl#Sentiment">Sentiment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TopWord" title="https://popwords.github.io/asap.owl#TopWord">Top Word</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Topic" title="https://popwords.github.io/asap.owl#Topic">Topic</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://dbpedia.org/ontology/Country">
+      <h3>Country<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dbpedia.org/ontology/Country</p>
+      <div class="comment">
+         <span class="markdown">It refers to a region that is identified as a distinct national entity in political geography</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://dbpedia.org/ontology/PopultedPlace" title="http://dbpedia.org/ontology/PopultedPlace">Populated Place</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://xmlns.com/foaf/spec/#term_Document">
+      <h3>Document<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/spec/#term_Document</p>
+      <div class="comment">
+         <span class="markdown">The Document class represents those things which are, broadly conceived, 'documents'.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://purl.org/vocab/frbr/core#Expression" title="http://purl.org/vocab/frbr/core#Expression">Expression</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://purl.org/spar/pro/relatesToDocument" title="http://purl.org/spar/pro/relatesToDocument">relates to doc</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/vocab/frbr/core#Expression">
+      <h3>Expression<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/vocab/frbr/core#Expression</p>
+      <div class="comment">
+         <span class="markdown">A realization of a single work usually in a physical form.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://xmlns.com/foaf/spec/#term_Document" title="http://xmlns.com/foaf/spec/#term_Document">Document</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FoulLanguage">
+      <h3>Foul Language<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#FoulLanguage</p>
+      <div class="comment">
+         <span class="markdown">Foul language refers to when a speech or other language is offensive, rude, or shocking</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RhetoricalFigure"
+               title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Illeism">
+      <h3>Illeism<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#Illeism</p>
+      <div class="comment">
+         <span class="markdown">Illeism refers to the practice of referring to oneself in the third person</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RhetoricalFigure"
+               title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InauguralSpeech">
+      <h3>Inaugural Speech<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#InauguralSpeech</p>
+      <div class="comment">
+         <span class="markdown">It refers to the speech given during the inuguration of an elected leader, informing the people of their intention as a leader</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LexicalComplexity">
+      <h3>Lexical Complexity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#LexicalComplexity</p>
+      <div class="comment">
+         <span class="markdown">It refers to the lexical space occupied by a speech act</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://purl.org/vocab/frbr/core#Concept" title="http://purl.org/vocab/frbr/core#Concept">Concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDaleChallScore"
+               title="https://popwords.github.io/asap.owl#hasDaleChallScore">has Dale Chall score</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasNumberOfUniqueWords"
+               title="https://popwords.github.io/asap.owl#hasNumberOfUniqueWords">has number of unique words</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasLexicalComplexity"
+               title="https://popwords.github.io/asap.owl#hasLexicalComplexity">has lexical complexity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Metaphor">
+      <h3>Metaphor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#Metaphor</p>
+      <div class="comment">
+         <span class="markdown">Metaphor refers to an expression that describes a person or object by referring to something that is considered to have similar characteristics to that person or object</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RhetoricalFigure"
+               title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="NegativeNickname">
+      <h3>Negative Nicknames<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#NegativeNickname</p>
+      <div class="comment">
+         <span class="markdown">Negative Nickname refers to an informal name for someone or something, usually based on your real name or your character, used to defame a political opponent</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RhetoricalFigure"
+               title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Opposition">
+      <h3>Opposition<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#Opposition</p>
+      <div class="comment">
+         <span class="markdown">Opposition refers to the "black and white rhetoric", that creates and opposes two polarities
+
+e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’’ and the ‘‘evil elite’’</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RhetoricalFigure"
+               title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://xmlns.com/foaf/spec/#term_Organization">
+      <h3>Organization<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/spec/#term_Organization</p>
+      <div class="comment">
+         <span class="markdown">A kind of Agent corresponding to social instititutions such as companies, societies etc.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://dbpedia.org/ontology/PoliticalParty" title="http://dbpedia.org/ontology/PoliticalParty">Political Party</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://purl.org/spar/pro/relatesToOrganization" title="http://purl.org/spar/pro/relatesToOrganization">relates to organization</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Paradox">
+      <h3>Paradox<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#Paradox</p>
+      <div class="comment">
+         <span class="markdown">Paradox refers to a situation or statement that seems impossible or is difficult to understand because it contains two opposite facts or characteristics</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RhetoricalFigure"
+               title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/vocab/frbr/core#Person">
+      <h3>Person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/vocab/frbr/core#Person</p>
+      <div class="comment">
+         <span class="markdown">A living or dead individual</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://dbpedia.org/ontology/Politician" title="http://dbpedia.org/ontology/Politician">Politician</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Personification">
+      <h3>Personification<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#Personification</p>
+      <div class="comment">
+         <span class="markdown">Personification refers to the act of giving a human quality or characteristic to something which is not human</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RhetoricalFigure"
+               title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://dbpedia.org/ontology/Place">
+      <h3>Place<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dbpedia.org/ontology/Place</p>
+      <div class="comment">
+         <span class="markdown">Immobile things or locations</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://dbpedia.org/ontology/PopultedPlace" title="http://dbpedia.org/ontology/PopultedPlace">Populated Place</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#deliveredAt" title="https://popwords.github.io/asap.owl#deliveredAt">delivered at</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Polarity">
+      <h3>Polarity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#Polarity</p>
+      <div class="comment">
+         <span class="markdown">Polarity refers to the value</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Sentiment" title="https://popwords.github.io/asap.owl#Sentiment">Sentiment</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasPolarityValue"
+               title="https://popwords.github.io/asap.owl#hasPolarityValue">has polarity value</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://dbpedia.org/ontology/PoliticalParty">
+      <h3>Political Party<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dbpedia.org/ontology/PoliticalParty</p>
+      <div class="comment">
+         <span class="markdown">group of people who come together to contest elections and hold power in the government. The party agrees on some proposed policies and programmes, with a view to promoting the collective good or furthering their supporters' interests.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://xmlns.com/foaf/spec/#term_Organization" title="http://xmlns.com/foaf/spec/#term_Organization">Organization</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PoliticalRoleInTime">
+      <h3>Political Role In Time<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#PoliticalRoleInTime</p>
+      <div class="comment">
+         <span class="markdown">It represents the (reified) relationship between the agent holding a role and the role itself, within the boundaries of a particular timeinterval and applicable context for that role</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://purl.org/spar/pro/relatesToOrganization" title="http://purl.org/spar/pro/relatesToOrganization">relates to organization</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://purl.org/spar/pro/holdsRoleInTime" title="http://purl.org/spar/pro/holdsRoleInTime">holds role in time</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://dbpedia.org/ontology/Politician">
+      <h3>Politician<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dbpedia.org/ontology/Politician</p>
+      <div class="comment">
+         <span class="markdown">A political figure</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://purl.org/vocab/frbr/core#Person" title="http://purl.org/vocab/frbr/core#Person">Person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://live.dbpedia.org/ontology/President" title="http://live.dbpedia.org/ontology/President">President</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://live.dbpedia.org/ontology/PrimeMinister" title="http://live.dbpedia.org/ontology/PrimeMinister">Prime Minister</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://dbpedia.org/ontology/VicePrimeMinister" title="http://dbpedia.org/ontology/VicePrimeMinister">Vice Prime Minister</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://dbpedia.org/ontology/PopultedPlace">
+      <h3>Populated Place<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dbpedia.org/ontology/PopultedPlace</p>
+      <div class="comment">
+         <span class="markdown">place or area with clustered or scattered buildings and a permanent human population (city, settlement, town, or village) referenced with geographic coordinates</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://dbpedia.org/ontology/Place" title="http://dbpedia.org/ontology/Place">Place</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://dbpedia.org/ontology/City" title="http://dbpedia.org/ontology/City">City</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://dbpedia.org/ontology/Country" title="http://dbpedia.org/ontology/Country">Country</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://live.dbpedia.org/ontology/President">
+      <h3>President<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://live.dbpedia.org/ontology/President</p>
+      <div class="comment">
+         <span class="markdown">Leader of a country or a division or part of a country, typically a republic, a democracy, or a dictatorship.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://dbpedia.org/ontology/Politician" title="http://dbpedia.org/ontology/Politician">Politician</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PressConference">
+      <h3>Press Conference<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#PressConference</p>
+      <div class="comment">
+         <span class="markdown">It refers to a meeting at which a person or organization makes a public statement and reporters can ask questions</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://live.dbpedia.org/ontology/PrimeMinister">
+      <h3>Prime Minister<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://live.dbpedia.org/ontology/PrimeMinister</p>
+      <div class="comment">
+         <span class="markdown">Head of an elected government; the principle minister of a sovereign or a state</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://dbpedia.org/ontology/Politician" title="http://dbpedia.org/ontology/Politician">Politician</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Quotation">
+      <h3>Quotation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#Quotation</p>
+      <div class="comment">
+         <span class="markdown">Quotation refers to a phrase or short piece of writing taken from a longer work of literature, poetry, etc. or what someone else has said</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RethoricalQuestion"
+               title="https://popwords.github.io/asap.owl#RethoricalQuestion">Rethorical Question</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RethoricalQuestion">
+      <h3>Rethorical Question<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#RethoricalQuestion</p>
+      <div class="comment">
+         <span class="markdown">Rhetorical question refers to a question, asked in order to make a statement, that does not expect an answer</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RhetoricalFigure"
+               title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Quotation" title="https://popwords.github.io/asap.owl#Quotation">Quotation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RhetoricalFigure">
+      <h3>Rhetorical Figure<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#RhetoricalFigure</p>
+      <div class="comment">
+         <span class="markdown">The class of some common tropes in political speech acts</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://purl.org/vocab/frbr/core#Concept" title="http://purl.org/vocab/frbr/core#Concept">Concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#FoulLanguage" title="https://popwords.github.io/asap.owl#FoulLanguage">Foul Language</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Illeism" title="https://popwords.github.io/asap.owl#Illeism">Illeism</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Metaphor" title="https://popwords.github.io/asap.owl#Metaphor">Metaphor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#NegativeNickname"
+               title="https://popwords.github.io/asap.owl#NegativeNickname">Negative Nicknames</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Opposition" title="https://popwords.github.io/asap.owl#Opposition">Opposition</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Paradox" title="https://popwords.github.io/asap.owl#Paradox">Paradox</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Personification"
+               title="https://popwords.github.io/asap.owl#Personification">Personification</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RethoricalQuestion"
+               title="https://popwords.github.io/asap.owl#RethoricalQuestion">Rethorical Question</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Simile" title="https://popwords.github.io/asap.owl#Simile">Simile</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#textualReference"
+               title="https://popwords.github.io/asap.owl#textualReference">has textual embodiment</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isEmployedIn" title="https://popwords.github.io/asap.owl#isEmployedIn">is employed in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasRhetoricalFigure"
+               title="https://popwords.github.io/asap.owl#hasRhetoricalFigure">has rhetorical figure</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Sentiment">
+      <h3>Sentiment<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#Sentiment</p>
+      <div class="comment">
+         <span class="markdown">The values connected to the outcome from sentiment analysis</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://purl.org/vocab/frbr/core#Concept" title="http://purl.org/vocab/frbr/core#Concept">Concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Polarity" title="https://popwords.github.io/asap.owl#Polarity">Polarity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Subjectivity"
+               title="https://popwords.github.io/asap.owl#Subjectivity">Subjectivity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasSentiment" title="https://popwords.github.io/asap.owl#hasSentiment">has sentiment</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Simile">
+      <h3>Simile<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#Simile</p>
+      <div class="comment">
+         <span class="markdown">Simile refers to the use of an expression comparing one thing with another, always including the words "as" or "like"</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RhetoricalFigure"
+               title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SpeechAct">
+      <h3>Speech Act<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#SpeechAct</p>
+      <div class="comment">
+         <span class="markdown">an utterance considered as an action, particularly with regard to its intention, purpose, or effect.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://purl.org/vocab/frbr/core#Expression" title="http://purl.org/vocab/frbr/core#Expression">Expression</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#InauguralSpeech"
+               title="https://popwords.github.io/asap.owl#InauguralSpeech">Inaugural Speech</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PressConference"
+               title="https://popwords.github.io/asap.owl#PressConference">Press Conference</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Tweet" title="https://popwords.github.io/asap.owl#Tweet">Tweet</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#deliveredAt" title="https://popwords.github.io/asap.owl#deliveredAt">delivered at</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#deliveredBy" title="https://popwords.github.io/asap.owl#deliveredBy">delivered by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#deliveredWhen"
+               title="https://popwords.github.io/asap.owl#deliveredWhen">delivered when</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasLexicalComplexity"
+               title="https://popwords.github.io/asap.owl#hasLexicalComplexity">has lexical complexity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRhetoricalFigure"
+               title="https://popwords.github.io/asap.owl#hasRhetoricalFigure">has rhetorical figure</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSentiment" title="https://popwords.github.io/asap.owl#hasSentiment">has sentiment</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSubjectivity"
+               title="https://popwords.github.io/asap.owl#hasSubjectivity">has subjectivity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasTopWord" title="https://popwords.github.io/asap.owl#hasTopWord">has top word</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasTopic" title="https://popwords.github.io/asap.owl#hasTopic">has topic</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/spar/pro/relatesToDocument" title="http://purl.org/spar/pro/relatesToDocument">relates to doc</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isEmployedIn" title="https://popwords.github.io/asap.owl#isEmployedIn">is employed in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPresentIn" title="https://popwords.github.io/asap.owl#isPresentIn">is present in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#relatesToSpeechAct"
+               title="https://popwords.github.io/asap.owl#relatesToSpeechAct">relates to speech act</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Subjectivity">
+      <h3>Subjectivity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#Subjectivity</p>
+      <div class="comment">
+         <span class="markdown">Subjectivity refers to the value</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Sentiment" title="https://popwords.github.io/asap.owl#Sentiment">Sentiment</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasSubjectivityValue"
+               title="https://popwords.github.io/asap.owl#hasSubjectivityValue">has subjectivity value</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasSubjectivity"
+               title="https://popwords.github.io/asap.owl#hasSubjectivity">has subjectivity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval">
+      <h3>Time Interval<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval</p>
+      <div class="comment">
+         <span class="markdown">It refers to any Region in a dimensional space that aims at representing time. It should be used when you want to talk about time as an object having some characteristics.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#deliveredWhen"
+               title="https://popwords.github.io/asap.owl#deliveredWhen">delivered when</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TopWord">
+      <h3>Top Word<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#TopWord</p>
+      <div class="comment">
+         <span class="markdown">Refers to the most recurrent words present in a speech act</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://purl.org/vocab/frbr/core#Concept" title="http://purl.org/vocab/frbr/core#Concept">Concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasTopTenCouples"
+               title="https://popwords.github.io/asap.owl#hasTopTenCouples">has top ten couples</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasTopTenTriples"
+               title="https://popwords.github.io/asap.owl#hasTopTenTriples">has top ten triples</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasTopTenWords"
+               title="https://popwords.github.io/asap.owl#hasTopTenWords">has top ten words</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasTopWord" title="https://popwords.github.io/asap.owl#hasTopWord">has top word</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Topic">
+      <h3>Topic<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#Topic</p>
+      <div class="comment">
+         <span class="markdown">Topic refers to the retrieved topic of a single speech act</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://purl.org/vocab/frbr/core#Concept" title="http://purl.org/vocab/frbr/core#Concept">Concept</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasRepresentativeWords"
+               title="https://popwords.github.io/asap.owl#hasRepresentativeWords">has representative words</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isPresentIn" title="https://popwords.github.io/asap.owl#isPresentIn">is present in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasTopic" title="https://popwords.github.io/asap.owl#hasTopic">has topic</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tweet">
+      <h3>Tweet<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#Tweet</p>
+      <div class="comment">
+         <span class="markdown">a short remark or piece of information published on Twitter</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://dbpedia.org/ontology/VicePrimeMinister">
+      <h3>Vice Prime Minister<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://dbpedia.org/ontology/VicePrimeMinister</p>
+      <div class="comment">
+         <span class="markdown">It refers to a government minister who can take the position of acting prime minister when the prime minister is temporarily absent</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://dbpedia.org/ontology/Politician" title="http://dbpedia.org/ontology/Politician">Politician</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#deliveredAt" title="https://popwords.github.io/asap.owl#deliveredAt">delivered at</a>
+      </li>
+      <li>
+         <a href="#deliveredBy" title="https://popwords.github.io/asap.owl#deliveredBy">delivered by</a>
+      </li>
+      <li>
+         <a href="#deliveredWhen"
+            title="https://popwords.github.io/asap.owl#deliveredWhen">delivered when</a>
+      </li>
+      <li>
+         <a href="#hasLexicalComplexity"
+            title="https://popwords.github.io/asap.owl#hasLexicalComplexity">has lexical complexity</a>
+      </li>
+      <li>
+         <a href="#hasRhetoricalFigure"
+            title="https://popwords.github.io/asap.owl#hasRhetoricalFigure">has rhetorical figure</a>
+      </li>
+      <li>
+         <a href="#hasSentiment" title="https://popwords.github.io/asap.owl#hasSentiment">has sentiment</a>
+      </li>
+      <li>
+         <a href="#hasSubjectivity"
+            title="https://popwords.github.io/asap.owl#hasSubjectivity">has subjectivity</a>
+      </li>
+      <li>
+         <a href="#hasTopWord" title="https://popwords.github.io/asap.owl#hasTopWord">has top word</a>
+      </li>
+      <li>
+         <a href="#hasTopic" title="https://popwords.github.io/asap.owl#hasTopic">has topic</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/spar/pro/holdsRoleInTime" title="http://purl.org/spar/pro/holdsRoleInTime">holds role in time</a>
+      </li>
+      <li>
+         <a href="#isEmployedIn" title="https://popwords.github.io/asap.owl#isEmployedIn">is employed in</a>
+      </li>
+      <li>
+         <a href="#isPresentIn" title="https://popwords.github.io/asap.owl#isPresentIn">is present in</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/spar/pro/relatesToDocument" title="http://purl.org/spar/pro/relatesToDocument">relates to doc</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/spar/pro/relatesToOrganization" title="http://purl.org/spar/pro/relatesToOrganization">relates to organization</a>
+      </li>
+      <li>
+         <a href="#relatesToSpeechAct"
+            title="https://popwords.github.io/asap.owl#relatesToSpeechAct">relates to speech act</a>
+      </li>
+   </ul>
+   <div class="entity" id="deliveredAt">
+      <h3>delivered at<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#deliveredAt</p>
+      <div class="comment">
+         <span class="markdown">It relates the Speech Act with the place of deliverance</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://dbpedia.org/ontology/Place" title="http://dbpedia.org/ontology/Place">Place</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="deliveredBy">
+      <h3>delivered by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#deliveredBy</p>
+      <div class="comment">
+         <span class="markdown">It relates the Speech Act with its Agent</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="deliveredWhen">
+      <h3>delivered when<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#deliveredWhen</p>
+      <div class="comment">
+         <span class="markdown">It relates the Speech Act with the interval of time it has been delivered</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+                  title="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval">Time Interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLexicalComplexity">
+      <h3>has lexical complexity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#hasLexicalComplexity</p>
+      <div class="comment">
+         <span class="markdown">It relates a speech act with its lexical complexity</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#LexicalComplexity"
+                  title="https://popwords.github.io/asap.owl#LexicalComplexity">Lexical Complexity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRhetoricalFigure">
+      <h3>has rhetorical figure<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#hasRhetoricalFigure</p>
+      <div class="comment">
+         <span class="markdown">This property relates a literary text that contains a rhetorical figure.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#RhetoricalFigure"
+                  title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isEmployedIn" title="https://popwords.github.io/asap.owl#isEmployedIn">is employed in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSentiment">
+      <h3>has sentiment<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#hasSentiment</p>
+      <div class="comment">
+         <span class="markdown">It relates the sentiment value with its speech act</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Sentiment" title="https://popwords.github.io/asap.owl#Sentiment">Sentiment</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSubjectivity">
+      <h3>has subjectivity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#hasSubjectivity</p>
+      <div class="comment">
+         <span class="markdown">It relates the speech act to che subjectivity of the text</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Subjectivity"
+                  title="https://popwords.github.io/asap.owl#Subjectivity">Subjectivity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTopWord">
+      <h3>has top word<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#hasTopWord</p>
+      <div class="comment">
+         <span class="markdown">It relates a speech act with its top words</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#TopWord" title="https://popwords.github.io/asap.owl#TopWord">Top Word</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTopic">
+      <h3>has topic<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#hasTopic</p>
+      <div class="comment">
+         <span class="markdown">It relates a speech act with its topic</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Topic" title="https://popwords.github.io/asap.owl#Topic">Topic</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isPresentIn" title="https://popwords.github.io/asap.owl#isPresentIn">is present in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/spar/pro/holdsRoleInTime">
+      <h3>holds role in time<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/spar/pro/holdsRoleInTime</p>
+      <div class="comment">
+         <span class="markdown">A property relating an agent to a role that the agent holds.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PoliticalRoleInTime"
+                  title="https://popwords.github.io/asap.owl#PoliticalRoleInTime">Political Role In Time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isEmployedIn">
+      <h3>is employed in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#isEmployedIn</p>
+      <div class="comment">
+         <span class="markdown">This property relates a rhetorical figure with a particular speech act in which it is present.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RhetoricalFigure"
+                  title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasRhetoricalFigure"
+                  title="https://popwords.github.io/asap.owl#hasRhetoricalFigure">has rhetorical figure</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPresentIn">
+      <h3>is present in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#isPresentIn</p>
+      <div class="comment">
+         <span class="markdown">It relates a topic to the speech act in which it is present</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Topic" title="https://popwords.github.io/asap.owl#Topic">Topic</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasTopic" title="https://popwords.github.io/asap.owl#hasTopic">has topic</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/spar/pro/relatesToDocument">
+      <h3>relates to doc<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/spar/pro/relatesToDocument</p>
+      <div class="comment">
+         <span class="markdown">It relates the Speech Act with the document in which it is contained the transcription</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://xmlns.com/foaf/spec/#term_Document" title="http://xmlns.com/foaf/spec/#term_Document">Document</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/spar/pro/relatesToOrganization">
+      <h3>relates to organization<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/spar/pro/relatesToOrganization</p>
+      <div class="comment">
+         <span class="markdown">It relates the Political Role to a certain political organization</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>https://popwords.github.io/asap.owl</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PoliticalRoleInTime"
+                  title="https://popwords.github.io/asap.owl#PoliticalRoleInTime">Political Role In Time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://xmlns.com/foaf/spec/#term_Organization" title="http://xmlns.com/foaf/spec/#term_Organization">Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatesToSpeechAct">
+      <h3>relates to speech act<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#relatesToSpeechAct</p>
+      <div class="comment">
+         <span class="markdown">It relates some important entities (Agent, Document, Political Role In Time) to the speech act itself</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#http://xmlns.com/foaf/spec/#term_Document" title="http://xmlns.com/foaf/spec/#term_Document">Document</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#PoliticalRoleInTime"
+                  title="https://popwords.github.io/asap.owl#PoliticalRoleInTime">Political Role In Time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasDaleChallScore"
+            title="https://popwords.github.io/asap.owl#hasDaleChallScore">has Dale Chall score</a>
+      </li>
+      <li>
+         <a href="#hasNumberOfUniqueWords"
+            title="https://popwords.github.io/asap.owl#hasNumberOfUniqueWords">has number of unique words</a>
+      </li>
+      <li>
+         <a href="#hasPolarityValue"
+            title="https://popwords.github.io/asap.owl#hasPolarityValue">has polarity value</a>
+      </li>
+      <li>
+         <a href="#hasRepresentativeWords"
+            title="https://popwords.github.io/asap.owl#hasRepresentativeWords">has representative words</a>
+      </li>
+      <li>
+         <a href="#hasSubjectivityValue"
+            title="https://popwords.github.io/asap.owl#hasSubjectivityValue">has subjectivity value</a>
+      </li>
+      <li>
+         <a href="#textualReference"
+            title="https://popwords.github.io/asap.owl#textualReference">has textual embodiment</a>
+      </li>
+      <li>
+         <a href="#hasTopTenCouples"
+            title="https://popwords.github.io/asap.owl#hasTopTenCouples">has top ten couples</a>
+      </li>
+      <li>
+         <a href="#hasTopTenTriples"
+            title="https://popwords.github.io/asap.owl#hasTopTenTriples">has top ten triples</a>
+      </li>
+      <li>
+         <a href="#hasTopTenWords"
+            title="https://popwords.github.io/asap.owl#hasTopTenWords">has top ten words</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasDaleChallScore">
+      <h3>has Dale Chall score<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#hasDaleChallScore</p>
+      <div class="comment">
+         <span class="markdown">It relates the speech act to the decimal value of the Dale Chall readability formula</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#LexicalComplexity"
+                  title="https://popwords.github.io/asap.owl#LexicalComplexity">Lexical Complexity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasNumberOfUniqueWords">
+      <h3>has number of unique words<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#hasNumberOfUniqueWords</p>
+      <div class="comment">
+         <span class="markdown">It refers to the number of unique words present in a speech act</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#LexicalComplexity"
+                  title="https://popwords.github.io/asap.owl#LexicalComplexity">Lexical Complexity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPolarityValue">
+      <h3>has polarity value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#hasPolarityValue</p>
+      <div class="comment">
+         <span class="markdown">Refers to the decimal value of the polarity related to a specific speech act</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Polarity" title="https://popwords.github.io/asap.owl#Polarity">Polarity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRepresentativeWords">
+      <h3>has representative words<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#hasRepresentativeWords</p>
+      <div class="comment">
+         <span class="markdown">The words able to describe the semantic space of a toic</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Topic" title="https://popwords.github.io/asap.owl#Topic">Topic</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSubjectivityValue">
+      <h3>has subjectivity value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#hasSubjectivityValue</p>
+      <div class="comment">
+         <span class="markdown">Refers to the decimal value of the subjectivity related to a specific speech act</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Subjectivity"
+                  title="https://popwords.github.io/asap.owl#Subjectivity">Subjectivity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="textualReference">
+      <h3>has textual embodiment<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#textualReference</p>
+      <div class="comment">
+         <span class="markdown">Relates a concept to a text that includes its textual string reference</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RhetoricalFigure"
+                  title="https://popwords.github.io/asap.owl#RhetoricalFigure">Rhetorical Figure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTopTenCouples">
+      <h3>has top ten couples<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#hasTopTenCouples</p>
+      <div class="comment">
+         <span class="markdown">It refers to the ten most recurrent couples of words of a speech act</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TopWord" title="https://popwords.github.io/asap.owl#TopWord">Top Word</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTopTenTriples">
+      <h3>has top ten triples<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#hasTopTenTriples</p>
+      <div class="comment">
+         <span class="markdown">It refers to the ten most recurrent triples of words of a speech act</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TopWord" title="https://popwords.github.io/asap.owl#TopWord">Top Word</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTopTenWords">
+      <h3>has top ten words<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#hasTopTenWords</p>
+      <div class="comment">
+         <span class="markdown">It refers to the ten most recurrent words of a speech act</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TopWord" title="https://popwords.github.io/asap.owl#TopWord">Top Word</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="annotationproperties">
+   <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
+            <span>creator</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/vocab/frbr/core#Rights" title="http://purl.org/vocab/frbr/core#Rights">
+            <span>rights</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+            <span>title</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="http://purl.org/dc/elements/1.1/creator">
+      <h3>creator<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/elements/1.1/creator</p>
+   </div>
+   <div class="entity" id="http://purl.org/vocab/frbr/core#Rights">
+      <h3>rights<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/vocab/frbr/core#Rights</p>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/title">
+      <h3>title<sup class="type-ap" title="annotation property">ap</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgements">
+<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,919 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://popwords.github.io/asap.owl#"
+     xml:base="https://popwords.github.io/asap.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://popwords.github.io/asap.owl">
+        <owl:versionIRI rdf:resource="https://popwords.github.io/asap.owl"/>
+        <dc:creator xml:lang="en">Andrea Poltronieri</dc:creator>
+        <dc:creator xml:lang="en">Delfina Sol Pandiani</dc:creator>
+        <dc:creator xml:lang="en">Maria Chiara Frangipane</dc:creator>
+        <terms:title xml:lang="en">ASAP Ontology - Analyze Speech Acts by Politicians</terms:title>
+        <core:Rights xml:lang="en">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).</core:Rights>
+        <rdfs:comment xml:lang="en">Ontology (ASAP) is a rhetorics based ontology that expresses in a formal way the rhetorical discourse behind politician&apos;s speech acts.</rdfs:comment>
+        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#Rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/frbr/core#Rights"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/spar/pro/holdsRoleInTime -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/pro/holdsRoleInTime">
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:range rdf:resource="https://popwords.github.io/asap.owl#PoliticalRoleInTime"/>
+        <rdfs:comment xml:lang="en">A property relating an agent to a role that the agent holds.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/spar/pro/holdsRoleInTime</rdfs:isDefinedBy>
+        <rdfs:label>holds role in time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/pro/relatesToDocument -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/pro/relatesToDocument">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/spec/#term_Document"/>
+        <rdfs:comment xml:lang="en">It relates the Speech Act with the document in which it is contained the transcription</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.org/spar/pro/relatesToDocument</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">relates to doc</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/pro/relatesToOrganization -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/pro/relatesToOrganization">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#PoliticalRoleInTime"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/spec/#term_Organization"/>
+        <rdfs:comment xml:lang="en">It relates the Political Role to a certain political organization</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/spar/pro/relatesToOrganization</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">relates to organization</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#deliveredAt -->
+
+
+    <owl:ObjectProperty rdf:about="https://popwords.github.io/asap.owl#deliveredAt">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:comment xml:lang="en">It relates the Speech Act with the place of deliverance</rdfs:comment>
+        <rdfs:label xml:lang="en">delivered at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#deliveredBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://popwords.github.io/asap.owl#deliveredBy">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:comment xml:lang="en">It relates the Speech Act with its Agent</rdfs:comment>
+        <rdfs:label xml:lang="en">delivered by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#deliveredWhen -->
+
+
+    <owl:ObjectProperty rdf:about="https://popwords.github.io/asap.owl#deliveredWhen">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"/>
+        <rdfs:comment xml:lang="en">It relates the Speech Act with the interval of time it has been delivered</rdfs:comment>
+        <rdfs:label xml:lang="en">delivered when</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#hasLexicalComplexity -->
+
+
+    <owl:ObjectProperty rdf:about="https://popwords.github.io/asap.owl#hasLexicalComplexity">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:range rdf:resource="https://popwords.github.io/asap.owl#LexicalComplexity"/>
+        <rdfs:comment xml:lang="en">It relates a speech act with its lexical complexity</rdfs:comment>
+        <rdfs:label xml:lang="en">has lexical complexity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#hasRhetoricalFigure -->
+
+
+    <owl:ObjectProperty rdf:about="https://popwords.github.io/asap.owl#hasRhetoricalFigure">
+        <owl:inverseOf rdf:resource="https://popwords.github.io/asap.owl#isEmployedIn"/>
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:range rdf:resource="https://popwords.github.io/asap.owl#RhetoricalFigure"/>
+        <rdfs:comment xml:lang="en">This property relates a literary text that contains a rhetorical figure.</rdfs:comment>
+        <rdfs:label xml:lang="en">has rhetorical figure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#hasSentiment -->
+
+
+    <owl:ObjectProperty rdf:about="https://popwords.github.io/asap.owl#hasSentiment">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:range rdf:resource="https://popwords.github.io/asap.owl#Sentiment"/>
+        <rdfs:comment xml:lang="en">It relates the sentiment value with its speech act</rdfs:comment>
+        <rdfs:label xml:lang="en">has sentiment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#hasSubjectivity -->
+
+
+    <owl:ObjectProperty rdf:about="https://popwords.github.io/asap.owl#hasSubjectivity">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:range rdf:resource="https://popwords.github.io/asap.owl#Subjectivity"/>
+        <rdfs:comment xml:lang="en">It relates the speech act to che subjectivity of the text</rdfs:comment>
+        <rdfs:label xml:lang="en">has subjectivity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#hasTopWord -->
+
+
+    <owl:ObjectProperty rdf:about="https://popwords.github.io/asap.owl#hasTopWord">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:range rdf:resource="https://popwords.github.io/asap.owl#TopWord"/>
+        <rdfs:comment xml:lang="en">It relates a speech act with its top words</rdfs:comment>
+        <rdfs:label xml:lang="en">has top word</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#hasTopic -->
+
+
+    <owl:ObjectProperty rdf:about="https://popwords.github.io/asap.owl#hasTopic">
+        <owl:inverseOf rdf:resource="https://popwords.github.io/asap.owl#isPresentIn"/>
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:range rdf:resource="https://popwords.github.io/asap.owl#Topic"/>
+        <rdfs:comment xml:lang="en">It relates a speech act with its topic</rdfs:comment>
+        <rdfs:label xml:lang="en">has topic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#isEmployedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://popwords.github.io/asap.owl#isEmployedIn">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#RhetoricalFigure"/>
+        <rdfs:range rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:comment xml:lang="en">This property relates a rhetorical figure with a particular speech act in which it is present.</rdfs:comment>
+        <rdfs:label xml:lang="en">is employed in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#isPresentIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://popwords.github.io/asap.owl#isPresentIn">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#Topic"/>
+        <rdfs:range rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:comment xml:lang="en">It relates a topic to the speech act in which it is present</rdfs:comment>
+        <rdfs:label xml:lang="en">is present in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#relatesToSpeechAct -->
+
+
+    <owl:ObjectProperty rdf:about="https://popwords.github.io/asap.owl#relatesToSpeechAct">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/dc/terms/Agent"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/spec/#term_Document"/>
+                    <rdf:Description rdf:about="https://popwords.github.io/asap.owl#PoliticalRoleInTime"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:comment xml:lang="en">It relates some important entities (Agent, Document, Political Role In Time) to the speech act itself</rdfs:comment>
+        <rdfs:label xml:lang="en">relates to speech act</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#hasDaleChallScore -->
+
+
+    <owl:DatatypeProperty rdf:about="https://popwords.github.io/asap.owl#hasDaleChallScore">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#LexicalComplexity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">It relates the speech act to the decimal value of the Dale Chall readability formula</rdfs:comment>
+        <rdfs:label xml:lang="en">has Dale Chall score</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#hasNumberOfUniqueWords -->
+
+
+    <owl:DatatypeProperty rdf:about="https://popwords.github.io/asap.owl#hasNumberOfUniqueWords">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#LexicalComplexity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">It refers to the number of unique words present in a speech act</rdfs:comment>
+        <rdfs:label xml:lang="en">has number of unique words</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#hasPolarityValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://popwords.github.io/asap.owl#hasPolarityValue">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#Polarity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">Refers to the decimal value of the polarity related to a specific speech act</rdfs:comment>
+        <rdfs:label xml:lang="en">has polarity value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#hasRepresentativeWords -->
+
+
+    <owl:DatatypeProperty rdf:about="https://popwords.github.io/asap.owl#hasRepresentativeWords">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#Topic"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The words able to describe the semantic space of a toic</rdfs:comment>
+        <rdfs:label xml:lang="en">has representative words</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#hasSubjectivityValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://popwords.github.io/asap.owl#hasSubjectivityValue">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#Subjectivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">Refers to the decimal value of the subjectivity related to a specific speech act</rdfs:comment>
+        <rdfs:label xml:lang="en">has subjectivity value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#hasTopTenCouples -->
+
+
+    <owl:DatatypeProperty rdf:about="https://popwords.github.io/asap.owl#hasTopTenCouples">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#TopWord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">It refers to the ten most recurrent couples of words of a speech act</rdfs:comment>
+        <rdfs:label xml:lang="en">has top ten couples</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#hasTopTenTriples -->
+
+
+    <owl:DatatypeProperty rdf:about="https://popwords.github.io/asap.owl#hasTopTenTriples">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#TopWord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">It refers to the ten most recurrent triples of words of a speech act</rdfs:comment>
+        <rdfs:label xml:lang="en">has top ten triples</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#hasTopTenWords -->
+
+
+    <owl:DatatypeProperty rdf:about="https://popwords.github.io/asap.owl#hasTopTenWords">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#TopWord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">It refers to the ten most recurrent words of a speech act</rdfs:comment>
+        <rdfs:label xml:lang="en">has top ten words</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#textualReference -->
+
+
+    <owl:DatatypeProperty rdf:about="https://popwords.github.io/asap.owl#textualReference">
+        <rdfs:domain rdf:resource="https://popwords.github.io/asap.owl#RhetoricalFigure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates a concept to a text that includes its textual string reference</rdfs:comment>
+        <rdfs:label xml:lang="en">has textual embodiment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/City -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/City">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/PopultedPlace"/>
+        <rdfs:comment xml:lang="en">large and permanent human settlement.</rdfs:comment>
+        <rdfs:isDefinedBy>http://dbpedia.org/ontology/City</rdfs:isDefinedBy>
+        <rdfs:label>City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Country">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/PopultedPlace"/>
+        <rdfs:comment xml:lang="en">It refers to a region that is identified as a distinct national entity in political geography</rdfs:comment>
+        <rdfs:isDefinedBy>http://dbpedia.org/ontology/Country</rdfs:isDefinedBy>
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Place -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Place">
+        <rdfs:comment xml:lang="en">Immobile things or locations</rdfs:comment>
+        <rdfs:isDefinedBy>http://dbpedia.org/ontology/Place</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PoliticalParty -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PoliticalParty">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/spec/#term_Organization"/>
+        <rdfs:comment xml:lang="en">group of people who come together to contest elections and hold power in the government. The party agrees on some proposed policies and programmes, with a view to promoting the collective good or furthering their supporters&apos; interests.</rdfs:comment>
+        <rdfs:isDefinedBy>http://dbpedia.org/ontology/PoliticalParty</rdfs:isDefinedBy>
+        <rdfs:label>Political Party</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Politician -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Politician">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Person"/>
+        <rdfs:comment>A political figure</rdfs:comment>
+        <rdfs:isDefinedBy>http://dbpedia.org/ontology/Politician</rdfs:isDefinedBy>
+        <rdfs:label>Politician</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/PopultedPlace -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/PopultedPlace">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:comment xml:lang="en">place or area with clustered or scattered buildings and a permanent human population (city, settlement, town, or village) referenced with geographic coordinates</rdfs:comment>
+        <rdfs:isDefinedBy>http://dbpedia.org/ontology/PopultedPlace</rdfs:isDefinedBy>
+        <rdfs:label>Populated Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/VicePrimeMinister -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/VicePrimeMinister">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+        <rdfs:comment xml:lang="en">It refers to a government minister who can take the position of acting prime minister when the prime minister is temporarily absent</rdfs:comment>
+        <rdfs:isDefinedBy>http://dbpedia.org/ontology/VicePrimeMinister</rdfs:isDefinedBy>
+        <rdfs:label>Vice Prime Minister</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://live.dbpedia.org/ontology/President -->
+
+
+    <owl:Class rdf:about="http://live.dbpedia.org/ontology/President">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+        <rdfs:comment xml:lang="en">Leader of a country or a division or part of a country, typically a republic, a democracy, or a dictatorship.</rdfs:comment>
+        <rdfs:isDefinedBy>http://live.dbpedia.org/ontology/President</rdfs:isDefinedBy>
+        <rdfs:label>President</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://live.dbpedia.org/ontology/PrimeMinister -->
+
+
+    <owl:Class rdf:about="http://live.dbpedia.org/ontology/PrimeMinister">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Politician"/>
+        <rdfs:comment xml:lang="en">Head of an elected government; the principle minister of a sovereign or a state</rdfs:comment>
+        <rdfs:isDefinedBy>http://live.dbpedia.org/ontology/PrimeMinister</rdfs:isDefinedBy>
+        <rdfs:label>Prime Minister</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Agent">
+        <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+        <rdfs:comment xml:lang="en">A resource that acts or has the power to act</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/dc/terms/Agent</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#Concept -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Concept">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">An abstract idea or notion</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/vocab/frbr/core#Concept</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#Expression -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Expression">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A realization of a single work usually in a physical form.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://purl.org/vocab/frbr/core#Expression</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#Person -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Person">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:comment xml:lang="en">A living or dead individual</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.org/vocab/frbr/core#Person</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval">
+        <rdfs:comment xml:lang="en">It refers to any Region in a dimensional space that aims at representing time. It should be used when you want to talk about time as an object having some characteristics.</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Time Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/spec/#term_Document -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/spec/#term_Document">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+        <rdfs:comment xml:lang="en">The Document class represents those things which are, broadly conceived, &apos;documents&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_Document</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/spec/#term_Organization -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/spec/#term_Organization">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:comment>A kind of Agent corresponding to social instititutions such as companies, societies etc.</rdfs:comment>
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_Organization</rdfs:isDefinedBy>
+        <rdfs:label>Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#FoulLanguage -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#FoulLanguage">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#RhetoricalFigure"/>
+        <rdfs:comment xml:lang="en">Foul language refers to when a speech or other language is offensive, rude, or shocking</rdfs:comment>
+        <rdfs:label xml:lang="en">Foul Language</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://popwords.github.io/asap.owl#FoulLanguage"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Foul language refers to when a speech or other language is offensive, rude, or shocking</owl:annotatedTarget>
+        <rdfs:isDefinedBy>https://dictionary.cambridge.org/dictionary/english/foul</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#Illeism -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#Illeism">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#RhetoricalFigure"/>
+        <rdfs:comment xml:lang="en">Illeism refers to the practice of referring to oneself in the third person</rdfs:comment>
+        <rdfs:label xml:lang="en">Illeism</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://popwords.github.io/asap.owl#Illeism"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Illeism refers to the practice of referring to oneself in the third person</owl:annotatedTarget>
+        <rdfs:isDefinedBy>https://en.wiktionary.org/wiki/illeism</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#InauguralSpeech -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#InauguralSpeech">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:comment xml:lang="en">It refers to the speech given during the inuguration of an elected leader, informing the people of their intention as a leader</rdfs:comment>
+        <rdfs:label xml:lang="en">Inaugural Speech</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#LexicalComplexity -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#LexicalComplexity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Concept"/>
+        <rdfs:comment xml:lang="en">It refers to the lexical space occupied by a speech act</rdfs:comment>
+        <rdfs:label xml:lang="en">Lexical Complexity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#Metaphor -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#Metaphor">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#RhetoricalFigure"/>
+        <rdfs:comment xml:lang="en">Metaphor refers to an expression that describes a person or object by referring to something that is considered to have similar characteristics to that person or object</rdfs:comment>
+        <rdfs:label xml:lang="en">Metaphor</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://popwords.github.io/asap.owl#Metaphor"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Metaphor refers to an expression that describes a person or object by referring to something that is considered to have similar characteristics to that person or object</owl:annotatedTarget>
+        <rdfs:isDefinedBy>https://dictionary.cambridge.org/dictionary/english/metaphor</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#NegativeNickname -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#NegativeNickname">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#RhetoricalFigure"/>
+        <rdfs:comment xml:lang="en">Negative Nickname refers to an informal name for someone or something, usually based on your real name or your character, used to defame a political opponent</rdfs:comment>
+        <rdfs:label xml:lang="en">Negative Nicknames</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://popwords.github.io/asap.owl#NegativeNickname"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Negative Nickname refers to an informal name for someone or something, usually based on your real name or your character, used to defame a political opponent</owl:annotatedTarget>
+        <rdfs:seeAlso>https://www.researchgate.net/publication/325134882_Populism_and_Informal_Fallacies_An_Analysis_of_Right-Wing_Populist_Rhetoric_in_Election_Campaigns</rdfs:seeAlso>
+    </owl:Axiom>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#Opposition -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#Opposition">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#RhetoricalFigure"/>
+        <rdfs:comment xml:lang="en">Opposition refers to the &quot;black and white rhetoric&quot;, that creates and opposes two polarities
+
+e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’’ and the ‘‘evil elite’’</rdfs:comment>
+        <rdfs:label xml:lang="en">Opposition</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://popwords.github.io/asap.owl#Opposition"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Opposition refers to the &quot;black and white rhetoric&quot;, that creates and opposes two polarities
+
+e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’’ and the ‘‘evil elite’’</owl:annotatedTarget>
+        <rdfs:isDefinedBy>https://www.researchgate.net/publication/325134882_Populism_and_Informal_Fallacies_An_Analysis_of_Right-Wing_Populist_Rhetoric_in_Election_Campaigns</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#Paradox -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#Paradox">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#RhetoricalFigure"/>
+        <rdfs:comment xml:lang="en">Paradox refers to a situation or statement that seems impossible or is difficult to understand because it contains two opposite facts or characteristics</rdfs:comment>
+        <rdfs:label xml:lang="en">Paradox</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://popwords.github.io/asap.owl#Paradox"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Paradox refers to a situation or statement that seems impossible or is difficult to understand because it contains two opposite facts or characteristics</owl:annotatedTarget>
+        <rdfs:isDefinedBy>https://dictionary.cambridge.org/dictionary/english/paradox</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#Personification -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#Personification">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#RhetoricalFigure"/>
+        <rdfs:comment xml:lang="en">Personification refers to the act of giving a human quality or characteristic to something which is not human</rdfs:comment>
+        <rdfs:label xml:lang="en">Personification</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://popwords.github.io/asap.owl#Personification"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Personification refers to the act of giving a human quality or characteristic to something which is not human</owl:annotatedTarget>
+        <rdfs:isDefinedBy>https://dictionary.cambridge.org/dictionary/english/personification</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#Polarity -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#Polarity">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#Sentiment"/>
+        <rdfs:comment xml:lang="en">Polarity refers to the value</rdfs:comment>
+        <rdfs:label xml:lang="en">Polarity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#PoliticalRoleInTime -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#PoliticalRoleInTime">
+        <rdfs:comment xml:lang="en">It represents the (reified) relationship between the agent holding a role and the role itself, within the boundaries of a particular timeinterval and applicable context for that role</rdfs:comment>
+        <rdfs:label xml:lang="en">Political Role In Time</rdfs:label>
+        <rdfs:seeAlso>http://www.essepuntato.it/2013/10/politicalroles#PoliticalRoleInTime</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#PressConference -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#PressConference">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:comment xml:lang="en">It refers to a meeting at which a person or organization makes a public statement and reporters can ask questions</rdfs:comment>
+        <rdfs:label xml:lang="en">Press Conference</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://popwords.github.io/asap.owl#PressConference"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">It refers to a meeting at which a person or organization makes a public statement and reporters can ask questions</owl:annotatedTarget>
+        <rdfs:isDefinedBy>https://dictionary.cambridge.org/dictionary/english/press-conference</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#Quotation -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#Quotation">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#RethoricalQuestion"/>
+        <rdfs:comment xml:lang="en">Quotation refers to a phrase or short piece of writing taken from a longer work of literature, poetry, etc. or what someone else has said</rdfs:comment>
+        <rdfs:label xml:lang="en">Quotation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://popwords.github.io/asap.owl#Quotation"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Quotation refers to a phrase or short piece of writing taken from a longer work of literature, poetry, etc. or what someone else has said</owl:annotatedTarget>
+        <rdfs:isDefinedBy>https://dictionary.cambridge.org/dictionary/english/quotation</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#RethoricalQuestion -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#RethoricalQuestion">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#RhetoricalFigure"/>
+        <rdfs:comment xml:lang="en">Rhetorical question refers to a question, asked in order to make a statement, that does not expect an answer</rdfs:comment>
+        <rdfs:label xml:lang="en">Rethorical Question</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://popwords.github.io/asap.owl#RethoricalQuestion"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Rhetorical question refers to a question, asked in order to make a statement, that does not expect an answer</owl:annotatedTarget>
+        <rdfs:isDefinedBy>https://dictionary.cambridge.org/dictionary/english/rhetorical-question</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#RhetoricalFigure -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#RhetoricalFigure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Concept"/>
+        <rdfs:comment xml:lang="en">The class of some common tropes in political speech acts</rdfs:comment>
+        <rdfs:label xml:lang="en">Rhetorical Figure</rdfs:label>
+        <rdfs:seeAlso>https://www.researchgate.net/publication/220961451_Toward_an_ontology_of_rhetorical_figures</rdfs:seeAlso>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://popwords.github.io/asap.owl#RhetoricalFigure"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+        <owl:annotatedTarget>https://www.researchgate.net/publication/220961451_Toward_an_ontology_of_rhetorical_figures</owl:annotatedTarget>
+        <rdfs:seeAlso>DOI: 10.1145/1878450.1878471</rdfs:seeAlso>
+    </owl:Axiom>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#Sentiment -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#Sentiment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Concept"/>
+        <rdfs:comment xml:lang="en">The values connected to the outcome from sentiment analysis</rdfs:comment>
+        <rdfs:label xml:lang="en">Sentiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#Simile -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#Simile">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#RhetoricalFigure"/>
+        <rdfs:comment xml:lang="en">Simile refers to the use of an expression comparing one thing with another, always including the words &quot;as&quot; or &quot;like&quot;</rdfs:comment>
+        <rdfs:label xml:lang="en">Simile</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://popwords.github.io/asap.owl#Simile"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">Simile refers to the use of an expression comparing one thing with another, always including the words &quot;as&quot; or &quot;like&quot;</owl:annotatedTarget>
+        <rdfs:isDefinedBy>https://dictionary.cambridge.org/dictionary/english/simile</rdfs:isDefinedBy>
+    </owl:Axiom>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#SpeechAct -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#SpeechAct">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+        <rdfs:comment xml:lang="en">an utterance considered as an action, particularly with regard to its intention, purpose, or effect.</rdfs:comment>
+        <rdfs:label xml:lang="en">Speech Act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#Subjectivity -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#Subjectivity">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#Sentiment"/>
+        <rdfs:comment xml:lang="en">Subjectivity refers to the value</rdfs:comment>
+        <rdfs:label xml:lang="en">Subjectivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#TopWord -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#TopWord">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Concept"/>
+        <rdfs:comment xml:lang="en">Refers to the most recurrent words present in a speech act</rdfs:comment>
+        <rdfs:label xml:lang="en">Top Word</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#Topic -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#Topic">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Concept"/>
+        <rdfs:comment xml:lang="en">Topic refers to the retrieved topic of a single speech act</rdfs:comment>
+        <rdfs:label xml:lang="en">Topic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://popwords.github.io/asap.owl#Tweet -->
+
+
+    <owl:Class rdf:about="https://popwords.github.io/asap.owl#Tweet">
+        <rdfs:subClassOf rdf:resource="https://popwords.github.io/asap.owl#SpeechAct"/>
+        <rdfs:comment xml:lang="en">a short remark or piece of information published on Twitter</rdfs:comment>
+        <rdfs:label xml:lang="en">Tweet</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://popwords.github.io/asap.owl#Tweet"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">a short remark or piece of information published on Twitter</owl:annotatedTarget>
+        <rdfs:isDefinedBy>https://dictionary.cambridge.org/dictionary/english/tweet</rdfs:isDefinedBy>
+    </owl:Axiom>
+    <rdf:Description>
+        <rdfs:seeAlso>https://dictionary.cambridge.org/dictionary/english/simile</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:seeAlso>https://dictionary.cambridge.org/dictionary/english/simile</rdfs:seeAlso>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+

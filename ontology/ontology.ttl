@@ -1,0 +1,631 @@
+@prefix : <https://popwords.github.io/asap.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://popwords.github.io/asap.owl> .
+
+<https://popwords.github.io/asap.owl> rdf:type owl:Ontology ;
+                                       owl:versionIRI <https://popwords.github.io/asap.owl> ;
+                                       <http://purl.org/dc/elements/1.1/creator> "Andrea Poltronieri"@en ,
+                                                                                 "Delfina Sol Pandiani"@en ,
+                                                                                 "Maria Chiara Frangipane"@en ;
+                                       <http://purl.org/dc/terms/title> "ASAP Ontology - Analyze Speech Acts by Politicians"@en ;
+                                       <http://purl.org/vocab/frbr/core#Rights> "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."@en ;
+                                       rdfs:comment "Ontology (ASAP) is a rhetorics based ontology that expresses in a formal way the rhetorical discourse behind politician's speech acts."@en ;
+                                       owl:versionInfo "1.0.0"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/frbr/core#Rights
+<http://purl.org/vocab/frbr/core#Rights> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/spar/pro/holdsRoleInTime
+<http://purl.org/spar/pro/holdsRoleInTime> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://purl.org/dc/terms/Agent> ;
+                                           rdfs:range :PoliticalRoleInTime ;
+                                           rdfs:comment "A property relating an agent to a role that the agent holds."@en ;
+                                           rdfs:isDefinedBy "http://purl.org/spar/pro/holdsRoleInTime" ;
+                                           rdfs:label "holds role in time" .
+
+
+###  http://purl.org/spar/pro/relatesToDocument
+<http://purl.org/spar/pro/relatesToDocument> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain :SpeechAct ;
+                                             rdfs:range <http://xmlns.com/foaf/spec/#term_Document> ;
+                                             rdfs:comment "It relates the Speech Act with the document in which it is contained the transcription"@en ;
+                                             rdfs:isDefinedBy "http://purl.org/spar/pro/relatesToDocument"@en ;
+                                             rdfs:label "relates to doc"@en .
+
+
+###  http://purl.org/spar/pro/relatesToOrganization
+<http://purl.org/spar/pro/relatesToOrganization> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain :PoliticalRoleInTime ;
+                                                 rdfs:range <http://xmlns.com/foaf/spec/#term_Organization> ;
+                                                 rdfs:comment "It relates the Political Role to a certain political organization"@en ;
+                                                 rdfs:isDefinedBy "http://purl.org/spar/pro/relatesToOrganization" ;
+                                                 rdfs:label "relates to organization"@en .
+
+
+###  https://popwords.github.io/asap.owl#deliveredAt
+:deliveredAt rdf:type owl:ObjectProperty ;
+             rdfs:domain :SpeechAct ;
+             rdfs:range <http://dbpedia.org/ontology/Place> ;
+             rdfs:comment "It relates the Speech Act with the place of deliverance"@en ;
+             rdfs:label "delivered at"@en .
+
+
+###  https://popwords.github.io/asap.owl#deliveredBy
+:deliveredBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :SpeechAct ;
+             rdfs:range <http://purl.org/dc/terms/Agent> ;
+             rdfs:comment "It relates the Speech Act with its Agent"@en ;
+             rdfs:label "delivered by"@en .
+
+
+###  https://popwords.github.io/asap.owl#deliveredWhen
+:deliveredWhen rdf:type owl:ObjectProperty ;
+               rdfs:domain :SpeechAct ;
+               rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+               rdfs:comment "It relates the Speech Act with the interval of time it has been delivered"@en ;
+               rdfs:label "delivered when"@en .
+
+
+###  https://popwords.github.io/asap.owl#hasLexicalComplexity
+:hasLexicalComplexity rdf:type owl:ObjectProperty ;
+                      rdfs:domain :SpeechAct ;
+                      rdfs:range :LexicalComplexity ;
+                      rdfs:comment "It relates a speech act with its lexical complexity"@en ;
+                      rdfs:label "has lexical complexity"@en .
+
+
+###  https://popwords.github.io/asap.owl#hasRhetoricalFigure
+:hasRhetoricalFigure rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :isEmployedIn ;
+                     rdfs:domain :SpeechAct ;
+                     rdfs:range :RhetoricalFigure ;
+                     rdfs:comment "This property relates a literary text that contains a rhetorical figure."@en ;
+                     rdfs:label "has rhetorical figure"@en .
+
+
+###  https://popwords.github.io/asap.owl#hasSentiment
+:hasSentiment rdf:type owl:ObjectProperty ;
+              rdfs:domain :SpeechAct ;
+              rdfs:range :Sentiment ;
+              rdfs:comment "It relates the sentiment value with its speech act"@en ;
+              rdfs:label "has sentiment"@en .
+
+
+###  https://popwords.github.io/asap.owl#hasSubjectivity
+:hasSubjectivity rdf:type owl:ObjectProperty ;
+                 rdfs:domain :SpeechAct ;
+                 rdfs:range :Subjectivity ;
+                 rdfs:comment "It relates the speech act to che subjectivity of the text"@en ;
+                 rdfs:label "has subjectivity"@en .
+
+
+###  https://popwords.github.io/asap.owl#hasTopWord
+:hasTopWord rdf:type owl:ObjectProperty ;
+            rdfs:domain :SpeechAct ;
+            rdfs:range :TopWord ;
+            rdfs:comment "It relates a speech act with its top words"@en ;
+            rdfs:label "has top word"@en .
+
+
+###  https://popwords.github.io/asap.owl#hasTopic
+:hasTopic rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isPresentIn ;
+          rdfs:domain :SpeechAct ;
+          rdfs:range :Topic ;
+          rdfs:comment "It relates a speech act with its topic"@en ;
+          rdfs:label "has topic"@en .
+
+
+###  https://popwords.github.io/asap.owl#isEmployedIn
+:isEmployedIn rdf:type owl:ObjectProperty ;
+              rdfs:domain :RhetoricalFigure ;
+              rdfs:range :SpeechAct ;
+              rdfs:comment "This property relates a rhetorical figure with a particular speech act in which it is present."@en ;
+              rdfs:label "is employed in"@en .
+
+
+###  https://popwords.github.io/asap.owl#isPresentIn
+:isPresentIn rdf:type owl:ObjectProperty ;
+             rdfs:domain :Topic ;
+             rdfs:range :SpeechAct ;
+             rdfs:comment "It relates a topic to the speech act in which it is present"@en ;
+             rdfs:label "is present in"@en .
+
+
+###  https://popwords.github.io/asap.owl#relatesToSpeechAct
+:relatesToSpeechAct rdf:type owl:ObjectProperty ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( <http://purl.org/dc/terms/Agent>
+                                                <http://xmlns.com/foaf/spec/#term_Document>
+                                                :PoliticalRoleInTime
+                                              )
+                                ] ;
+                    rdfs:range :SpeechAct ;
+                    rdfs:comment "It relates some important entities (Agent, Document, Political Role In Time) to the speech act itself"@en ;
+                    rdfs:label "relates to speech act"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://popwords.github.io/asap.owl#hasDaleChallScore
+:hasDaleChallScore rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :LexicalComplexity ;
+                   rdfs:range xsd:decimal ;
+                   rdfs:comment "It relates the speech act to the decimal value of the Dale Chall readability formula"@en ;
+                   rdfs:label "has Dale Chall score"@en .
+
+
+###  https://popwords.github.io/asap.owl#hasNumberOfUniqueWords
+:hasNumberOfUniqueWords rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :LexicalComplexity ;
+                        rdfs:range xsd:integer ;
+                        rdfs:comment "It refers to the number of unique words present in a speech act"@en ;
+                        rdfs:label "has number of unique words"@en .
+
+
+###  https://popwords.github.io/asap.owl#hasPolarityValue
+:hasPolarityValue rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Polarity ;
+                  rdfs:range xsd:decimal ;
+                  rdfs:comment "Refers to the decimal value of the polarity related to a specific speech act"@en ;
+                  rdfs:label "has polarity value"@en .
+
+
+###  https://popwords.github.io/asap.owl#hasRepresentativeWords
+:hasRepresentativeWords rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Topic ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "The words able to describe the semantic space of a toic"@en ;
+                        rdfs:label "has representative words"@en .
+
+
+###  https://popwords.github.io/asap.owl#hasSubjectivityValue
+:hasSubjectivityValue rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Subjectivity ;
+                      rdfs:range xsd:decimal ;
+                      rdfs:comment "Refers to the decimal value of the subjectivity related to a specific speech act"@en ;
+                      rdfs:label "has subjectivity value"@en .
+
+
+###  https://popwords.github.io/asap.owl#hasTopTenCouples
+:hasTopTenCouples rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TopWord ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "It refers to the ten most recurrent couples of words of a speech act"@en ;
+                  rdfs:label "has top ten couples"@en .
+
+
+###  https://popwords.github.io/asap.owl#hasTopTenTriples
+:hasTopTenTriples rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TopWord ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "It refers to the ten most recurrent triples of words of a speech act"@en ;
+                  rdfs:label "has top ten triples"@en .
+
+
+###  https://popwords.github.io/asap.owl#hasTopTenWords
+:hasTopTenWords rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TopWord ;
+                rdfs:range xsd:string ;
+                rdfs:comment "It refers to the ten most recurrent words of a speech act"@en ;
+                rdfs:label "has top ten words"@en .
+
+
+###  https://popwords.github.io/asap.owl#textualReference
+:textualReference rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :RhetoricalFigure ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Relates a concept to a text that includes its textual string reference"@en ;
+                  rdfs:label "has textual embodiment"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/City
+<http://dbpedia.org/ontology/City> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://dbpedia.org/ontology/PopultedPlace> ;
+                                   rdfs:comment "large and permanent human settlement."@en ;
+                                   rdfs:isDefinedBy "http://dbpedia.org/ontology/City" ;
+                                   rdfs:label "City" .
+
+
+###  http://dbpedia.org/ontology/Country
+<http://dbpedia.org/ontology/Country> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://dbpedia.org/ontology/PopultedPlace> ;
+                                      rdfs:comment "It refers to a region that is identified as a distinct national entity in political geography"@en ;
+                                      rdfs:isDefinedBy "http://dbpedia.org/ontology/Country" ;
+                                      rdfs:label "Country" .
+
+
+###  http://dbpedia.org/ontology/Place
+<http://dbpedia.org/ontology/Place> rdf:type owl:Class ;
+                                    rdfs:comment "Immobile things or locations"@en ;
+                                    rdfs:isDefinedBy "http://dbpedia.org/ontology/Place" ;
+                                    rdfs:label "Place"@en .
+
+
+###  http://dbpedia.org/ontology/PoliticalParty
+<http://dbpedia.org/ontology/PoliticalParty> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://xmlns.com/foaf/spec/#term_Organization> ;
+                                             rdfs:comment "group of people who come together to contest elections and hold power in the government. The party agrees on some proposed policies and programmes, with a view to promoting the collective good or furthering their supporters' interests."@en ;
+                                             rdfs:isDefinedBy "http://dbpedia.org/ontology/PoliticalParty" ;
+                                             rdfs:label "Political Party" .
+
+
+###  http://dbpedia.org/ontology/Politician
+<http://dbpedia.org/ontology/Politician> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.org/vocab/frbr/core#Person> ;
+                                         rdfs:comment "A political figure" ;
+                                         rdfs:isDefinedBy "http://dbpedia.org/ontology/Politician" ;
+                                         rdfs:label "Politician" .
+
+
+###  http://dbpedia.org/ontology/PopultedPlace
+<http://dbpedia.org/ontology/PopultedPlace> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://dbpedia.org/ontology/Place> ;
+                                            rdfs:comment "place or area with clustered or scattered buildings and a permanent human population (city, settlement, town, or village) referenced with geographic coordinates"@en ;
+                                            rdfs:isDefinedBy "http://dbpedia.org/ontology/PopultedPlace" ;
+                                            rdfs:label "Populated Place" .
+
+
+###  http://dbpedia.org/ontology/VicePrimeMinister
+<http://dbpedia.org/ontology/VicePrimeMinister> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://dbpedia.org/ontology/Politician> ;
+                                                rdfs:comment "It refers to a government minister who can take the position of acting prime minister when the prime minister is temporarily absent"@en ;
+                                                rdfs:isDefinedBy "http://dbpedia.org/ontology/VicePrimeMinister" ;
+                                                rdfs:label "Vice Prime Minister" .
+
+
+###  http://live.dbpedia.org/ontology/President
+<http://live.dbpedia.org/ontology/President> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://dbpedia.org/ontology/Politician> ;
+                                             rdfs:comment "Leader of a country or a division or part of a country, typically a republic, a democracy, or a dictatorship."@en ;
+                                             rdfs:isDefinedBy "http://live.dbpedia.org/ontology/President" ;
+                                             rdfs:label "President" .
+
+
+###  http://live.dbpedia.org/ontology/PrimeMinister
+<http://live.dbpedia.org/ontology/PrimeMinister> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://dbpedia.org/ontology/Politician> ;
+                                                 rdfs:comment "Head of an elected government; the principle minister of a sovereign or a state"@en ;
+                                                 rdfs:isDefinedBy "http://live.dbpedia.org/ontology/PrimeMinister" ;
+                                                 rdfs:label "Prime Minister" .
+
+
+###  http://purl.org/dc/terms/Agent
+<http://purl.org/dc/terms/Agent> rdf:type owl:Class ;
+                                 owl:disjointWith <http://purl.org/vocab/frbr/core#Expression> ;
+                                 rdfs:comment "A resource that acts or has the power to act"@en ;
+                                 rdfs:isDefinedBy "http://purl.org/dc/terms/Agent" ;
+                                 rdfs:label "Agent"@en .
+
+
+###  http://purl.org/vocab/frbr/core#Concept
+<http://purl.org/vocab/frbr/core#Concept> rdf:type owl:Class ;
+                                          rdfs:subClassOf owl:Thing ;
+                                          rdfs:comment "An abstract idea or notion"@en ;
+                                          rdfs:isDefinedBy "http://purl.org/vocab/frbr/core#Concept" ;
+                                          rdfs:label "Concept"@en .
+
+
+###  http://purl.org/vocab/frbr/core#Expression
+<http://purl.org/vocab/frbr/core#Expression> rdf:type owl:Class ;
+                                             rdfs:subClassOf owl:Thing ;
+                                             rdfs:comment "A realization of a single work usually in a physical form."@en ;
+                                             rdfs:isDefinedBy "http://purl.org/vocab/frbr/core#Expression"@en ;
+                                             rdfs:label "Expression"@en .
+
+
+###  http://purl.org/vocab/frbr/core#Person
+<http://purl.org/vocab/frbr/core#Person> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.org/dc/terms/Agent> ;
+                                         rdfs:comment "A living or dead individual"@en ;
+                                         rdfs:isDefinedBy "http://purl.org/vocab/frbr/core#Person" ;
+                                         rdfs:label "Person"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> rdf:type owl:Class ;
+                                                                             rdfs:comment "It refers to any Region in a dimensional space that aims at representing time. It should be used when you want to talk about time as an object having some characteristics."@en ;
+                                                                             rdfs:isDefinedBy "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval" ;
+                                                                             rdfs:label "Time Interval"@en .
+
+
+###  http://xmlns.com/foaf/spec/#term_Document
+<http://xmlns.com/foaf/spec/#term_Document> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.org/vocab/frbr/core#Expression> ;
+                                            rdfs:comment "The Document class represents those things which are, broadly conceived, 'documents'."@en ;
+                                            rdfs:isDefinedBy "http://xmlns.com/foaf/spec/#term_Document" ;
+                                            rdfs:label "Document"@en .
+
+
+###  http://xmlns.com/foaf/spec/#term_Organization
+<http://xmlns.com/foaf/spec/#term_Organization> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.org/dc/terms/Agent> ;
+                                                rdfs:comment "A kind of Agent corresponding to social instititutions such as companies, societies etc." ;
+                                                rdfs:isDefinedBy "http://xmlns.com/foaf/spec/#term_Organization" ;
+                                                rdfs:label "Organization" .
+
+
+###  https://popwords.github.io/asap.owl#FoulLanguage
+:FoulLanguage rdf:type owl:Class ;
+              rdfs:subClassOf :RhetoricalFigure ;
+              rdfs:comment "Foul language refers to when a speech or other language is offensive, rude, or shocking"@en ;
+              rdfs:label "Foul Language"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :FoulLanguage ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Foul language refers to when a speech or other language is offensive, rude, or shocking"@en ;
+   rdfs:isDefinedBy "https://dictionary.cambridge.org/dictionary/english/foul"
+ ] .
+
+
+###  https://popwords.github.io/asap.owl#Illeism
+:Illeism rdf:type owl:Class ;
+         rdfs:subClassOf :RhetoricalFigure ;
+         rdfs:comment "Illeism refers to the practice of referring to oneself in the third person"@en ;
+         rdfs:label "Illeism"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Illeism ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Illeism refers to the practice of referring to oneself in the third person"@en ;
+   rdfs:isDefinedBy "https://en.wiktionary.org/wiki/illeism"
+ ] .
+
+
+###  https://popwords.github.io/asap.owl#InauguralSpeech
+:InauguralSpeech rdf:type owl:Class ;
+                 rdfs:subClassOf :SpeechAct ;
+                 rdfs:comment "It refers to the speech given during the inuguration of an elected leader, informing the people of their intention as a leader"@en ;
+                 rdfs:label "Inaugural Speech"@en .
+
+
+###  https://popwords.github.io/asap.owl#LexicalComplexity
+:LexicalComplexity rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.org/vocab/frbr/core#Concept> ;
+                   rdfs:comment "It refers to the lexical space occupied by a speech act"@en ;
+                   rdfs:label "Lexical Complexity"@en .
+
+
+###  https://popwords.github.io/asap.owl#Metaphor
+:Metaphor rdf:type owl:Class ;
+          rdfs:subClassOf :RhetoricalFigure ;
+          rdfs:comment "Metaphor refers to an expression that describes a person or object by referring to something that is considered to have similar characteristics to that person or object"@en ;
+          rdfs:label "Metaphor"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Metaphor ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Metaphor refers to an expression that describes a person or object by referring to something that is considered to have similar characteristics to that person or object"@en ;
+   rdfs:isDefinedBy "https://dictionary.cambridge.org/dictionary/english/metaphor"
+ ] .
+
+
+###  https://popwords.github.io/asap.owl#NegativeNickname
+:NegativeNickname rdf:type owl:Class ;
+                  rdfs:subClassOf :RhetoricalFigure ;
+                  rdfs:comment "Negative Nickname refers to an informal name for someone or something, usually based on your real name or your character, used to defame a political opponent"@en ;
+                  rdfs:label "Negative Nicknames"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :NegativeNickname ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Negative Nickname refers to an informal name for someone or something, usually based on your real name or your character, used to defame a political opponent"@en ;
+   rdfs:seeAlso "https://www.researchgate.net/publication/325134882_Populism_and_Informal_Fallacies_An_Analysis_of_Right-Wing_Populist_Rhetoric_in_Election_Campaigns"
+ ] .
+
+
+###  https://popwords.github.io/asap.owl#Opposition
+:Opposition rdf:type owl:Class ;
+            rdfs:subClassOf :RhetoricalFigure ;
+            rdfs:comment """Opposition refers to the \"black and white rhetoric\", that creates and opposes two polarities
+
+e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’’ and the ‘‘evil elite’’"""@en ;
+            rdfs:label "Opposition"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Opposition ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget """Opposition refers to the \"black and white rhetoric\", that creates and opposes two polarities
+
+e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’’ and the ‘‘evil elite’’"""@en ;
+   rdfs:isDefinedBy "https://www.researchgate.net/publication/325134882_Populism_and_Informal_Fallacies_An_Analysis_of_Right-Wing_Populist_Rhetoric_in_Election_Campaigns"
+ ] .
+
+
+###  https://popwords.github.io/asap.owl#Paradox
+:Paradox rdf:type owl:Class ;
+         rdfs:subClassOf :RhetoricalFigure ;
+         rdfs:comment "Paradox refers to a situation or statement that seems impossible or is difficult to understand because it contains two opposite facts or characteristics"@en ;
+         rdfs:label "Paradox"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Paradox ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Paradox refers to a situation or statement that seems impossible or is difficult to understand because it contains two opposite facts or characteristics"@en ;
+   rdfs:isDefinedBy "https://dictionary.cambridge.org/dictionary/english/paradox"
+ ] .
+
+
+###  https://popwords.github.io/asap.owl#Personification
+:Personification rdf:type owl:Class ;
+                 rdfs:subClassOf :RhetoricalFigure ;
+                 rdfs:comment "Personification refers to the act of giving a human quality or characteristic to something which is not human"@en ;
+                 rdfs:label "Personification"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Personification ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Personification refers to the act of giving a human quality or characteristic to something which is not human"@en ;
+   rdfs:isDefinedBy "https://dictionary.cambridge.org/dictionary/english/personification"
+ ] .
+
+
+###  https://popwords.github.io/asap.owl#Polarity
+:Polarity rdf:type owl:Class ;
+          rdfs:subClassOf :Sentiment ;
+          rdfs:comment "Polarity refers to the value"@en ;
+          rdfs:label "Polarity"@en .
+
+
+###  https://popwords.github.io/asap.owl#PoliticalRoleInTime
+:PoliticalRoleInTime rdf:type owl:Class ;
+                     rdfs:comment "It represents the (reified) relationship between the agent holding a role and the role itself, within the boundaries of a particular timeinterval and applicable context for that role"@en ;
+                     rdfs:label "Political Role In Time"@en ;
+                     rdfs:seeAlso "http://www.essepuntato.it/2013/10/politicalroles#PoliticalRoleInTime" .
+
+
+###  https://popwords.github.io/asap.owl#PressConference
+:PressConference rdf:type owl:Class ;
+                 rdfs:subClassOf :SpeechAct ;
+                 rdfs:comment "It refers to a meeting at which a person or organization makes a public statement and reporters can ask questions"@en ;
+                 rdfs:label "Press Conference"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :PressConference ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "It refers to a meeting at which a person or organization makes a public statement and reporters can ask questions"@en ;
+   rdfs:isDefinedBy "https://dictionary.cambridge.org/dictionary/english/press-conference"
+ ] .
+
+
+###  https://popwords.github.io/asap.owl#Quotation
+:Quotation rdf:type owl:Class ;
+           rdfs:subClassOf :RethoricalQuestion ;
+           rdfs:comment "Quotation refers to a phrase or short piece of writing taken from a longer work of literature, poetry, etc. or what someone else has said"@en ;
+           rdfs:label "Quotation"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Quotation ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Quotation refers to a phrase or short piece of writing taken from a longer work of literature, poetry, etc. or what someone else has said"@en ;
+   rdfs:isDefinedBy "https://dictionary.cambridge.org/dictionary/english/quotation"
+ ] .
+
+
+###  https://popwords.github.io/asap.owl#RethoricalQuestion
+:RethoricalQuestion rdf:type owl:Class ;
+                    rdfs:subClassOf :RhetoricalFigure ;
+                    rdfs:comment "Rhetorical question refers to a question, asked in order to make a statement, that does not expect an answer"@en ;
+                    rdfs:label "Rethorical Question"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :RethoricalQuestion ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Rhetorical question refers to a question, asked in order to make a statement, that does not expect an answer"@en ;
+   rdfs:isDefinedBy "https://dictionary.cambridge.org/dictionary/english/rhetorical-question"
+ ] .
+
+
+###  https://popwords.github.io/asap.owl#RhetoricalFigure
+:RhetoricalFigure rdf:type owl:Class ;
+                  rdfs:subClassOf <http://purl.org/vocab/frbr/core#Concept> ;
+                  rdfs:comment "The class of some common tropes in political speech acts"@en ;
+                  rdfs:label "Rhetorical Figure"@en ;
+                  rdfs:seeAlso "https://www.researchgate.net/publication/220961451_Toward_an_ontology_of_rhetorical_figures" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :RhetoricalFigure ;
+   owl:annotatedProperty rdfs:seeAlso ;
+   owl:annotatedTarget "https://www.researchgate.net/publication/220961451_Toward_an_ontology_of_rhetorical_figures" ;
+   rdfs:seeAlso "DOI: 10.1145/1878450.1878471"
+ ] .
+
+
+###  https://popwords.github.io/asap.owl#Sentiment
+:Sentiment rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/vocab/frbr/core#Concept> ;
+           rdfs:comment "The values connected to the outcome from sentiment analysis"@en ;
+           rdfs:label "Sentiment"@en .
+
+
+###  https://popwords.github.io/asap.owl#Simile
+:Simile rdf:type owl:Class ;
+        rdfs:subClassOf :RhetoricalFigure ;
+        rdfs:comment "Simile refers to the use of an expression comparing one thing with another, always including the words \"as\" or \"like\""@en ;
+        rdfs:label "Simile"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Simile ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Simile refers to the use of an expression comparing one thing with another, always including the words \"as\" or \"like\""@en ;
+   rdfs:isDefinedBy "https://dictionary.cambridge.org/dictionary/english/simile"
+ ] .
+
+
+###  https://popwords.github.io/asap.owl#SpeechAct
+:SpeechAct rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/vocab/frbr/core#Expression> ;
+           rdfs:comment "an utterance considered as an action, particularly with regard to its intention, purpose, or effect."@en ;
+           rdfs:label "Speech Act"@en .
+
+
+###  https://popwords.github.io/asap.owl#Subjectivity
+:Subjectivity rdf:type owl:Class ;
+              rdfs:subClassOf :Sentiment ;
+              rdfs:comment "Subjectivity refers to the value"@en ;
+              rdfs:label "Subjectivity"@en .
+
+
+###  https://popwords.github.io/asap.owl#TopWord
+:TopWord rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.org/vocab/frbr/core#Concept> ;
+         rdfs:comment "Refers to the most recurrent words present in a speech act"@en ;
+         rdfs:label "Top Word"@en .
+
+
+###  https://popwords.github.io/asap.owl#Topic
+:Topic rdf:type owl:Class ;
+       rdfs:subClassOf <http://purl.org/vocab/frbr/core#Concept> ;
+       rdfs:comment "Topic refers to the retrieved topic of a single speech act"@en ;
+       rdfs:label "Topic"@en .
+
+
+###  https://popwords.github.io/asap.owl#Tweet
+:Tweet rdf:type owl:Class ;
+       rdfs:subClassOf :SpeechAct ;
+       rdfs:comment "a short remark or piece of information published on Twitter"@en ;
+       rdfs:label "Tweet"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Tweet ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "a short remark or piece of information published on Twitter"@en ;
+   rdfs:isDefinedBy "https://dictionary.cambridge.org/dictionary/english/tweet"
+ ] .
+
+
+[ rdfs:seeAlso "https://dictionary.cambridge.org/dictionary/english/simile"
+] .
+
+[ rdfs:seeAlso "https://dictionary.cambridge.org/dictionary/english/simile"
+ ] .
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

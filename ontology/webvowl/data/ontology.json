@@ -1,0 +1,1728 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/spar/pro", "https://popwords.github.io/asap.owl", "http://live.dbpedia.org/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/spec/", "http://dbpedia.org/ontology", "http://purl.org/vocab/frbr/core" ],
+    "title" : {
+      "en" : "ASAP Ontology - Analyze Speech Acts by Politicians"
+    },
+    "iri" : "https://popwords.github.io/asap.owl",
+    "version" : "1.0.0",
+    "author" : [ "Maria Chiara Frangipane", "Delfina Sol Pandiani", "Andrea Poltronieri" ],
+    "comments" : {
+      "en" : "Ontology (ASAP) is a rhetorics based ontology that expresses in a formal way the rhetorical discourse behind politician's speech acts."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Andrea Poltronieri",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Delfina Sol Pandiani",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Maria Chiara Frangipane",
+        "type" : "label"
+      } ],
+      "Rights" : [ {
+        "identifier" : "Rights",
+        "language" : "en",
+        "value" : "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "ASAP Ontology - Analyze Speech Acts by Politicians",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/vocab/frbr/core#Expression",
+    "baseIri" : "http://purl.org/vocab/frbr/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "http://purl.org/vocab/frbr/core#Expression",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Expression",
+      "en" : "Expression"
+    },
+    "subClasses" : [ "12", "7" ],
+    "comment" : {
+      "en" : "A realization of a single work usually in a physical form."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Politician",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/ontology/Politician",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Politician",
+      "undefined" : "Politician"
+    },
+    "subClasses" : [ "15", "16", "17" ],
+    "comment" : {
+      "undefined" : "A political figure"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#Metaphor",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://dictionary.cambridge.org/dictionary/english/metaphor",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Metaphor",
+      "en" : "Metaphor"
+    },
+    "comment" : {
+      "en" : "Metaphor refers to an expression that describes a person or object by referring to something that is considered to have similar characteristics to that person or object"
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#Quotation",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://dictionary.cambridge.org/dictionary/english/quotation",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Quotation",
+      "en" : "Quotation"
+    },
+    "comment" : {
+      "en" : "Quotation refers to a phrase or short piece of writing taken from a longer work of literature, poetry, etc. or what someone else has said"
+    },
+    "id" : "36",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Country",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/ontology/Country",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Country",
+      "undefined" : "Country"
+    },
+    "comment" : {
+      "en" : "It refers to a region that is identified as a distinct national entity in political geography"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#Sentiment",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sentiment",
+      "en" : "Sentiment"
+    },
+    "subClasses" : [ "34", "32" ],
+    "comment" : {
+      "en" : "The values connected to the outcome from sentiment analysis"
+    },
+    "id" : "10",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#PoliticalRoleInTime",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.essepuntato.it/2013/10/politicalroles#PoliticalRoleInTime",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PoliticalRoleInTime",
+      "en" : "Political Role In Time"
+    },
+    "comment" : {
+      "en" : "It represents the (reified) relationship between the agent holding a role and the role itself, within the boundaries of a particular timeinterval and applicable context for that role"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#NegativeNickname",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/publication/325134882_Populism_and_Informal_Fallacies_An_Analysis_of_Right-Wing_Populist_Rhetoric_in_Election_Campaigns",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NegativeNickname",
+      "en" : "Negative Nicknames"
+    },
+    "comment" : {
+      "en" : "Negative Nickname refers to an informal name for someone or something, usually based on your real name or your character, used to defame a political opponent"
+    },
+    "id" : "57",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/spec/#term_Organization",
+    "baseIri" : "http://xmlns.com/foaf/spec/",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/spec/#term_Organization",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "term_Organization",
+      "undefined" : "Organization"
+    },
+    "subClasses" : [ "25" ],
+    "comment" : {
+      "undefined" : "A kind of Agent corresponding to social instititutions such as companies, societies etc."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.org/vocab/frbr/core#Person",
+    "baseIri" : "http://purl.org/vocab/frbr/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/frbr/core#Person",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Person",
+      "en" : "Person"
+    },
+    "subClasses" : [ "13" ],
+    "comment" : {
+      "en" : "A living or dead individual"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#Paradox",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://dictionary.cambridge.org/dictionary/english/paradox",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Paradox",
+      "en" : "Paradox"
+    },
+    "comment" : {
+      "en" : "Paradox refers to a situation or statement that seems impossible or is difficult to understand because it contains two opposite facts or characteristics"
+    },
+    "id" : "62",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://live.dbpedia.org/ontology/PrimeMinister",
+    "baseIri" : "http://live.dbpedia.org/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://live.dbpedia.org/ontology/PrimeMinister",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PrimeMinister",
+      "undefined" : "Prime Minister"
+    },
+    "comment" : {
+      "en" : "Head of an elected government; the principle minister of a sovereign or a state"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/PoliticalParty",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/ontology/PoliticalParty",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PoliticalParty",
+      "undefined" : "Political Party"
+    },
+    "comment" : {
+      "en" : "group of people who come together to contest elections and hold power in the government. The party agrees on some proposed policies and programmes, with a view to promoting the collective good or furthering their supporters' interests."
+    },
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#RhetoricalFigure",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "DOI: 10.1145/1878450.1878471",
+        "type" : "label"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/publication/220961451_Toward_an_ontology_of_rhetorical_figures",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RhetoricalFigure",
+      "en" : "Rhetorical Figure"
+    },
+    "subClasses" : [ "4", "62", "67", "68", "69", "37", "70", "71", "57" ],
+    "comment" : {
+      "en" : "The class of some common tropes in political speech acts"
+    },
+    "id" : "5",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#LexicalComplexity",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LexicalComplexity",
+      "en" : "Lexical Complexity"
+    },
+    "comment" : {
+      "en" : "It refers to the lexical space occupied by a speech act"
+    },
+    "id" : "19",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#Subjectivity",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Subjectivity",
+      "en" : "Subjectivity"
+    },
+    "comment" : {
+      "en" : "Subjectivity refers to the value"
+    },
+    "id" : "32",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Place",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/ontology/Place",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Place",
+      "en" : "Place"
+    },
+    "subClasses" : [ "28" ],
+    "comment" : {
+      "en" : "Immobile things or locations"
+    },
+    "attributes" : [ "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#TopWord",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TopWord",
+      "en" : "Top Word"
+    },
+    "comment" : {
+      "en" : "Refers to the most recurrent words present in a speech act"
+    },
+    "id" : "46",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#Simile",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://dictionary.cambridge.org/dictionary/english/simile",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Simile",
+      "en" : "Simile"
+    },
+    "comment" : {
+      "en" : "Simile refers to the use of an expression comparing one thing with another, always including the words \"as\" or \"like\""
+    },
+    "id" : "69",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#Tweet",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://dictionary.cambridge.org/dictionary/english/tweet",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Tweet",
+      "en" : "Tweet"
+    },
+    "comment" : {
+      "en" : "a short remark or piece of information published on Twitter"
+    },
+    "id" : "64",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#Personification",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://dictionary.cambridge.org/dictionary/english/personification",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Personification",
+      "en" : "Personification"
+    },
+    "comment" : {
+      "en" : "Personification refers to the act of giving a human quality or characteristic to something which is not human"
+    },
+    "id" : "70",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#Opposition",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.researchgate.net/publication/325134882_Populism_and_Informal_Fallacies_An_Analysis_of_Right-Wing_Populist_Rhetoric_in_Election_Campaigns",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Opposition",
+      "en" : "Opposition"
+    },
+    "comment" : {
+      "en" : "Opposition refers to the \"black and white rhetoric\", that creates and opposes two polarities\n\ne.g. a Manichean and moralistic juxtaposition between the ‘‘good people’’ and the ‘‘evil elite’’"
+    },
+    "id" : "68",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://purl.org/vocab/frbr/core#Concept",
+    "baseIri" : "http://purl.org/vocab/frbr/core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/vocab/frbr/core#Concept",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Concept",
+      "en" : "Concept"
+    },
+    "subClasses" : [ "19", "46", "50", "5", "10" ],
+    "comment" : {
+      "en" : "An abstract idea or notion"
+    },
+    "attributes" : [ "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://dbpedia.org/ontology/City",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/ontology/City",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "City"
+    },
+    "comment" : {
+      "en" : "large and permanent human settlement."
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#Illeism",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://en.wiktionary.org/wiki/illeism",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Illeism",
+      "en" : "Illeism"
+    },
+    "comment" : {
+      "en" : "Illeism refers to the practice of referring to oneself in the third person"
+    },
+    "id" : "67",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TimeInterval",
+      "en" : "Time Interval"
+    },
+    "comment" : {
+      "en" : "It refers to any Region in a dimensional space that aims at representing time. It should be used when you want to talk about time as an object having some characteristics."
+    },
+    "attributes" : [ "external" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#RethoricalQuestion",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://dictionary.cambridge.org/dictionary/english/rhetorical-question",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RethoricalQuestion",
+      "en" : "Rethorical Question"
+    },
+    "subClasses" : [ "36" ],
+    "comment" : {
+      "en" : "Rhetorical question refers to a question, asked in order to make a statement, that does not expect an answer"
+    },
+    "id" : "37",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://live.dbpedia.org/ontology/President",
+    "baseIri" : "http://live.dbpedia.org/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://live.dbpedia.org/ontology/President",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "President",
+      "undefined" : "President"
+    },
+    "comment" : {
+      "en" : "Leader of a country or a division or part of a country, typically a republic, a democracy, or a dictatorship."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#InauguralSpeech",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InauguralSpeech",
+      "en" : "Inaugural Speech"
+    },
+    "comment" : {
+      "en" : "It refers to the speech given during the inuguration of an elected leader, informing the people of their intention as a leader"
+    },
+    "id" : "66",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#PressConference",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://dictionary.cambridge.org/dictionary/english/press-conference",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PressConference",
+      "en" : "Press Conference"
+    },
+    "comment" : {
+      "en" : "It refers to a meeting at which a person or organization makes a public statement and reporters can ask questions"
+    },
+    "id" : "59",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://purl.org/dc/terms/Agent",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Agent",
+      "en" : "Agent"
+    },
+    "subClasses" : [ "2", "14" ],
+    "comment" : {
+      "en" : "A resource that acts or has the power to act"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://dbpedia.org/ontology/PopultedPlace",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/ontology/PopultedPlace",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PopultedPlace",
+      "undefined" : "Populated Place"
+    },
+    "subClasses" : [ "30", "27" ],
+    "comment" : {
+      "en" : "place or area with clustered or scattered buildings and a permanent human population (city, settlement, town, or village) referenced with geographic coordinates"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/spec/#term_Document",
+    "baseIri" : "http://xmlns.com/foaf/spec/",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/spec/#term_Document",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "term_Document",
+      "en" : "Document"
+    },
+    "comment" : {
+      "en" : "The Document class represents those things which are, broadly conceived, 'documents'."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#Polarity",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Polarity",
+      "en" : "Polarity"
+    },
+    "comment" : {
+      "en" : "Polarity refers to the value"
+    },
+    "id" : "34",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#Topic",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Topic",
+      "en" : "Topic"
+    },
+    "comment" : {
+      "en" : "Topic refers to the retrieved topic of a single speech act"
+    },
+    "id" : "50",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "8", "1", "12" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#FoulLanguage",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://dictionary.cambridge.org/dictionary/english/foul",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FoulLanguage",
+      "en" : "Foul Language"
+    },
+    "comment" : {
+      "en" : "Foul language refers to when a speech or other language is offensive, rude, or shocking"
+    },
+    "id" : "71",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#SpeechAct",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpeechAct",
+      "en" : "Speech Act"
+    },
+    "subClasses" : [ "66", "64", "59" ],
+    "comment" : {
+      "en" : "an utterance considered as an action, particularly with regard to its intention, purpose, or effect."
+    },
+    "id" : "7",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/VicePrimeMinister",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/ontology/VicePrimeMinister",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "VicePrimeMinister",
+      "undefined" : "Vice Prime Minister"
+    },
+    "comment" : {
+      "en" : "It refers to a government minister who can take the position of acting prime minister when the prime minister is temporarily absent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "13" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://purl.org/spar/pro/relatesToOrganization",
+    "baseIri" : "http://purl.org/spar/pro",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/spar/pro/relatesToOrganization",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "relatesToOrganization",
+      "en" : "relates to organization"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "It relates the Political Role to a certain political organization"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#deliveredBy",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "deliveredBy",
+      "en" : "delivered by"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "It relates the Speech Act with its Agent"
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasSentiment",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasSentiment",
+      "en" : "has sentiment"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "It relates the sentiment value with its speech act"
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasNumberOfUniqueWords",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasNumberOfUniqueWords",
+      "en" : "has number of unique words"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "It refers to the number of unique words present in a speech act"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#relatesToSpeechAct",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "relatesToSpeechAct",
+      "en" : "relates to speech act"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "It relates some important entities (Agent, Document, Political Role In Time) to the speech act itself"
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "range" : "2",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "28",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "28",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "10",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "10",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "37",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "13",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "8",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "8",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "43",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "13",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "43",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "43",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "43",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "43",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "11",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "11",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://purl.org/spar/pro/relatesToDocument",
+    "baseIri" : "http://purl.org/spar/pro",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "http://purl.org/spar/pro/relatesToDocument",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "relatesToDocument",
+      "en" : "relates to doc"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "It relates the Speech Act with the document in which it is contained the transcription"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasPolarityValue",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "hasPolarityValue",
+      "en" : "has polarity value"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Refers to the decimal value of the polarity related to a specific speech act"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "range" : "7",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#deliveredAt",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "deliveredAt",
+      "en" : "delivered at"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "It relates the Speech Act with the place of deliverance"
+    },
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "range" : "7",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "range" : "7",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasTopWord",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasTopWord",
+      "en" : "has top word"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "It relates a speech act with its top words"
+    },
+    "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "range" : "61",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "5",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "5",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "5",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "range" : "5",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "5",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "5",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "range" : "5",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "5",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasSubjectivity",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasSubjectivity",
+      "en" : "has subjectivity"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "It relates the speech act to che subjectivity of the text"
+    },
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://purl.org/spar/pro/holdsRoleInTime",
+    "baseIri" : "http://purl.org/spar/pro",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/spar/pro/holdsRoleInTime",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holdsRoleInTime",
+      "undefined" : "holds role in time"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "A property relating an agent to a role that the agent holds."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasTopic",
+    "inverse" : "86",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasTopic",
+      "en" : "has topic"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "It relates a speech act with its topic"
+    },
+    "attributes" : [ "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#isPresentIn",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isPresentIn",
+      "en" : "is present in"
+    },
+    "domain" : "50",
+    "comment" : {
+      "en" : "It relates a topic to the speech act in which it is present"
+    },
+    "attributes" : [ "object" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#isEmployedIn",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isEmployedIn",
+      "en" : "is employed in"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "This property relates a rhetorical figure with a particular speech act in which it is present."
+    },
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasRepresentativeWords",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "hasRepresentativeWords",
+      "en" : "has representative words"
+    },
+    "domain" : "50",
+    "comment" : {
+      "en" : "The words able to describe the semantic space of a toic"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasSubjectivityValue",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "hasSubjectivityValue",
+      "en" : "has subjectivity value"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Refers to the decimal value of the subjectivity related to a specific speech act"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasDaleChallScore",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "hasDaleChallScore",
+      "en" : "has Dale Chall score"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "It relates the speech act to the decimal value of the Dale Chall readability formula"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasTopTenCouples",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "hasTopTenCouples",
+      "en" : "has top ten couples"
+    },
+    "domain" : "46",
+    "comment" : {
+      "en" : "It refers to the ten most recurrent couples of words of a speech act"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#textualReference",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "textualReference",
+      "en" : "has textual embodiment"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Relates a concept to a text that includes its textual string reference"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "98"
+  }, {
+    "range" : "11",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasTopTenWords",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasTopTenWords",
+      "en" : "has top ten words"
+    },
+    "domain" : "46",
+    "comment" : {
+      "en" : "It refers to the ten most recurrent words of a speech act"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#deliveredWhen",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "deliveredWhen",
+      "en" : "delivered when"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "It relates the Speech Act with the interval of time it has been delivered"
+    },
+    "attributes" : [ "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasRhetoricalFigure",
+    "inverse" : "87",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasRhetoricalFigure",
+      "en" : "has rhetorical figure"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "This property relates a literary text that contains a rhetorical figure."
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasTopTenTriples",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "hasTopTenTriples",
+      "en" : "has top ten triples"
+    },
+    "domain" : "46",
+    "comment" : {
+      "en" : "It refers to the ten most recurrent triples of words of a speech act"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasLexicalComplexity",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasLexicalComplexity",
+      "en" : "has lexical complexity"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "It relates a speech act with its lexical complexity"
+    },
+    "attributes" : [ "object" ],
+    "id" : "104"
+  } ]
+}

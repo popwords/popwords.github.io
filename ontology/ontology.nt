@@ -1,0 +1,549 @@
+<https://popwords.github.io/asap.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://popwords.github.io/asap.owl> <http://www.w3.org/2002/07/owl#versionIRI> <https://popwords.github.io/asap.owl> .
+<https://popwords.github.io/asap.owl> <http://purl.org/dc/elements/1.1/creator> "Andrea Poltronieri"@en .
+<https://popwords.github.io/asap.owl> <http://purl.org/dc/elements/1.1/creator> "Delfina Sol Pandiani"@en .
+<https://popwords.github.io/asap.owl> <http://purl.org/dc/elements/1.1/creator> "Maria Chiara Frangipane"@en .
+<https://popwords.github.io/asap.owl> <http://purl.org/dc/terms/title> "ASAP Ontology - Analyze Speech Acts by Politicians"@en .
+<https://popwords.github.io/asap.owl> <http://purl.org/vocab/frbr/core#Rights> "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."@en .
+<https://popwords.github.io/asap.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology (ASAP) is a rhetorics based ontology that expresses in a formal way the rhetorical discourse behind politician's speech acts."@en .
+<https://popwords.github.io/asap.owl> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/frbr/core#Rights
+<http://purl.org/vocab/frbr/core#Rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/spar/pro/holdsRoleInTime
+<http://purl.org/spar/pro/holdsRoleInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/pro/holdsRoleInTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/dc/terms/Agent> .
+<http://purl.org/spar/pro/holdsRoleInTime> <http://www.w3.org/2000/01/rdf-schema#range> <https://popwords.github.io/asap.owl#PoliticalRoleInTime> .
+<http://purl.org/spar/pro/holdsRoleInTime> <http://www.w3.org/2000/01/rdf-schema#comment> "A property relating an agent to a role that the agent holds."@en .
+<http://purl.org/spar/pro/holdsRoleInTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/spar/pro/holdsRoleInTime" .
+<http://purl.org/spar/pro/holdsRoleInTime> <http://www.w3.org/2000/01/rdf-schema#label> "holds role in time" .
+# 
+# http://purl.org/spar/pro/relatesToDocument
+<http://purl.org/spar/pro/relatesToDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/pro/relatesToDocument> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#SpeechAct> .
+<http://purl.org/spar/pro/relatesToDocument> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/spec/#term_Document> .
+<http://purl.org/spar/pro/relatesToDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates the Speech Act with the document in which it is contained the transcription"@en .
+<http://purl.org/spar/pro/relatesToDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/spar/pro/relatesToDocument"@en .
+<http://purl.org/spar/pro/relatesToDocument> <http://www.w3.org/2000/01/rdf-schema#label> "relates to doc"@en .
+# 
+# http://purl.org/spar/pro/relatesToOrganization
+<http://purl.org/spar/pro/relatesToOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/pro/relatesToOrganization> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#PoliticalRoleInTime> .
+<http://purl.org/spar/pro/relatesToOrganization> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/spec/#term_Organization> .
+<http://purl.org/spar/pro/relatesToOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates the Political Role to a certain political organization"@en .
+<http://purl.org/spar/pro/relatesToOrganization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/spar/pro/relatesToOrganization" .
+<http://purl.org/spar/pro/relatesToOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "relates to organization"@en .
+# 
+# https://popwords.github.io/asap.owl#deliveredAt
+<https://popwords.github.io/asap.owl#deliveredAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://popwords.github.io/asap.owl#deliveredAt> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#deliveredAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Place> .
+<https://popwords.github.io/asap.owl#deliveredAt> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates the Speech Act with the place of deliverance"@en .
+<https://popwords.github.io/asap.owl#deliveredAt> <http://www.w3.org/2000/01/rdf-schema#label> "delivered at"@en .
+# 
+# https://popwords.github.io/asap.owl#deliveredBy
+<https://popwords.github.io/asap.owl#deliveredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://popwords.github.io/asap.owl#deliveredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#deliveredBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/Agent> .
+<https://popwords.github.io/asap.owl#deliveredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates the Speech Act with its Agent"@en .
+<https://popwords.github.io/asap.owl#deliveredBy> <http://www.w3.org/2000/01/rdf-schema#label> "delivered by"@en .
+# 
+# https://popwords.github.io/asap.owl#deliveredWhen
+<https://popwords.github.io/asap.owl#deliveredWhen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://popwords.github.io/asap.owl#deliveredWhen> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#deliveredWhen> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> .
+<https://popwords.github.io/asap.owl#deliveredWhen> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates the Speech Act with the interval of time it has been delivered"@en .
+<https://popwords.github.io/asap.owl#deliveredWhen> <http://www.w3.org/2000/01/rdf-schema#label> "delivered when"@en .
+# 
+# https://popwords.github.io/asap.owl#hasLexicalComplexity
+<https://popwords.github.io/asap.owl#hasLexicalComplexity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://popwords.github.io/asap.owl#hasLexicalComplexity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#hasLexicalComplexity> <http://www.w3.org/2000/01/rdf-schema#range> <https://popwords.github.io/asap.owl#LexicalComplexity> .
+<https://popwords.github.io/asap.owl#hasLexicalComplexity> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates a speech act with its lexical complexity"@en .
+<https://popwords.github.io/asap.owl#hasLexicalComplexity> <http://www.w3.org/2000/01/rdf-schema#label> "has lexical complexity"@en .
+# 
+# https://popwords.github.io/asap.owl#hasRhetoricalFigure
+<https://popwords.github.io/asap.owl#hasRhetoricalFigure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://popwords.github.io/asap.owl#hasRhetoricalFigure> <http://www.w3.org/2002/07/owl#inverseOf> <https://popwords.github.io/asap.owl#isEmployedIn> .
+<https://popwords.github.io/asap.owl#hasRhetoricalFigure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#hasRhetoricalFigure> <http://www.w3.org/2000/01/rdf-schema#range> <https://popwords.github.io/asap.owl#RhetoricalFigure> .
+<https://popwords.github.io/asap.owl#hasRhetoricalFigure> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a literary text that contains a rhetorical figure."@en .
+<https://popwords.github.io/asap.owl#hasRhetoricalFigure> <http://www.w3.org/2000/01/rdf-schema#label> "has rhetorical figure"@en .
+# 
+# https://popwords.github.io/asap.owl#hasSentiment
+<https://popwords.github.io/asap.owl#hasSentiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://popwords.github.io/asap.owl#hasSentiment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#hasSentiment> <http://www.w3.org/2000/01/rdf-schema#range> <https://popwords.github.io/asap.owl#Sentiment> .
+<https://popwords.github.io/asap.owl#hasSentiment> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates the sentiment value with its speech act"@en .
+<https://popwords.github.io/asap.owl#hasSentiment> <http://www.w3.org/2000/01/rdf-schema#label> "has sentiment"@en .
+# 
+# https://popwords.github.io/asap.owl#hasSubjectivity
+<https://popwords.github.io/asap.owl#hasSubjectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://popwords.github.io/asap.owl#hasSubjectivity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#hasSubjectivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://popwords.github.io/asap.owl#Subjectivity> .
+<https://popwords.github.io/asap.owl#hasSubjectivity> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates the speech act to che subjectivity of the text"@en .
+<https://popwords.github.io/asap.owl#hasSubjectivity> <http://www.w3.org/2000/01/rdf-schema#label> "has subjectivity"@en .
+# 
+# https://popwords.github.io/asap.owl#hasTopWord
+<https://popwords.github.io/asap.owl#hasTopWord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://popwords.github.io/asap.owl#hasTopWord> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#hasTopWord> <http://www.w3.org/2000/01/rdf-schema#range> <https://popwords.github.io/asap.owl#TopWord> .
+<https://popwords.github.io/asap.owl#hasTopWord> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates a speech act with its top words"@en .
+<https://popwords.github.io/asap.owl#hasTopWord> <http://www.w3.org/2000/01/rdf-schema#label> "has top word"@en .
+# 
+# https://popwords.github.io/asap.owl#hasTopic
+<https://popwords.github.io/asap.owl#hasTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://popwords.github.io/asap.owl#hasTopic> <http://www.w3.org/2002/07/owl#inverseOf> <https://popwords.github.io/asap.owl#isPresentIn> .
+<https://popwords.github.io/asap.owl#hasTopic> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#hasTopic> <http://www.w3.org/2000/01/rdf-schema#range> <https://popwords.github.io/asap.owl#Topic> .
+<https://popwords.github.io/asap.owl#hasTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates a speech act with its topic"@en .
+<https://popwords.github.io/asap.owl#hasTopic> <http://www.w3.org/2000/01/rdf-schema#label> "has topic"@en .
+# 
+# https://popwords.github.io/asap.owl#isEmployedIn
+<https://popwords.github.io/asap.owl#isEmployedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://popwords.github.io/asap.owl#isEmployedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#RhetoricalFigure> .
+<https://popwords.github.io/asap.owl#isEmployedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#isEmployedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "This property relates a rhetorical figure with a particular speech act in which it is present."@en .
+<https://popwords.github.io/asap.owl#isEmployedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is employed in"@en .
+# 
+# https://popwords.github.io/asap.owl#isPresentIn
+<https://popwords.github.io/asap.owl#isPresentIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://popwords.github.io/asap.owl#isPresentIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#Topic> .
+<https://popwords.github.io/asap.owl#isPresentIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#isPresentIn> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates a topic to the speech act in which it is present"@en .
+<https://popwords.github.io/asap.owl#isPresentIn> <http://www.w3.org/2000/01/rdf-schema#label> "is present in"@en .
+# 
+# https://popwords.github.io/asap.owl#relatesToSpeechAct
+<https://popwords.github.io/asap.owl#relatesToSpeechAct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://popwords.github.io/asap.owl#relatesToSpeechAct> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/dc/terms/Agent> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/spec/#term_Document> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://popwords.github.io/asap.owl#PoliticalRoleInTime> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://popwords.github.io/asap.owl#relatesToSpeechAct> <http://www.w3.org/2000/01/rdf-schema#range> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#relatesToSpeechAct> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates some important entities (Agent, Document, Political Role In Time) to the speech act itself"@en .
+<https://popwords.github.io/asap.owl#relatesToSpeechAct> <http://www.w3.org/2000/01/rdf-schema#label> "relates to speech act"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://popwords.github.io/asap.owl#hasDaleChallScore
+<https://popwords.github.io/asap.owl#hasDaleChallScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://popwords.github.io/asap.owl#hasDaleChallScore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#LexicalComplexity> .
+<https://popwords.github.io/asap.owl#hasDaleChallScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://popwords.github.io/asap.owl#hasDaleChallScore> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates the speech act to the decimal value of the Dale Chall readability formula"@en .
+<https://popwords.github.io/asap.owl#hasDaleChallScore> <http://www.w3.org/2000/01/rdf-schema#label> "has Dale Chall score"@en .
+# 
+# https://popwords.github.io/asap.owl#hasNumberOfUniqueWords
+<https://popwords.github.io/asap.owl#hasNumberOfUniqueWords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://popwords.github.io/asap.owl#hasNumberOfUniqueWords> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#LexicalComplexity> .
+<https://popwords.github.io/asap.owl#hasNumberOfUniqueWords> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://popwords.github.io/asap.owl#hasNumberOfUniqueWords> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the number of unique words present in a speech act"@en .
+<https://popwords.github.io/asap.owl#hasNumberOfUniqueWords> <http://www.w3.org/2000/01/rdf-schema#label> "has number of unique words"@en .
+# 
+# https://popwords.github.io/asap.owl#hasPolarityValue
+<https://popwords.github.io/asap.owl#hasPolarityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://popwords.github.io/asap.owl#hasPolarityValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#Polarity> .
+<https://popwords.github.io/asap.owl#hasPolarityValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://popwords.github.io/asap.owl#hasPolarityValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the decimal value of the polarity related to a specific speech act"@en .
+<https://popwords.github.io/asap.owl#hasPolarityValue> <http://www.w3.org/2000/01/rdf-schema#label> "has polarity value"@en .
+# 
+# https://popwords.github.io/asap.owl#hasRepresentativeWords
+<https://popwords.github.io/asap.owl#hasRepresentativeWords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://popwords.github.io/asap.owl#hasRepresentativeWords> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#Topic> .
+<https://popwords.github.io/asap.owl#hasRepresentativeWords> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://popwords.github.io/asap.owl#hasRepresentativeWords> <http://www.w3.org/2000/01/rdf-schema#comment> "The words able to describe the semantic space of a toic"@en .
+<https://popwords.github.io/asap.owl#hasRepresentativeWords> <http://www.w3.org/2000/01/rdf-schema#label> "has representative words"@en .
+# 
+# https://popwords.github.io/asap.owl#hasSubjectivityValue
+<https://popwords.github.io/asap.owl#hasSubjectivityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://popwords.github.io/asap.owl#hasSubjectivityValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#Subjectivity> .
+<https://popwords.github.io/asap.owl#hasSubjectivityValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://popwords.github.io/asap.owl#hasSubjectivityValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the decimal value of the subjectivity related to a specific speech act"@en .
+<https://popwords.github.io/asap.owl#hasSubjectivityValue> <http://www.w3.org/2000/01/rdf-schema#label> "has subjectivity value"@en .
+# 
+# https://popwords.github.io/asap.owl#hasTopTenCouples
+<https://popwords.github.io/asap.owl#hasTopTenCouples> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://popwords.github.io/asap.owl#hasTopTenCouples> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#TopWord> .
+<https://popwords.github.io/asap.owl#hasTopTenCouples> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://popwords.github.io/asap.owl#hasTopTenCouples> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the ten most recurrent couples of words of a speech act"@en .
+<https://popwords.github.io/asap.owl#hasTopTenCouples> <http://www.w3.org/2000/01/rdf-schema#label> "has top ten couples"@en .
+# 
+# https://popwords.github.io/asap.owl#hasTopTenTriples
+<https://popwords.github.io/asap.owl#hasTopTenTriples> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://popwords.github.io/asap.owl#hasTopTenTriples> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#TopWord> .
+<https://popwords.github.io/asap.owl#hasTopTenTriples> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://popwords.github.io/asap.owl#hasTopTenTriples> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the ten most recurrent triples of words of a speech act"@en .
+<https://popwords.github.io/asap.owl#hasTopTenTriples> <http://www.w3.org/2000/01/rdf-schema#label> "has top ten triples"@en .
+# 
+# https://popwords.github.io/asap.owl#hasTopTenWords
+<https://popwords.github.io/asap.owl#hasTopTenWords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://popwords.github.io/asap.owl#hasTopTenWords> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#TopWord> .
+<https://popwords.github.io/asap.owl#hasTopTenWords> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://popwords.github.io/asap.owl#hasTopTenWords> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the ten most recurrent words of a speech act"@en .
+<https://popwords.github.io/asap.owl#hasTopTenWords> <http://www.w3.org/2000/01/rdf-schema#label> "has top ten words"@en .
+# 
+# https://popwords.github.io/asap.owl#textualReference
+<https://popwords.github.io/asap.owl#textualReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://popwords.github.io/asap.owl#textualReference> <http://www.w3.org/2000/01/rdf-schema#domain> <https://popwords.github.io/asap.owl#RhetoricalFigure> .
+<https://popwords.github.io/asap.owl#textualReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://popwords.github.io/asap.owl#textualReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a concept to a text that includes its textual string reference"@en .
+<https://popwords.github.io/asap.owl#textualReference> <http://www.w3.org/2000/01/rdf-schema#label> "has textual embodiment"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/City
+<http://dbpedia.org/ontology/City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/PopultedPlace> .
+<http://dbpedia.org/ontology/City> <http://www.w3.org/2000/01/rdf-schema#comment> "large and permanent human settlement."@en .
+<http://dbpedia.org/ontology/City> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://dbpedia.org/ontology/City" .
+<http://dbpedia.org/ontology/City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+# 
+# http://dbpedia.org/ontology/Country
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/PopultedPlace> .
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to a region that is identified as a distinct national entity in political geography"@en .
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://dbpedia.org/ontology/Country" .
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+# 
+# http://dbpedia.org/ontology/Place
+<http://dbpedia.org/ontology/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Immobile things or locations"@en .
+<http://dbpedia.org/ontology/Place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://dbpedia.org/ontology/Place" .
+<http://dbpedia.org/ontology/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+# 
+# http://dbpedia.org/ontology/PoliticalParty
+<http://dbpedia.org/ontology/PoliticalParty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/PoliticalParty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/spec/#term_Organization> .
+<http://dbpedia.org/ontology/PoliticalParty> <http://www.w3.org/2000/01/rdf-schema#comment> "group of people who come together to contest elections and hold power in the government. The party agrees on some proposed policies and programmes, with a view to promoting the collective good or furthering their supporters' interests."@en .
+<http://dbpedia.org/ontology/PoliticalParty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://dbpedia.org/ontology/PoliticalParty" .
+<http://dbpedia.org/ontology/PoliticalParty> <http://www.w3.org/2000/01/rdf-schema#label> "Political Party" .
+# 
+# http://dbpedia.org/ontology/Politician
+<http://dbpedia.org/ontology/Politician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Politician> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Person> .
+<http://dbpedia.org/ontology/Politician> <http://www.w3.org/2000/01/rdf-schema#comment> "A political figure" .
+<http://dbpedia.org/ontology/Politician> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://dbpedia.org/ontology/Politician" .
+<http://dbpedia.org/ontology/Politician> <http://www.w3.org/2000/01/rdf-schema#label> "Politician" .
+# 
+# http://dbpedia.org/ontology/PopultedPlace
+<http://dbpedia.org/ontology/PopultedPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/PopultedPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Place> .
+<http://dbpedia.org/ontology/PopultedPlace> <http://www.w3.org/2000/01/rdf-schema#comment> "place or area with clustered or scattered buildings and a permanent human population (city, settlement, town, or village) referenced with geographic coordinates"@en .
+<http://dbpedia.org/ontology/PopultedPlace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://dbpedia.org/ontology/PopultedPlace" .
+<http://dbpedia.org/ontology/PopultedPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Populated Place" .
+# 
+# http://dbpedia.org/ontology/VicePrimeMinister
+<http://dbpedia.org/ontology/VicePrimeMinister> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/VicePrimeMinister> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Politician> .
+<http://dbpedia.org/ontology/VicePrimeMinister> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to a government minister who can take the position of acting prime minister when the prime minister is temporarily absent"@en .
+<http://dbpedia.org/ontology/VicePrimeMinister> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://dbpedia.org/ontology/VicePrimeMinister" .
+<http://dbpedia.org/ontology/VicePrimeMinister> <http://www.w3.org/2000/01/rdf-schema#label> "Vice Prime Minister" .
+# 
+# http://live.dbpedia.org/ontology/President
+<http://live.dbpedia.org/ontology/President> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://live.dbpedia.org/ontology/President> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Politician> .
+<http://live.dbpedia.org/ontology/President> <http://www.w3.org/2000/01/rdf-schema#comment> "Leader of a country or a division or part of a country, typically a republic, a democracy, or a dictatorship."@en .
+<http://live.dbpedia.org/ontology/President> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://live.dbpedia.org/ontology/President" .
+<http://live.dbpedia.org/ontology/President> <http://www.w3.org/2000/01/rdf-schema#label> "President" .
+# 
+# http://live.dbpedia.org/ontology/PrimeMinister
+<http://live.dbpedia.org/ontology/PrimeMinister> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://live.dbpedia.org/ontology/PrimeMinister> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Politician> .
+<http://live.dbpedia.org/ontology/PrimeMinister> <http://www.w3.org/2000/01/rdf-schema#comment> "Head of an elected government; the principle minister of a sovereign or a state"@en .
+<http://live.dbpedia.org/ontology/PrimeMinister> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://live.dbpedia.org/ontology/PrimeMinister" .
+<http://live.dbpedia.org/ontology/PrimeMinister> <http://www.w3.org/2000/01/rdf-schema#label> "Prime Minister" .
+# 
+# http://purl.org/dc/terms/Agent
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/vocab/frbr/core#Expression> .
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource that acts or has the power to act"@en .
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/dc/terms/Agent" .
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .
+# 
+# http://purl.org/vocab/frbr/core#Concept
+<http://purl.org/vocab/frbr/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/vocab/frbr/core#Concept> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstract idea or notion"@en .
+<http://purl.org/vocab/frbr/core#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/vocab/frbr/core#Concept" .
+<http://purl.org/vocab/frbr/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
+# 
+# http://purl.org/vocab/frbr/core#Expression
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "A realization of a single work usually in a physical form."@en .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/vocab/frbr/core#Expression"@en .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#label> "Expression"@en .
+# 
+# http://purl.org/vocab/frbr/core#Person
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/Agent> .
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A living or dead individual"@en .
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/vocab/frbr/core#Person" .
+<http://purl.org/vocab/frbr/core#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to any Region in a dimensional space that aims at representing time. It should be used when you want to talk about time as an object having some characteristics."@en .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval" .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Time Interval"@en .
+# 
+# http://xmlns.com/foaf/spec/#term_Document
+<http://xmlns.com/foaf/spec/#term_Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/spec/#term_Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Expression> .
+<http://xmlns.com/foaf/spec/#term_Document> <http://www.w3.org/2000/01/rdf-schema#comment> "The Document class represents those things which are, broadly conceived, 'documents'."@en .
+<http://xmlns.com/foaf/spec/#term_Document> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://xmlns.com/foaf/spec/#term_Document" .
+<http://xmlns.com/foaf/spec/#term_Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document"@en .
+# 
+# http://xmlns.com/foaf/spec/#term_Organization
+<http://xmlns.com/foaf/spec/#term_Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/spec/#term_Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/Agent> .
+<http://xmlns.com/foaf/spec/#term_Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "A kind of Agent corresponding to social instititutions such as companies, societies etc." .
+<http://xmlns.com/foaf/spec/#term_Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://xmlns.com/foaf/spec/#term_Organization" .
+<http://xmlns.com/foaf/spec/#term_Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+# 
+# https://popwords.github.io/asap.owl#FoulLanguage
+<https://popwords.github.io/asap.owl#FoulLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#FoulLanguage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#RhetoricalFigure> .
+<https://popwords.github.io/asap.owl#FoulLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "Foul language refers to when a speech or other language is offensive, rude, or shocking"@en .
+<https://popwords.github.io/asap.owl#FoulLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "Foul Language"@en .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid5 <http://www.w3.org/2002/07/owl#annotatedSource> <https://popwords.github.io/asap.owl#FoulLanguage> .
+_:genid5 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid5 <http://www.w3.org/2002/07/owl#annotatedTarget> "Foul language refers to when a speech or other language is offensive, rude, or shocking"@en .
+_:genid5 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://dictionary.cambridge.org/dictionary/english/foul" .
+# 
+# https://popwords.github.io/asap.owl#Illeism
+<https://popwords.github.io/asap.owl#Illeism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#Illeism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#RhetoricalFigure> .
+<https://popwords.github.io/asap.owl#Illeism> <http://www.w3.org/2000/01/rdf-schema#comment> "Illeism refers to the practice of referring to oneself in the third person"@en .
+<https://popwords.github.io/asap.owl#Illeism> <http://www.w3.org/2000/01/rdf-schema#label> "Illeism"@en .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid6 <http://www.w3.org/2002/07/owl#annotatedSource> <https://popwords.github.io/asap.owl#Illeism> .
+_:genid6 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid6 <http://www.w3.org/2002/07/owl#annotatedTarget> "Illeism refers to the practice of referring to oneself in the third person"@en .
+_:genid6 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://en.wiktionary.org/wiki/illeism" .
+# 
+# https://popwords.github.io/asap.owl#InauguralSpeech
+<https://popwords.github.io/asap.owl#InauguralSpeech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#InauguralSpeech> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#InauguralSpeech> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the speech given during the inuguration of an elected leader, informing the people of their intention as a leader"@en .
+<https://popwords.github.io/asap.owl#InauguralSpeech> <http://www.w3.org/2000/01/rdf-schema#label> "Inaugural Speech"@en .
+# 
+# https://popwords.github.io/asap.owl#LexicalComplexity
+<https://popwords.github.io/asap.owl#LexicalComplexity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#LexicalComplexity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Concept> .
+<https://popwords.github.io/asap.owl#LexicalComplexity> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the lexical space occupied by a speech act"@en .
+<https://popwords.github.io/asap.owl#LexicalComplexity> <http://www.w3.org/2000/01/rdf-schema#label> "Lexical Complexity"@en .
+# 
+# https://popwords.github.io/asap.owl#Metaphor
+<https://popwords.github.io/asap.owl#Metaphor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#Metaphor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#RhetoricalFigure> .
+<https://popwords.github.io/asap.owl#Metaphor> <http://www.w3.org/2000/01/rdf-schema#comment> "Metaphor refers to an expression that describes a person or object by referring to something that is considered to have similar characteristics to that person or object"@en .
+<https://popwords.github.io/asap.owl#Metaphor> <http://www.w3.org/2000/01/rdf-schema#label> "Metaphor"@en .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid7 <http://www.w3.org/2002/07/owl#annotatedSource> <https://popwords.github.io/asap.owl#Metaphor> .
+_:genid7 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid7 <http://www.w3.org/2002/07/owl#annotatedTarget> "Metaphor refers to an expression that describes a person or object by referring to something that is considered to have similar characteristics to that person or object"@en .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://dictionary.cambridge.org/dictionary/english/metaphor" .
+# 
+# https://popwords.github.io/asap.owl#NegativeNickname
+<https://popwords.github.io/asap.owl#NegativeNickname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#NegativeNickname> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#RhetoricalFigure> .
+<https://popwords.github.io/asap.owl#NegativeNickname> <http://www.w3.org/2000/01/rdf-schema#comment> "Negative Nickname refers to an informal name for someone or something, usually based on your real name or your character, used to defame a political opponent"@en .
+<https://popwords.github.io/asap.owl#NegativeNickname> <http://www.w3.org/2000/01/rdf-schema#label> "Negative Nicknames"@en .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid8 <http://www.w3.org/2002/07/owl#annotatedSource> <https://popwords.github.io/asap.owl#NegativeNickname> .
+_:genid8 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid8 <http://www.w3.org/2002/07/owl#annotatedTarget> "Negative Nickname refers to an informal name for someone or something, usually based on your real name or your character, used to defame a political opponent"@en .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.researchgate.net/publication/325134882_Populism_and_Informal_Fallacies_An_Analysis_of_Right-Wing_Populist_Rhetoric_in_Election_Campaigns" .
+# 
+# https://popwords.github.io/asap.owl#Opposition
+<https://popwords.github.io/asap.owl#Opposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#Opposition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#RhetoricalFigure> .
+<https://popwords.github.io/asap.owl#Opposition> <http://www.w3.org/2000/01/rdf-schema#comment> "Opposition refers to the \"black and white rhetoric\", that creates and opposes two polarities\n\ne.g. a Manichean and moralistic juxtaposition between the ‘‘good people’’ and the ‘‘evil elite’’"@en .
+<https://popwords.github.io/asap.owl#Opposition> <http://www.w3.org/2000/01/rdf-schema#label> "Opposition"@en .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid9 <http://www.w3.org/2002/07/owl#annotatedSource> <https://popwords.github.io/asap.owl#Opposition> .
+_:genid9 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid9 <http://www.w3.org/2002/07/owl#annotatedTarget> "Opposition refers to the \"black and white rhetoric\", that creates and opposes two polarities\n\ne.g. a Manichean and moralistic juxtaposition between the ‘‘good people’’ and the ‘‘evil elite’’"@en .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.researchgate.net/publication/325134882_Populism_and_Informal_Fallacies_An_Analysis_of_Right-Wing_Populist_Rhetoric_in_Election_Campaigns" .
+# 
+# https://popwords.github.io/asap.owl#Paradox
+<https://popwords.github.io/asap.owl#Paradox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#Paradox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#RhetoricalFigure> .
+<https://popwords.github.io/asap.owl#Paradox> <http://www.w3.org/2000/01/rdf-schema#comment> "Paradox refers to a situation or statement that seems impossible or is difficult to understand because it contains two opposite facts or characteristics"@en .
+<https://popwords.github.io/asap.owl#Paradox> <http://www.w3.org/2000/01/rdf-schema#label> "Paradox"@en .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid10 <http://www.w3.org/2002/07/owl#annotatedSource> <https://popwords.github.io/asap.owl#Paradox> .
+_:genid10 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid10 <http://www.w3.org/2002/07/owl#annotatedTarget> "Paradox refers to a situation or statement that seems impossible or is difficult to understand because it contains two opposite facts or characteristics"@en .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://dictionary.cambridge.org/dictionary/english/paradox" .
+# 
+# https://popwords.github.io/asap.owl#Personification
+<https://popwords.github.io/asap.owl#Personification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#Personification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#RhetoricalFigure> .
+<https://popwords.github.io/asap.owl#Personification> <http://www.w3.org/2000/01/rdf-schema#comment> "Personification refers to the act of giving a human quality or characteristic to something which is not human"@en .
+<https://popwords.github.io/asap.owl#Personification> <http://www.w3.org/2000/01/rdf-schema#label> "Personification"@en .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid11 <http://www.w3.org/2002/07/owl#annotatedSource> <https://popwords.github.io/asap.owl#Personification> .
+_:genid11 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid11 <http://www.w3.org/2002/07/owl#annotatedTarget> "Personification refers to the act of giving a human quality or characteristic to something which is not human"@en .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://dictionary.cambridge.org/dictionary/english/personification" .
+# 
+# https://popwords.github.io/asap.owl#Polarity
+<https://popwords.github.io/asap.owl#Polarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#Polarity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#Sentiment> .
+<https://popwords.github.io/asap.owl#Polarity> <http://www.w3.org/2000/01/rdf-schema#comment> "Polarity refers to the value"@en .
+<https://popwords.github.io/asap.owl#Polarity> <http://www.w3.org/2000/01/rdf-schema#label> "Polarity"@en .
+# 
+# https://popwords.github.io/asap.owl#PoliticalRoleInTime
+<https://popwords.github.io/asap.owl#PoliticalRoleInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#PoliticalRoleInTime> <http://www.w3.org/2000/01/rdf-schema#comment> "It represents the (reified) relationship between the agent holding a role and the role itself, within the boundaries of a particular timeinterval and applicable context for that role"@en .
+<https://popwords.github.io/asap.owl#PoliticalRoleInTime> <http://www.w3.org/2000/01/rdf-schema#label> "Political Role In Time"@en .
+<https://popwords.github.io/asap.owl#PoliticalRoleInTime> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.essepuntato.it/2013/10/politicalroles#PoliticalRoleInTime" .
+# 
+# https://popwords.github.io/asap.owl#PressConference
+<https://popwords.github.io/asap.owl#PressConference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#PressConference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#PressConference> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to a meeting at which a person or organization makes a public statement and reporters can ask questions"@en .
+<https://popwords.github.io/asap.owl#PressConference> <http://www.w3.org/2000/01/rdf-schema#label> "Press Conference"@en .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid12 <http://www.w3.org/2002/07/owl#annotatedSource> <https://popwords.github.io/asap.owl#PressConference> .
+_:genid12 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid12 <http://www.w3.org/2002/07/owl#annotatedTarget> "It refers to a meeting at which a person or organization makes a public statement and reporters can ask questions"@en .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://dictionary.cambridge.org/dictionary/english/press-conference" .
+# 
+# https://popwords.github.io/asap.owl#Quotation
+<https://popwords.github.io/asap.owl#Quotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#Quotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#RethoricalQuestion> .
+<https://popwords.github.io/asap.owl#Quotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Quotation refers to a phrase or short piece of writing taken from a longer work of literature, poetry, etc. or what someone else has said"@en .
+<https://popwords.github.io/asap.owl#Quotation> <http://www.w3.org/2000/01/rdf-schema#label> "Quotation"@en .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid13 <http://www.w3.org/2002/07/owl#annotatedSource> <https://popwords.github.io/asap.owl#Quotation> .
+_:genid13 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid13 <http://www.w3.org/2002/07/owl#annotatedTarget> "Quotation refers to a phrase or short piece of writing taken from a longer work of literature, poetry, etc. or what someone else has said"@en .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://dictionary.cambridge.org/dictionary/english/quotation" .
+# 
+# https://popwords.github.io/asap.owl#RethoricalQuestion
+<https://popwords.github.io/asap.owl#RethoricalQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#RethoricalQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#RhetoricalFigure> .
+<https://popwords.github.io/asap.owl#RethoricalQuestion> <http://www.w3.org/2000/01/rdf-schema#comment> "Rhetorical question refers to a question, asked in order to make a statement, that does not expect an answer"@en .
+<https://popwords.github.io/asap.owl#RethoricalQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Rethorical Question"@en .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid14 <http://www.w3.org/2002/07/owl#annotatedSource> <https://popwords.github.io/asap.owl#RethoricalQuestion> .
+_:genid14 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid14 <http://www.w3.org/2002/07/owl#annotatedTarget> "Rhetorical question refers to a question, asked in order to make a statement, that does not expect an answer"@en .
+_:genid14 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://dictionary.cambridge.org/dictionary/english/rhetorical-question" .
+# 
+# https://popwords.github.io/asap.owl#RhetoricalFigure
+<https://popwords.github.io/asap.owl#RhetoricalFigure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#RhetoricalFigure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Concept> .
+<https://popwords.github.io/asap.owl#RhetoricalFigure> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of some common tropes in political speech acts"@en .
+<https://popwords.github.io/asap.owl#RhetoricalFigure> <http://www.w3.org/2000/01/rdf-schema#label> "Rhetorical Figure"@en .
+<https://popwords.github.io/asap.owl#RhetoricalFigure> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.researchgate.net/publication/220961451_Toward_an_ontology_of_rhetorical_figures" .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid15 <http://www.w3.org/2002/07/owl#annotatedSource> <https://popwords.github.io/asap.owl#RhetoricalFigure> .
+_:genid15 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+_:genid15 <http://www.w3.org/2002/07/owl#annotatedTarget> "https://www.researchgate.net/publication/220961451_Toward_an_ontology_of_rhetorical_figures" .
+_:genid15 <http://www.w3.org/2000/01/rdf-schema#seeAlso> "DOI: 10.1145/1878450.1878471" .
+# 
+# https://popwords.github.io/asap.owl#Sentiment
+<https://popwords.github.io/asap.owl#Sentiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#Sentiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Concept> .
+<https://popwords.github.io/asap.owl#Sentiment> <http://www.w3.org/2000/01/rdf-schema#comment> "The values connected to the outcome from sentiment analysis"@en .
+<https://popwords.github.io/asap.owl#Sentiment> <http://www.w3.org/2000/01/rdf-schema#label> "Sentiment"@en .
+# 
+# https://popwords.github.io/asap.owl#Simile
+<https://popwords.github.io/asap.owl#Simile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#Simile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#RhetoricalFigure> .
+<https://popwords.github.io/asap.owl#Simile> <http://www.w3.org/2000/01/rdf-schema#comment> "Simile refers to the use of an expression comparing one thing with another, always including the words \"as\" or \"like\""@en .
+<https://popwords.github.io/asap.owl#Simile> <http://www.w3.org/2000/01/rdf-schema#label> "Simile"@en .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid16 <http://www.w3.org/2002/07/owl#annotatedSource> <https://popwords.github.io/asap.owl#Simile> .
+_:genid16 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid16 <http://www.w3.org/2002/07/owl#annotatedTarget> "Simile refers to the use of an expression comparing one thing with another, always including the words \"as\" or \"like\""@en .
+_:genid16 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://dictionary.cambridge.org/dictionary/english/simile" .
+# 
+# https://popwords.github.io/asap.owl#SpeechAct
+<https://popwords.github.io/asap.owl#SpeechAct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#SpeechAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Expression> .
+<https://popwords.github.io/asap.owl#SpeechAct> <http://www.w3.org/2000/01/rdf-schema#comment> "an utterance considered as an action, particularly with regard to its intention, purpose, or effect."@en .
+<https://popwords.github.io/asap.owl#SpeechAct> <http://www.w3.org/2000/01/rdf-schema#label> "Speech Act"@en .
+# 
+# https://popwords.github.io/asap.owl#Subjectivity
+<https://popwords.github.io/asap.owl#Subjectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#Subjectivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#Sentiment> .
+<https://popwords.github.io/asap.owl#Subjectivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Subjectivity refers to the value"@en .
+<https://popwords.github.io/asap.owl#Subjectivity> <http://www.w3.org/2000/01/rdf-schema#label> "Subjectivity"@en .
+# 
+# https://popwords.github.io/asap.owl#TopWord
+<https://popwords.github.io/asap.owl#TopWord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#TopWord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Concept> .
+<https://popwords.github.io/asap.owl#TopWord> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the most recurrent words present in a speech act"@en .
+<https://popwords.github.io/asap.owl#TopWord> <http://www.w3.org/2000/01/rdf-schema#label> "Top Word"@en .
+# 
+# https://popwords.github.io/asap.owl#Topic
+<https://popwords.github.io/asap.owl#Topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#Topic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Concept> .
+<https://popwords.github.io/asap.owl#Topic> <http://www.w3.org/2000/01/rdf-schema#comment> "Topic refers to the retrieved topic of a single speech act"@en .
+<https://popwords.github.io/asap.owl#Topic> <http://www.w3.org/2000/01/rdf-schema#label> "Topic"@en .
+# 
+# https://popwords.github.io/asap.owl#Tweet
+<https://popwords.github.io/asap.owl#Tweet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://popwords.github.io/asap.owl#Tweet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://popwords.github.io/asap.owl#SpeechAct> .
+<https://popwords.github.io/asap.owl#Tweet> <http://www.w3.org/2000/01/rdf-schema#comment> "a short remark or piece of information published on Twitter"@en .
+<https://popwords.github.io/asap.owl#Tweet> <http://www.w3.org/2000/01/rdf-schema#label> "Tweet"@en .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid17 <http://www.w3.org/2002/07/owl#annotatedSource> <https://popwords.github.io/asap.owl#Tweet> .
+_:genid17 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> .
+_:genid17 <http://www.w3.org/2002/07/owl#annotatedTarget> "a short remark or piece of information published on Twitter"@en .
+_:genid17 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://dictionary.cambridge.org/dictionary/english/tweet" .
+# 
+_:genid18 <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dictionary.cambridge.org/dictionary/english/simile" .
+_:genid19 <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dictionary.cambridge.org/dictionary/english/simile" .
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
