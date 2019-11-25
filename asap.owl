@@ -7,7 +7,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://popwords.github.io/asap.owl"
      versionIRI="https://popwords.github.io/asap.owl">
-    <Prefix name="" IRI="https://ourontology.com/asap.owl"/>
+    <Prefix name="" IRI="https://popwords.github.io/asap.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="pro" IRI="http://purl.org/spar/pro#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -162,12 +162,6 @@
         <ObjectProperty IRI="http://purl.org/spar/pro/holdsRoleInTime"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.org/spar/pro/relatesToDocument"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.org/spar/pro/relatesToOrganization"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#deliveredAt"/>
     </Declaration>
     <Declaration>
@@ -195,13 +189,40 @@
         <ObjectProperty IRI="#hasTopic"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isAgentOfDelivery"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isEmployedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHeldBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLexicalComplexityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPlaceOfDelivery"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isPresentIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#relatesToSpeechAct"/>
+        <ObjectProperty IRI="#isRelatedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSentimentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubjectivityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTimeOfDelivery"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTopWordIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relatesTo"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasDaleChallScore"/>
@@ -380,24 +401,52 @@
         <Class IRI="http://purl.org/vocab/frbr/core#Expression"/>
     </DisjointClasses>
     <InverseObjectProperties>
+        <ObjectProperty IRI="http://purl.org/spar/pro/holdsRoleInTime"/>
+        <ObjectProperty IRI="#isHeldBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#deliveredAt"/>
+        <ObjectProperty IRI="#isPlaceOfDelivery"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#deliveredBy"/>
+        <ObjectProperty IRI="#isAgentOfDelivery"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#deliveredWhen"/>
+        <ObjectProperty IRI="#isTimeOfDelivery"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasLexicalComplexity"/>
+        <ObjectProperty IRI="#isLexicalComplexityOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#hasRhetoricalFigure"/>
         <ObjectProperty IRI="#isEmployedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSentiment"/>
+        <ObjectProperty IRI="#isSentimentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSubjectivity"/>
+        <ObjectProperty IRI="#isSubjectivityOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTopWord"/>
+        <ObjectProperty IRI="#isTopWordIn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasTopic"/>
         <ObjectProperty IRI="#isPresentIn"/>
     </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isRelatedTo"/>
+        <ObjectProperty IRI="#relatesTo"/>
+    </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://purl.org/spar/pro/holdsRoleInTime"/>
         <Class IRI="http://purl.org/dc/terms/Agent"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/spar/pro/relatesToDocument"/>
-        <Class IRI="#SpeechAct"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/spar/pro/relatesToOrganization"/>
-        <Class IRI="#PoliticalRoleInTime"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#deliveredAt"/>
@@ -436,32 +485,64 @@
         <Class IRI="#SpeechAct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAgentOfDelivery"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isEmployedIn"/>
         <Class IRI="#RhetoricalFigure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHeldBy"/>
+        <Class IRI="#PoliticalRoleInTime"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLexicalComplexityOf"/>
+        <Class IRI="#LexicalComplexity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPlaceOfDelivery"/>
+        <Class IRI="http://dbpedia.org/ontology/Place"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPresentIn"/>
         <Class IRI="#Topic"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#relatesToSpeechAct"/>
+        <ObjectProperty IRI="#isRelatedTo"/>
         <ObjectUnionOf>
             <Class IRI="http://purl.org/dc/terms/Agent"/>
-            <Class IRI="http://xmlns.com/foaf/spec/#term_Document"/>
             <Class IRI="#PoliticalRoleInTime"/>
+            <Class IRI="#SpeechAct"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSentimentOf"/>
+        <Class IRI="#Sentiment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubjectivityOf"/>
+        <Class IRI="#Subjectivity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTimeOfDelivery"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTopWordIn"/>
+        <Class IRI="#TopWord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relatesTo"/>
+        <ObjectUnionOf>
+            <Class IRI="http://purl.org/dc/terms/Agent"/>
+            <Class IRI="#PoliticalRoleInTime"/>
+            <Class IRI="#SpeechAct"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://purl.org/spar/pro/holdsRoleInTime"/>
         <Class IRI="#PoliticalRoleInTime"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/spar/pro/relatesToDocument"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Document"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/spar/pro/relatesToOrganization"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#deliveredAt"/>
@@ -500,7 +581,23 @@
         <Class IRI="#Topic"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAgentOfDelivery"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#isEmployedIn"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHeldBy"/>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLexicalComplexityOf"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPlaceOfDelivery"/>
         <Class IRI="#SpeechAct"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -508,8 +605,36 @@
         <Class IRI="#SpeechAct"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#relatesToSpeechAct"/>
+        <ObjectProperty IRI="#isRelatedTo"/>
+        <ObjectUnionOf>
+            <Class IRI="http://purl.org/dc/terms/Agent"/>
+            <Class IRI="#PoliticalRoleInTime"/>
+            <Class IRI="#SpeechAct"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSentimentOf"/>
         <Class IRI="#SpeechAct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubjectivityOf"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTimeOfDelivery"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTopWordIn"/>
+        <Class IRI="#SpeechAct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relatesTo"/>
+        <ObjectUnionOf>
+            <Class IRI="http://purl.org/dc/terms/Agent"/>
+            <Class IRI="#PoliticalRoleInTime"/>
+            <Class IRI="#SpeechAct"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#hasDaleChallScore"/>
@@ -736,7 +861,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.org/spar/pro/holdsRoleInTime</IRI>
-        <Literal></Literal>
+        <Literal>Relates an agent to a political role held in a certain period of time</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -747,36 +872,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.org/spar/pro/holdsRoleInTime</IRI>
         <Literal>holds role in time</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.org/spar/pro/relatesToDocument</IRI>
-        <Literal xml:lang="en">It relates the Speech Act with the document in which it is contained the transcription</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>http://purl.org/spar/pro/relatesToDocument</IRI>
-        <Literal xml:lang="en">http://purl.org/spar/pro/relatesToDocument</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.org/spar/pro/relatesToDocument</IRI>
-        <Literal xml:lang="en">relates to doc</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.org/spar/pro/relatesToOrganization</IRI>
-        <Literal xml:lang="en">It relates the Political Role to a certain political organization</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>http://purl.org/spar/pro/relatesToOrganization</IRI>
-        <Literal>http://purl.org/spar/pro/relatesToOrganization</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.org/spar/pro/relatesToOrganization</IRI>
-        <Literal xml:lang="en">relates to organization</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1324,6 +1419,16 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAgentOfDelivery</IRI>
+        <Literal>relates the agent of delivery of a speech act to a speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAgentOfDelivery</IRI>
+        <Literal>is agent of delivery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#isEmployedIn</IRI>
         <Literal xml:lang="en">This property relates a rhetorical figure with a particular speech act in which it is present.</Literal>
     </AnnotationAssertion>
@@ -1331,6 +1436,36 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isEmployedIn</IRI>
         <Literal xml:lang="en">is employed in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isHeldBy</IRI>
+        <Literal>relates a political role in time to the agent that holds or has held it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isHeldBy</IRI>
+        <Literal>is held by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isLexicalComplexityOf</IRI>
+        <Literal>Relates the lexical complexity of a speech act to the speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isLexicalComplexityOf</IRI>
+        <Literal>is lexical complexity of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPlaceOfDelivery</IRI>
+        <Literal>relates the place of delivery of a speech act to a speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPlaceOfDelivery</IRI>
+        <Literal>is place of delivery</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1344,13 +1479,63 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#relatesToSpeechAct</IRI>
-        <Literal xml:lang="en">It relates some important entities (Agent, Document, Political Role In Time) to the speech act itself</Literal>
+        <IRI>#isRelatedTo</IRI>
+        <Literal>Relates one elment to another</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#relatesToSpeechAct</IRI>
-        <Literal xml:lang="en">relates to speech act</Literal>
+        <IRI>#isRelatedTo</IRI>
+        <Literal>is related to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSentimentOf</IRI>
+        <Literal>Relates the sentiment of a speech act to the speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSentimentOf</IRI>
+        <Literal>is sentiment of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSubjectivityOf</IRI>
+        <Literal>Relates the subjectivity of a speech act to the speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSubjectivityOf</IRI>
+        <Literal>is subjectivity of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isTimeOfDelivery</IRI>
+        <Literal>relates the time of delivery of a speech act to a speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTimeOfDelivery</IRI>
+        <Literal>is time of delivery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isTopWordIn</IRI>
+        <Literal>Relates a top word in a speech act to the speech act</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTopWordIn</IRI>
+        <Literal>is top word in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#relatesTo</IRI>
+        <Literal>one element is related to another</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#relatesTo</IRI>
+        <Literal>relates to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1364,12 +1549,12 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AnonymousIndividual nodeID="_:genid-c1f2ca63-a473-4534-8021-2c6fb04e5a79"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
         <Literal>https://dictionary.cambridge.org/dictionary/english/simile</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AnonymousIndividual nodeID="_:genid-fef0bf0f-a1a1-41ab-bcd2-06959132e9b4"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
         <Literal>https://dictionary.cambridge.org/dictionary/english/simile</Literal>
     </AnnotationAssertion>
 </Ontology>
