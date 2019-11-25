@@ -8,9 +8,9 @@
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://popwords.github.io/asap.owl","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://popwords.github.io/asap.owl","name":"ASAP Ontology - Analyze Speech Acts by Politicians", "headline":"Document describing the ontology https://popwords.github.io/asap.owl", "datePublished":"Mon Nov 25 00:47:12 CET 2019", "version":"1.0.0", "author":[{"@type":"Person","name":"Andrea Poltronieri"},{"@type":"Person","name":"Delfina Sol Pandiani"},{"@type":"Person","name":"Maria Chiara Frangipane"}]}</script>
 
-<script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
-    <script> 
+<script src="resources/jquery.js"></script>
+<script src="resources/marked.min.js"></script>
+    <script>
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -40,13 +40,13 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t); 
+	  $("#toc").html(t);
 }
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- }; 
-   </script> 
-  </head> 
+ };
+   </script>
+  </head>
 
 <body>
 <div class="container">
@@ -64,7 +64,7 @@ function loadTOC(){
 <dd>Andrea Poltronieri</dd><dd>Delfina Sol Pandiani</dd><dd>Maria Chiara Frangipane</dd>
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
-</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+</dd><dt>Visualization:</dt><dd><a href="http://www.visualdataweb.de/webvowl/#iri=https://popwords.github.io/asap.owl" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <dt>Cite as:</dt>
 <dd>Andrea Poltronieri,Delfina Sol Pandiani,Maria Chiara Frangipane. ASAP Ontology - Analyze Speech Acts by Politicians. Revision: 1.0.0. Retrieved from: https://popwords.github.io/asap.owl</dd>
 </dl>
@@ -78,7 +78,7 @@ function loadTOC(){
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
 This is a place holder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
 </div>
-<div id="toc"></div> 
+<div id="toc"></div>
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -107,7 +107,7 @@ This is a place holder text for the introduction. The introduction should briefl
 </div>
 </div>
 </div>
-  
+
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">ASAP Ontology - Analyze Speech Acts by Politicians: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -343,9 +343,9 @@ This ontology has the following classes and properties.</span>
          <span>title</span>
       </a>
    </li>
-</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</ul><iframe align="center" width="100%" height ="500px" src="http://www.visualdataweb.de/webvowl/#iri=https://popwords.github.io/asap.owl"></iframe>
 </div>
-  
+
 
 <!--DESCRIPTION SECTION-->
     <div id="description"><h2 id="desc" class="list">ASAP Ontology - Analyze Speech Acts by Politicians: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -353,7 +353,7 @@ This ontology has the following classes and properties.</span>
 This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
 
 </div>
-   
+
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross reference for ASAP Ontology - Analyze Speech Acts by Politicians classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -1927,11 +1927,11 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
             <dt>has domain</dt>
             <dd>
                <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
+               <sup class="type-c" title="class">c</sup>
+               <span class="logic">or</span>
                <a href="#http://xmlns.com/foaf/spec/#term_Document" title="http://xmlns.com/foaf/spec/#term_Document">Document</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
+               <sup class="type-c" title="class">c</sup>
+               <span class="logic">or</span>
                <a href="#PoliticalRoleInTime"
                   title="https://popwords.github.io/asap.owl#PoliticalRoleInTime">Political Role In Time</a>
                <sup class="type-c" title="class">c</sup>
@@ -2257,7 +2257,7 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
 </div>
 </div>
 </div>
-    
+
 
 <!--REFERENCES SECTION-->
   <div id="references">
