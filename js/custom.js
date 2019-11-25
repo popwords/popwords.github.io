@@ -23,7 +23,7 @@ $(document).ready(function() {
     $(".thirdp").removeClass("hthirdp");
     $(".quotes").removeClass("hquotes");
     $(".person").removeClass("hperson");
-    $(".retquest").removeClass("hrequest");
+    $(".retquest").removeClass("hretquest");
     $(".nick").removeClass("hnick");
     $(".vs").removeClass("hvs");
     $(".paradox").removeClass("hparadox");
@@ -40,7 +40,7 @@ $("#btn_1").on('click', function() {
     $(".thirdp").removeClass("hthirdp");
     $(".quotes").removeClass("hquotes");
     $(".person").removeClass("hperson");
-    $(".retquest").removeClass("hrequest");
+    $(".retquest").removeClass("hretquest");
     $(".nick").removeClass("hnick");
     $(".vs").removeClass("hvs");
     $(".paradox").removeClass("hparadox");
@@ -56,7 +56,7 @@ $("#btn_1").on('click', function() {
     $(".thirdp").removeClass("hthirdp");
     $(".quotes").removeClass("hquotes");
     $(".person").removeClass("hperson");
-    $(".retquest").removeClass("hrequest");
+    $(".retquest").removeClass("hretquest");
     $(".nick").removeClass("hnick");
     $(".vs").removeClass("hvs");
     $(".paradox").removeClass("hparadox");
@@ -72,7 +72,7 @@ $("#btn_1").on('click', function() {
     $(".thirdp").removeClass("hthirdp");
     $(".quotes").removeClass("hquotes");
     $(".person").removeClass("hperson");
-    $(".retquest").removeClass("hrequest");
+    $(".retquest").removeClass("hretquest");
     $(".nick").removeClass("hnick");
     $(".vs").removeClass("hvs");
     $(".paradox").removeClass("hparadox");
@@ -88,7 +88,7 @@ $("#btn_1").on('click', function() {
     $(".thirdp").removeClass("hthirdp");
     $(".quotes").removeClass("hquotes");
     $(".person").removeClass("hperson");
-    $(".retquest").removeClass("hrequest");
+    $(".retquest").removeClass("hretquest");
     $(".nick").removeClass("hnick");
     $(".vs").removeClass("hvs");
     $(".paradox").removeClass("hparadox");
@@ -104,7 +104,7 @@ $("#btn_1").on('click', function() {
     $(".thirdp").removeClass("hthirdp");
     $(".quotes").removeClass("hquotes");
     $(".person").removeClass("hperson");
-    $(".retquest").removeClass("hrequest");
+    $(".retquest").removeClass("hretquest");
     $(".nick").removeClass("hnick");
     $(".vs").removeClass("hvs");
     $(".paradox").removeClass("hparadox");
@@ -120,7 +120,7 @@ $("#btn_1").on('click', function() {
     $(".thirdp").removeClass("hthirdp");
     $(".quotes").removeClass("hquotes");
     $(".person").removeClass("hperson");
-    $(".retquest").removeClass("hrequest");
+    $(".retquest").removeClass("hretquest");
     $(".nick").removeClass("hnick");
     $(".vs").removeClass("hvs");
     $(".paradox").removeClass("hparadox");
@@ -136,7 +136,7 @@ $("#btn_1").on('click', function() {
     $(".thirdp").removeClass("hthirdp");
     $(".quotes").removeClass("hquotes");
     $(".person").removeClass("hperson");
-    $(".retquest").removeClass("hrequest");
+    $(".retquest").removeClass("hretquest");
     $(".nick").removeClass("hnick");
     $(".vs").removeClass("hvs");
     $(".paradox").removeClass("hparadox");
@@ -158,7 +158,7 @@ $("#btn_1").on('click', function() {
     $(".thirdp").removeClass("hthirdp");
     $(".quotes").removeClass("hquotes");
     $(".person").removeClass("hperson");
-    $(".retquest").removeClass("hrequest");
+    $(".retquest").removeClass("hretquest");
     $(".nick").removeClass("hnick");
     $(".vs").removeClass("hvs");
     $(".paradox").removeClass("hparadox");
@@ -173,7 +173,7 @@ $("#btn_1").on('click', function() {
    $(".thirdp").removeClass("hthirdp");
    $(".quotes").removeClass("hquotes");
    $(".person").removeClass("hperson");
-   $(".retquest").removeClass("hrequest");
+   $(".retquest").removeClass("hretquest");
    $(".nick").removeClass("hnick");
    $(".vs").removeClass("hvs");
    $(".paradox").removeClass("hparadox");
@@ -188,7 +188,7 @@ $("#thirdp").on('click', function() {
    $(".simile").removeClass("hsimile");
    $(".quotes").removeClass("hquotes");
    $(".person").removeClass("hperson");
-   $(".retquest").removeClass("hrequest");
+   $(".retquest").removeClass("hretquest");
    $(".nick").removeClass("hnick");
    $(".vs").removeClass("hvs");
    $(".paradox").removeClass("hparadox");
@@ -203,7 +203,7 @@ $("#quotes").on('click', function() {
    $(".thirdp").removeClass("hthirdp");
    $(".simile").removeClass("hsimile");
    $(".person").removeClass("hperson");
-   $(".retquest").removeClass("hrequest");
+   $(".retquest").removeClass("hretquest");
    $(".nick").removeClass("hnick");
    $(".vs").removeClass("hvs");
    $(".paradox").removeClass("hparadox");
@@ -218,7 +218,7 @@ $("#person").on('click', function() {
    $(".thirdp").removeClass("hthirdp");
    $(".quotes").removeClass("hquotes");
    $(".simile").removeClass("hsimile");
-   $(".retquest").removeClass("hrequest");
+   $(".retquest").removeClass("hretquest");
    $(".nick").removeClass("hnick");
    $(".vs").removeClass("hvs");
    $(".paradox").removeClass("hparadox");
@@ -228,7 +228,7 @@ $("#person").on('click', function() {
 });
 
 $("#retquest").on('click', function() {
-   $(".retquest").addClass("hrequest");
+   $(".retquest").addClass("hretquest");
    $(".metaph").removeClass("hmetaph");
    $(".thirdp").removeClass("hthirdp");
    $(".quotes").removeClass("hquotes");
@@ -248,7 +248,7 @@ $("#nick").on('click', function() {
    $(".thirdp").removeClass("hthirdp");
    $(".quotes").removeClass("hquotes");
    $(".person").removeClass("hperson");
-   $(".retquest").removeClass("hrequest");
+   $(".retquest").removeClass("hretquest");
    $(".simile").removeClass("hsimile");
    $(".vs").removeClass("hvs");
    $(".paradox").removeClass("hparadox");
@@ -263,7 +263,7 @@ $("#vs").on('click', function() {
    $(".thirdp").removeClass("hthirdp");
    $(".quotes").removeClass("hquotes");
    $(".person").removeClass("hperson");
-   $(".retquest").removeClass("hrequest");
+   $(".retquest").removeClass("hretquest");
    $(".nick").removeClass("hnick");
    $(".simile").removeClass("hsimile");
    $(".paradox").removeClass("hparadox");
@@ -278,7 +278,7 @@ $("#paradox").on('click', function() {
    $(".thirdp").removeClass("hthirdp");
    $(".quotes").removeClass("hquotes");
    $(".person").removeClass("hperson");
-   $(".retquest").removeClass("hrequest");
+   $(".retquest").removeClass("hretquest");
    $(".nick").removeClass("hnick");
    $(".vs").removeClass("hvs");
    $(".simile").removeClass("hsimile");
@@ -293,7 +293,7 @@ $("#foul").on('click', function() {
    $(".thirdp").removeClass("hthirdp");
    $(".quotes").removeClass("hquotes");
    $(".person").removeClass("hperson");
-   $(".retquest").removeClass("hrequest");
+   $(".retquest").removeClass("hretquest");
    $(".nick").removeClass("hnick");
    $(".vs").removeClass("hvs");
    $(".paradox").removeClass("hparadox");
@@ -308,7 +308,7 @@ $("#relig").on('click', function() {
    $(".thirdp").removeClass("hthirdp");
    $(".quotes").removeClass("hquotes");
    $(".person").removeClass("hperson");
-   $(".retquest").removeClass("hrequest");
+   $(".retquest").removeClass("hretquest");
    $(".nick").removeClass("hnick");
    $(".vs").removeClass("hvs");
    $(".paradox").removeClass("hparadox");
@@ -323,7 +323,7 @@ $("#cores").on('click', function() {
    $(".thirdp").removeClass("hthirdp");
    $(".quotes").removeClass("hquotes");
    $(".person").removeClass("hperson");
-   $(".retquest").removeClass("hrequest");
+   $(".retquest").removeClass("hretquest");
    $(".nick").removeClass("hnick");
    $(".vs").removeClass("hvs");
    $(".paradox").removeClass("hparadox");

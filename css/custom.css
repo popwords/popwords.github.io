@@ -221,6 +221,10 @@ iframe {
   overflow: hidden;
 }
 
+.topicIframe  {
+  width: 90vw;
+}
+
 .examplespeech {
   font-style: italic;
   background-color: grey;
