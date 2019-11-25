@@ -199,8 +199,10 @@ p > a {
 
 div .text_corpus {
   overflow-y: scroll;
+  overflow-x: hidden;
   text-align: justify !important;
   height: 80vh;
+  padding-right: 2em;
 }
 
 div .vhh {
