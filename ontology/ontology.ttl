@@ -38,33 +38,17 @@
 
 ###  http://purl.org/spar/pro/holdsRoleInTime
 <http://purl.org/spar/pro/holdsRoleInTime> rdf:type owl:ObjectProperty ;
+                                           owl:inverseOf :isHeldBy ;
                                            rdfs:domain <http://purl.org/dc/terms/Agent> ;
                                            rdfs:range :PoliticalRoleInTime ;
-                                           rdfs:comment "A property relating an agent to a role that the agent holds."@en ;
+                                           rdfs:comment "Relates an agent to a political role held in a certain period of time" ;
                                            rdfs:isDefinedBy "http://purl.org/spar/pro/holdsRoleInTime" ;
                                            rdfs:label "holds role in time" .
 
 
-###  http://purl.org/spar/pro/relatesToDocument
-<http://purl.org/spar/pro/relatesToDocument> rdf:type owl:ObjectProperty ;
-                                             rdfs:domain :SpeechAct ;
-                                             rdfs:range <http://xmlns.com/foaf/spec/#term_Document> ;
-                                             rdfs:comment "It relates the Speech Act with the document in which it is contained the transcription"@en ;
-                                             rdfs:isDefinedBy "http://purl.org/spar/pro/relatesToDocument"@en ;
-                                             rdfs:label "relates to doc"@en .
-
-
-###  http://purl.org/spar/pro/relatesToOrganization
-<http://purl.org/spar/pro/relatesToOrganization> rdf:type owl:ObjectProperty ;
-                                                 rdfs:domain :PoliticalRoleInTime ;
-                                                 rdfs:range <http://xmlns.com/foaf/spec/#term_Organization> ;
-                                                 rdfs:comment "It relates the Political Role to a certain political organization"@en ;
-                                                 rdfs:isDefinedBy "http://purl.org/spar/pro/relatesToOrganization" ;
-                                                 rdfs:label "relates to organization"@en .
-
-
 ###  https://popwords.github.io/asap.owl#deliveredAt
 :deliveredAt rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isPlaceOfDelivery ;
              rdfs:domain :SpeechAct ;
              rdfs:range <http://dbpedia.org/ontology/Place> ;
              rdfs:comment "It relates the Speech Act with the place of deliverance"@en ;
@@ -73,6 +57,7 @@
 
 ###  https://popwords.github.io/asap.owl#deliveredBy
 :deliveredBy rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isAgentOfDelivery ;
              rdfs:domain :SpeechAct ;
              rdfs:range <http://purl.org/dc/terms/Agent> ;
              rdfs:comment "It relates the Speech Act with its Agent"@en ;
@@ -81,6 +66,7 @@
 
 ###  https://popwords.github.io/asap.owl#deliveredWhen
 :deliveredWhen rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isTimeOfDelivery ;
                rdfs:domain :SpeechAct ;
                rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
                rdfs:comment "It relates the Speech Act with the interval of time it has been delivered"@en ;
@@ -89,6 +75,7 @@
 
 ###  https://popwords.github.io/asap.owl#hasLexicalComplexity
 :hasLexicalComplexity rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :isLexicalComplexityOf ;
                       rdfs:domain :SpeechAct ;
                       rdfs:range :LexicalComplexity ;
                       rdfs:comment "It relates a speech act with its lexical complexity"@en ;
@@ -106,6 +93,7 @@
 
 ###  https://popwords.github.io/asap.owl#hasSentiment
 :hasSentiment rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isSentimentOf ;
               rdfs:domain :SpeechAct ;
               rdfs:range :Sentiment ;
               rdfs:comment "It relates the sentiment value with its speech act"@en ;
@@ -114,6 +102,7 @@
 
 ###  https://popwords.github.io/asap.owl#hasSubjectivity
 :hasSubjectivity rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isSubjectivityOf ;
                  rdfs:domain :SpeechAct ;
                  rdfs:range :Subjectivity ;
                  rdfs:comment "It relates the speech act to che subjectivity of the text"@en ;
@@ -122,6 +111,7 @@
 
 ###  https://popwords.github.io/asap.owl#hasTopWord
 :hasTopWord rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isTopWordIn ;
             rdfs:domain :SpeechAct ;
             rdfs:range :TopWord ;
             rdfs:comment "It relates a speech act with its top words"@en ;
@@ -137,12 +127,44 @@
           rdfs:label "has topic"@en .
 
 
+###  https://popwords.github.io/asap.owl#isAgentOfDelivery
+:isAgentOfDelivery rdf:type owl:ObjectProperty ;
+                   rdfs:domain <http://purl.org/dc/terms/Agent> ;
+                   rdfs:range :SpeechAct ;
+                   rdfs:comment "relates the agent of delivery of a speech act to a speech act" ;
+                   rdfs:label "is agent of delivery" .
+
+
 ###  https://popwords.github.io/asap.owl#isEmployedIn
 :isEmployedIn rdf:type owl:ObjectProperty ;
               rdfs:domain :RhetoricalFigure ;
               rdfs:range :SpeechAct ;
               rdfs:comment "This property relates a rhetorical figure with a particular speech act in which it is present."@en ;
               rdfs:label "is employed in"@en .
+
+
+###  https://popwords.github.io/asap.owl#isHeldBy
+:isHeldBy rdf:type owl:ObjectProperty ;
+          rdfs:domain :PoliticalRoleInTime ;
+          rdfs:range <http://purl.org/dc/terms/Agent> ;
+          rdfs:comment "relates a political role in time to the agent that holds or has held it" ;
+          rdfs:label "is held by" .
+
+
+###  https://popwords.github.io/asap.owl#isLexicalComplexityOf
+:isLexicalComplexityOf rdf:type owl:ObjectProperty ;
+                       rdfs:domain :LexicalComplexity ;
+                       rdfs:range :SpeechAct ;
+                       rdfs:comment "Relates the lexical complexity of a speech act to the speech act" ;
+                       rdfs:label "is lexical complexity of" .
+
+
+###  https://popwords.github.io/asap.owl#isPlaceOfDelivery
+:isPlaceOfDelivery rdf:type owl:ObjectProperty ;
+                   rdfs:domain <http://dbpedia.org/ontology/Place> ;
+                   rdfs:range :SpeechAct ;
+                   rdfs:comment "relates the place of delivery of a speech act to a speech act" ;
+                   rdfs:label "is place of delivery" .
 
 
 ###  https://popwords.github.io/asap.owl#isPresentIn
@@ -153,17 +175,73 @@
              rdfs:label "is present in"@en .
 
 
-###  https://popwords.github.io/asap.owl#relatesToSpeechAct
-:relatesToSpeechAct rdf:type owl:ObjectProperty ;
-                    rdfs:domain [ rdf:type owl:Class ;
-                                  owl:unionOf ( <http://purl.org/dc/terms/Agent>
-                                                <http://xmlns.com/foaf/spec/#term_Document>
-                                                :PoliticalRoleInTime
-                                              )
-                                ] ;
-                    rdfs:range :SpeechAct ;
-                    rdfs:comment "It relates some important entities (Agent, Document, Political Role In Time) to the speech act itself"@en ;
-                    rdfs:label "relates to speech act"@en .
+###  https://popwords.github.io/asap.owl#isRelatedTo
+:isRelatedTo rdf:type owl:ObjectProperty ;
+             owl:inverseOf :relatesTo ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( <http://purl.org/dc/terms/Agent>
+                                         :PoliticalRoleInTime
+                                         :SpeechAct
+                                       )
+                         ] ;
+             rdfs:range [ rdf:type owl:Class ;
+                          owl:unionOf ( <http://purl.org/dc/terms/Agent>
+                                        :PoliticalRoleInTime
+                                        :SpeechAct
+                                      )
+                        ] ;
+             rdfs:comment "Relates one elment to another" ;
+             rdfs:label "is related to" .
+
+
+###  https://popwords.github.io/asap.owl#isSentimentOf
+:isSentimentOf rdf:type owl:ObjectProperty ;
+               rdfs:domain :Sentiment ;
+               rdfs:range :SpeechAct ;
+               rdfs:comment "Relates the sentiment of a speech act to the speech act" ;
+               rdfs:label "is sentiment of" .
+
+
+###  https://popwords.github.io/asap.owl#isSubjectivityOf
+:isSubjectivityOf rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Subjectivity ;
+                  rdfs:range :SpeechAct ;
+                  rdfs:comment "Relates the subjectivity of a speech act to the speech act" ;
+                  rdfs:label "is subjectivity of" .
+
+
+###  https://popwords.github.io/asap.owl#isTimeOfDelivery
+:isTimeOfDelivery rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+                  rdfs:range :SpeechAct ;
+                  rdfs:comment "relates the time of delivery of a speech act to a speech act" ;
+                  rdfs:label "is time of delivery" .
+
+
+###  https://popwords.github.io/asap.owl#isTopWordIn
+:isTopWordIn rdf:type owl:ObjectProperty ;
+             rdfs:domain :TopWord ;
+             rdfs:range :SpeechAct ;
+             rdfs:comment "Relates a top word in a speech act to the speech act" ;
+             rdfs:label "is top word in" .
+
+
+###  https://popwords.github.io/asap.owl#relatesTo
+:relatesTo rdf:type owl:ObjectProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( <http://purl.org/dc/terms/Agent>
+                                       :PoliticalRoleInTime
+                                       :SpeechAct
+                                     )
+                       ] ;
+           rdfs:range [ rdf:type owl:Class ;
+                        owl:unionOf ( <http://purl.org/dc/terms/Agent>
+                                      :PoliticalRoleInTime
+                                      :SpeechAct
+                                    )
+                      ] ;
+           rdfs:comment "one element is related to another" ;
+           rdfs:label "relates to" .
 
 
 #################################################################

@@ -5,150 +5,25 @@
     "@list" : [ {
       "@id" : "http://purl.org/dc/terms/Agent"
     }, {
-      "@id" : "http://xmlns.com/foaf/spec/#term_Document"
-    }, {
       "@id" : "https://popwords.github.io/asap.owl#PoliticalRoleInTime"
+    }, {
+      "@id" : "https://popwords.github.io/asap.owl#SpeechAct"
     } ]
   } ]
 }, {
-  "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://dictionary.cambridge.org/dictionary/english/paradox"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
-    "@id" : "https://popwords.github.io/asap.owl#Paradox"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@language" : "en",
-    "@value" : "Paradox refers to a situation or statement that seems impossible or is difficult to understand because it contains two opposite facts or characteristics"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://dictionary.cambridge.org/dictionary/english/personification"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
-    "@id" : "https://popwords.github.io/asap.owl#Personification"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@language" : "en",
-    "@value" : "Personification refers to the act of giving a human quality or characteristic to something which is not human"
-  } ]
-}, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://dictionary.cambridge.org/dictionary/english/press-conference"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
-    "@id" : "https://popwords.github.io/asap.owl#PressConference"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@language" : "en",
-    "@value" : "It refers to a meeting at which a person or organization makes a public statement and reporters can ask questions"
-  } ]
-}, {
   "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://dictionary.cambridge.org/dictionary/english/quotation"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
-    "@id" : "https://popwords.github.io/asap.owl#Quotation"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@language" : "en",
-    "@value" : "Quotation refers to a phrase or short piece of writing taken from a longer work of literature, poetry, etc. or what someone else has said"
-  } ]
-}, {
-  "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://dictionary.cambridge.org/dictionary/english/rhetorical-question"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
-    "@id" : "https://popwords.github.io/asap.owl#RethoricalQuestion"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@language" : "en",
-    "@value" : "Rhetorical question refers to a question, asked in order to make a statement, that does not expect an answer"
-  } ]
-}, {
-  "@id" : "_:genid15",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@value" : "DOI: 10.1145/1878450.1878471"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
-    "@id" : "https://popwords.github.io/asap.owl#RhetoricalFigure"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@value" : "https://www.researchgate.net/publication/220961451_Toward_an_ontology_of_rhetorical_figures"
-  } ]
-}, {
-  "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://dictionary.cambridge.org/dictionary/english/simile"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
-    "@id" : "https://popwords.github.io/asap.owl#Simile"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@language" : "en",
-    "@value" : "Simile refers to the use of an expression comparing one thing with another, always including the words \"as\" or \"like\""
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/dc/terms/Agent"
+    }, {
+      "@id" : "https://popwords.github.io/asap.owl#PoliticalRoleInTime"
+    }, {
+      "@id" : "https://popwords.github.io/asap.owl#SpeechAct"
+    } ]
   } ]
 }, {
   "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "https://dictionary.cambridge.org/dictionary/english/tweet"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
-    "@id" : "https://popwords.github.io/asap.owl#Tweet"
-  } ],
-  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
-    "@language" : "en",
-    "@value" : "a short remark or piece of information published on Twitter"
-  } ]
-}, {
-  "@id" : "_:genid18",
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@value" : "https://dictionary.cambridge.org/dictionary/english/simile"
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@value" : "https://dictionary.cambridge.org/dictionary/english/simile"
-  } ]
-}, {
-  "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://dictionary.cambridge.org/dictionary/english/foul"
@@ -164,7 +39,7 @@
     "@value" : "Foul language refers to when a speech or other language is offensive, rude, or shocking"
   } ]
 }, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://en.wiktionary.org/wiki/illeism"
@@ -180,7 +55,7 @@
     "@value" : "Illeism refers to the practice of referring to oneself in the third person"
   } ]
 }, {
-  "@id" : "_:genid7",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://dictionary.cambridge.org/dictionary/english/metaphor"
@@ -196,7 +71,7 @@
     "@value" : "Metaphor refers to an expression that describes a person or object by referring to something that is considered to have similar characteristics to that person or object"
   } ]
 }, {
-  "@id" : "_:genid8",
+  "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@value" : "https://www.researchgate.net/publication/325134882_Populism_and_Informal_Fallacies_An_Analysis_of_Right-Wing_Populist_Rhetoric_in_Election_Campaigns"
@@ -212,7 +87,7 @@
     "@value" : "Negative Nickname refers to an informal name for someone or something, usually based on your real name or your character, used to defame a political opponent"
   } ]
 }, {
-  "@id" : "_:genid9",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://www.researchgate.net/publication/325134882_Populism_and_Informal_Fallacies_An_Analysis_of_Right-Wing_Populist_Rhetoric_in_Election_Campaigns"
@@ -226,6 +101,167 @@
   "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
     "@language" : "en",
     "@value" : "Opposition refers to the \"black and white rhetoric\", that creates and opposes two polarities\n\ne.g. a Manichean and moralistic juxtaposition between the ‘‘good people’’ and the ‘‘evil elite’’"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://dictionary.cambridge.org/dictionary/english/paradox"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#Paradox"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@language" : "en",
+    "@value" : "Paradox refers to a situation or statement that seems impossible or is difficult to understand because it contains two opposite facts or characteristics"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://dictionary.cambridge.org/dictionary/english/personification"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#Personification"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@language" : "en",
+    "@value" : "Personification refers to the act of giving a human quality or characteristic to something which is not human"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://dictionary.cambridge.org/dictionary/english/press-conference"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#PressConference"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@language" : "en",
+    "@value" : "It refers to a meeting at which a person or organization makes a public statement and reporters can ask questions"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://dictionary.cambridge.org/dictionary/english/quotation"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#Quotation"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@language" : "en",
+    "@value" : "Quotation refers to a phrase or short piece of writing taken from a longer work of literature, poetry, etc. or what someone else has said"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://dictionary.cambridge.org/dictionary/english/rhetorical-question"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#RethoricalQuestion"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@language" : "en",
+    "@value" : "Rhetorical question refers to a question, asked in order to make a statement, that does not expect an answer"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "DOI: 10.1145/1878450.1878471"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#RhetoricalFigure"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@value" : "https://www.researchgate.net/publication/220961451_Toward_an_ontology_of_rhetorical_figures"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://dictionary.cambridge.org/dictionary/english/simile"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#Simile"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@language" : "en",
+    "@value" : "Simile refers to the use of an expression comparing one thing with another, always including the words \"as\" or \"like\""
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://dictionary.cambridge.org/dictionary/english/tweet"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#Tweet"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@language" : "en",
+    "@value" : "a short remark or piece of information published on Twitter"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dictionary.cambridge.org/dictionary/english/simile"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://dictionary.cambridge.org/dictionary/english/simile"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/dc/terms/Agent"
+    }, {
+      "@id" : "https://popwords.github.io/asap.owl#PoliticalRoleInTime"
+    }, {
+      "@id" : "https://popwords.github.io/asap.owl#SpeechAct"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/dc/terms/Agent"
+    }, {
+      "@id" : "https://popwords.github.io/asap.owl#PoliticalRoleInTime"
+    }, {
+      "@id" : "https://popwords.github.io/asap.owl#SpeechAct"
+    } ]
   } ]
 }, {
   "@id" : "http://dbpedia.org/ontology/City",
@@ -395,8 +431,7 @@
   "@id" : "http://purl.org/spar/pro/holdsRoleInTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A property relating an agent to a role that the agent holds."
+    "@value" : "Relates an agent to a political role held in a certain period of time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/dc/terms/Agent"
@@ -409,47 +444,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://popwords.github.io/asap.owl#PoliticalRoleInTime"
-  } ]
-}, {
-  "@id" : "http://purl.org/spar/pro/relatesToDocument",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "It relates the Speech Act with the document in which it is contained the transcription"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://popwords.github.io/asap.owl#SpeechAct"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://purl.org/spar/pro/relatesToDocument"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "relates to doc"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://xmlns.com/foaf/spec/#term_Document"
-  } ]
-}, {
-  "@id" : "http://purl.org/spar/pro/relatesToOrganization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "It relates the Political Role to a certain political organization"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://popwords.github.io/asap.owl#PoliticalRoleInTime"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://purl.org/spar/pro/relatesToOrganization"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "relates to organization"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://xmlns.com/foaf/spec/#term_Organization"
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#isHeldBy"
   } ]
 }, {
   "@id" : "http://purl.org/vocab/frbr/core#Concept",
@@ -911,6 +908,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://dbpedia.org/ontology/Place"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#isPlaceOfDelivery"
   } ]
 }, {
   "@id" : "https://popwords.github.io/asap.owl#deliveredBy",
@@ -928,6 +928,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/dc/terms/Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#isAgentOfDelivery"
   } ]
 }, {
   "@id" : "https://popwords.github.io/asap.owl#deliveredWhen",
@@ -945,6 +948,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#isTimeOfDelivery"
   } ]
 }, {
   "@id" : "https://popwords.github.io/asap.owl#hasDaleChallScore",
@@ -979,6 +985,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://popwords.github.io/asap.owl#LexicalComplexity"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#isLexicalComplexityOf"
   } ]
 }, {
   "@id" : "https://popwords.github.io/asap.owl#hasNumberOfUniqueWords",
@@ -1067,6 +1076,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://popwords.github.io/asap.owl#Sentiment"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#isSentimentOf"
   } ]
 }, {
   "@id" : "https://popwords.github.io/asap.owl#hasSubjectivity",
@@ -1084,6 +1096,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://popwords.github.io/asap.owl#Subjectivity"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#isSubjectivityOf"
   } ]
 }, {
   "@id" : "https://popwords.github.io/asap.owl#hasSubjectivityValue",
@@ -1169,6 +1184,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://popwords.github.io/asap.owl#TopWord"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#isTopWordIn"
   } ]
 }, {
   "@id" : "https://popwords.github.io/asap.owl#hasTopic",
@@ -1191,6 +1209,21 @@
     "@id" : "https://popwords.github.io/asap.owl#isPresentIn"
   } ]
 }, {
+  "@id" : "https://popwords.github.io/asap.owl#isAgentOfDelivery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates the agent of delivery of a speech act to a speech act"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/dc/terms/Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is agent of delivery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#SpeechAct"
+  } ]
+}, {
   "@id" : "https://popwords.github.io/asap.owl#isEmployedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1203,6 +1236,51 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is employed in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#SpeechAct"
+  } ]
+}, {
+  "@id" : "https://popwords.github.io/asap.owl#isHeldBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a political role in time to the agent that holds or has held it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#PoliticalRoleInTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is held by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/dc/terms/Agent"
+  } ]
+}, {
+  "@id" : "https://popwords.github.io/asap.owl#isLexicalComplexityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates the lexical complexity of a speech act to the speech act"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#LexicalComplexity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is lexical complexity of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#SpeechAct"
+  } ]
+}, {
+  "@id" : "https://popwords.github.io/asap.owl#isPlaceOfDelivery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates the place of delivery of a speech act to a speech act"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://dbpedia.org/ontology/Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is place of delivery"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://popwords.github.io/asap.owl#SpeechAct"
@@ -1225,21 +1303,97 @@
     "@id" : "https://popwords.github.io/asap.owl#SpeechAct"
   } ]
 }, {
-  "@id" : "https://popwords.github.io/asap.owl#relatesToSpeechAct",
+  "@id" : "https://popwords.github.io/asap.owl#isRelatedTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "It relates some important entities (Agent, Document, Political Role In Time) to the speech act itself"
+    "@value" : "Relates one elment to another"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "relates to speech act"
+    "@value" : "is related to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#relatesTo"
+  } ]
+}, {
+  "@id" : "https://popwords.github.io/asap.owl#isSentimentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates the sentiment of a speech act to the speech act"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#Sentiment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is sentiment of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://popwords.github.io/asap.owl#SpeechAct"
+  } ]
+}, {
+  "@id" : "https://popwords.github.io/asap.owl#isSubjectivityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates the subjectivity of a speech act to the speech act"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#Subjectivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is subjectivity of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#SpeechAct"
+  } ]
+}, {
+  "@id" : "https://popwords.github.io/asap.owl#isTimeOfDelivery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates the time of delivery of a speech act to a speech act"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is time of delivery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#SpeechAct"
+  } ]
+}, {
+  "@id" : "https://popwords.github.io/asap.owl#isTopWordIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a top word in a speech act to the speech act"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#TopWord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is top word in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://popwords.github.io/asap.owl#SpeechAct"
+  } ]
+}, {
+  "@id" : "https://popwords.github.io/asap.owl#relatesTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "one element is related to another"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "relates to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid13"
   } ]
 }, {
   "@id" : "https://popwords.github.io/asap.owl#textualReference",

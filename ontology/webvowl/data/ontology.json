@@ -16,7 +16,7 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Andrea Poltronieri",
+        "value" : "Maria Chiara Frangipane",
         "type" : "label"
       }, {
         "identifier" : "creator",
@@ -26,7 +26,7 @@
       }, {
         "identifier" : "creator",
         "language" : "en",
-        "value" : "Maria Chiara Frangipane",
+        "value" : "Andrea Poltronieri",
         "type" : "label"
       } ],
       "Rights" : [ {
@@ -51,148 +51,157 @@
   },
   "namespace" : [ ],
   "class" : [ {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
     "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "36",
-    "type" : "owl:Class"
-  }, {
-    "id" : "51",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "27",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "57",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "62",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "25",
-    "type" : "owl:Class"
-  }, {
-    "id" : "5",
-    "type" : "owl:Class"
-  }, {
-    "id" : "19",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
-    "type" : "owl:Class"
-  }, {
-    "id" : "61",
-    "type" : "owl:Class"
-  }, {
-    "id" : "46",
-    "type" : "owl:Class"
-  }, {
-    "id" : "69",
-    "type" : "owl:Class"
-  }, {
-    "id" : "64",
-    "type" : "owl:Class"
-  }, {
-    "id" : "70",
-    "type" : "owl:Class"
-  }, {
-    "id" : "68",
-    "type" : "owl:Class"
-  }, {
-    "id" : "43",
-    "type" : "owl:Class"
-  }, {
-    "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "67",
-    "type" : "owl:Class"
-  }, {
-    "id" : "83",
-    "type" : "owl:Class"
-  }, {
-    "id" : "37",
     "type" : "owl:Class"
   }, {
     "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "66",
+    "id" : "29",
     "type" : "owl:Class"
   }, {
-    "id" : "59",
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "28",
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
     "type" : "owl:Class"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "34",
+    "id" : "69",
     "type" : "owl:Class"
   }, {
-    "id" : "92",
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "100",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "102",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "20",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "50",
-    "type" : "owl:Class"
-  }, {
-    "id" : "56",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "89",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "91",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "94",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "95",
+    "id" : "55",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "96",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "23",
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "104",
     "type" : "owl:unionOf"
   }, {
-    "id" : "71",
+    "id" : "72",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
+    "id" : "15",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -211,12 +220,12 @@
       "IRI-based" : "Expression",
       "en" : "Expression"
     },
-    "subClasses" : [ "12", "7" ],
+    "subClasses" : [ "10", "4" ],
     "comment" : {
       "en" : "A realization of a single work usually in a physical form."
     },
     "attributes" : [ "external" ],
-    "id" : "11"
+    "id" : "9"
   }, {
     "iri" : "http://dbpedia.org/ontology/Politician",
     "baseIri" : "http://dbpedia.org/ontology",
@@ -233,13 +242,13 @@
       "IRI-based" : "Politician",
       "undefined" : "Politician"
     },
-    "subClasses" : [ "15", "16", "17" ],
+    "subClasses" : [ "13", "14", "15" ],
     "comment" : {
       "undefined" : "A political figure"
     },
     "attributes" : [ "external" ],
-    "id" : "13",
-    "superClasses" : [ "14" ]
+    "id" : "11",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#Metaphor",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -259,8 +268,8 @@
     "comment" : {
       "en" : "Metaphor refers to an expression that describes a person or object by referring to something that is considered to have similar characteristics to that person or object"
     },
-    "id" : "4",
-    "superClasses" : [ "5" ]
+    "id" : "16",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#Quotation",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -280,12 +289,19 @@
     "comment" : {
       "en" : "Quotation refers to a phrase or short piece of writing taken from a longer work of literature, poetry, etc. or what someone else has said"
     },
-    "id" : "36",
-    "superClasses" : [ "37" ]
+    "id" : "29",
+    "superClasses" : [ "30" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "51",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
     "label" : {
       "IRI-based" : "string"
     }
@@ -309,8 +325,15 @@
       "en" : "It refers to a region that is identified as a distinct national entity in political geography"
     },
     "attributes" : [ "external" ],
-    "id" : "27",
-    "superClasses" : [ "28" ]
+    "id" : "24",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "https://popwords.github.io/asap.owl#Sentiment",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -319,12 +342,19 @@
       "IRI-based" : "Sentiment",
       "en" : "Sentiment"
     },
-    "subClasses" : [ "34", "32" ],
+    "subClasses" : [ "22", "1" ],
     "comment" : {
       "en" : "The values connected to the outcome from sentiment analysis"
     },
-    "id" : "10",
-    "superClasses" : [ "43" ]
+    "id" : "2",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "https://popwords.github.io/asap.owl#PoliticalRoleInTime",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -344,7 +374,7 @@
     "comment" : {
       "en" : "It represents the (reified) relationship between the agent holding a role and the role itself, within the boundaries of a particular timeinterval and applicable context for that role"
     },
-    "id" : "1"
+    "id" : "51"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#NegativeNickname",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -364,8 +394,8 @@
     "comment" : {
       "en" : "Negative Nickname refers to an informal name for someone or something, usually based on your real name or your character, used to defame a political opponent"
     },
-    "id" : "57",
-    "superClasses" : [ "5" ]
+    "id" : "56",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://xmlns.com/foaf/spec/#term_Organization",
     "baseIri" : "http://xmlns.com/foaf/spec/",
@@ -382,13 +412,13 @@
       "IRI-based" : "term_Organization",
       "undefined" : "Organization"
     },
-    "subClasses" : [ "25" ],
+    "subClasses" : [ "57" ],
     "comment" : {
       "undefined" : "A kind of Agent corresponding to social instititutions such as companies, societies etc."
     },
     "attributes" : [ "external" ],
-    "id" : "2",
-    "superClasses" : [ "8" ]
+    "id" : "27",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#Person",
     "baseIri" : "http://purl.org/vocab/frbr/core",
@@ -405,13 +435,13 @@
       "IRI-based" : "Person",
       "en" : "Person"
     },
-    "subClasses" : [ "13" ],
+    "subClasses" : [ "11" ],
     "comment" : {
       "en" : "A living or dead individual"
     },
     "attributes" : [ "external" ],
-    "id" : "14",
-    "superClasses" : [ "8" ]
+    "id" : "12",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#Paradox",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -431,8 +461,8 @@
     "comment" : {
       "en" : "Paradox refers to a situation or statement that seems impossible or is difficult to understand because it contains two opposite facts or characteristics"
     },
-    "id" : "62",
-    "superClasses" : [ "5" ]
+    "id" : "69",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://live.dbpedia.org/ontology/PrimeMinister",
     "baseIri" : "http://live.dbpedia.org/ontology",
@@ -453,8 +483,8 @@
       "en" : "Head of an elected government; the principle minister of a sovereign or a state"
     },
     "attributes" : [ "external" ],
-    "id" : "15",
-    "superClasses" : [ "13" ]
+    "id" : "13",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "http://dbpedia.org/ontology/PoliticalParty",
     "baseIri" : "http://dbpedia.org/ontology",
@@ -475,8 +505,8 @@
       "en" : "group of people who come together to contest elections and hold power in the government. The party agrees on some proposed policies and programmes, with a view to promoting the collective good or furthering their supporters' interests."
     },
     "attributes" : [ "external" ],
-    "id" : "25",
-    "superClasses" : [ "2" ]
+    "id" : "57",
+    "superClasses" : [ "27" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#RhetoricalFigure",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -485,12 +515,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "DOI: 10.1145/1878450.1878471",
+        "value" : "https://www.researchgate.net/publication/220961451_Toward_an_ontology_of_rhetorical_figures",
         "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://www.researchgate.net/publication/220961451_Toward_an_ontology_of_rhetorical_figures",
+        "value" : "DOI: 10.1145/1878450.1878471",
         "type" : "label"
       } ]
     },
@@ -498,12 +528,12 @@
       "IRI-based" : "RhetoricalFigure",
       "en" : "Rhetorical Figure"
     },
-    "subClasses" : [ "4", "62", "67", "68", "69", "37", "70", "71", "57" ],
+    "subClasses" : [ "16", "69", "73", "74", "75", "30", "76", "72", "56" ],
     "comment" : {
       "en" : "The class of some common tropes in political speech acts"
     },
-    "id" : "5",
-    "superClasses" : [ "43" ]
+    "id" : "17",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#LexicalComplexity",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -516,20 +546,7 @@
       "en" : "It refers to the lexical space occupied by a speech act"
     },
     "id" : "19",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "https://popwords.github.io/asap.owl#Subjectivity",
-    "baseIri" : "https://popwords.github.io/asap.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Subjectivity",
-      "en" : "Subjectivity"
-    },
-    "comment" : {
-      "en" : "Subjectivity refers to the value"
-    },
-    "id" : "32",
-    "superClasses" : [ "10" ]
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "http://dbpedia.org/ontology/Place",
     "baseIri" : "http://dbpedia.org/ontology",
@@ -546,12 +563,25 @@
       "IRI-based" : "Place",
       "en" : "Place"
     },
-    "subClasses" : [ "28" ],
+    "subClasses" : [ "25" ],
     "comment" : {
       "en" : "Immobile things or locations"
     },
     "attributes" : [ "external" ],
-    "id" : "61"
+    "id" : "62"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#Subjectivity",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Subjectivity",
+      "en" : "Subjectivity"
+    },
+    "comment" : {
+      "en" : "Subjectivity refers to the value"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#TopWord",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -563,8 +593,8 @@
     "comment" : {
       "en" : "Refers to the most recurrent words present in a speech act"
     },
-    "id" : "46",
-    "superClasses" : [ "43" ]
+    "id" : "42",
+    "superClasses" : [ "36" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#Simile",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -584,8 +614,8 @@
     "comment" : {
       "en" : "Simile refers to the use of an expression comparing one thing with another, always including the words \"as\" or \"like\""
     },
-    "id" : "69",
-    "superClasses" : [ "5" ]
+    "id" : "75",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#Tweet",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -605,8 +635,8 @@
     "comment" : {
       "en" : "a short remark or piece of information published on Twitter"
     },
-    "id" : "64",
-    "superClasses" : [ "7" ]
+    "id" : "68",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#Personification",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -626,8 +656,8 @@
     "comment" : {
       "en" : "Personification refers to the act of giving a human quality or characteristic to something which is not human"
     },
-    "id" : "70",
-    "superClasses" : [ "5" ]
+    "id" : "76",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#Opposition",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -647,8 +677,8 @@
     "comment" : {
       "en" : "Opposition refers to the \"black and white rhetoric\", that creates and opposes two polarities\n\ne.g. a Manichean and moralistic juxtaposition between the ‘‘good people’’ and the ‘‘evil elite’’"
     },
-    "id" : "68",
-    "superClasses" : [ "5" ]
+    "id" : "74",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://purl.org/vocab/frbr/core#Concept",
     "baseIri" : "http://purl.org/vocab/frbr/core",
@@ -665,12 +695,12 @@
       "IRI-based" : "Concept",
       "en" : "Concept"
     },
-    "subClasses" : [ "19", "46", "50", "5", "10" ],
+    "subClasses" : [ "19", "42", "40", "17", "2" ],
     "comment" : {
       "en" : "An abstract idea or notion"
     },
     "attributes" : [ "external" ],
-    "id" : "43"
+    "id" : "36"
   }, {
     "iri" : "http://dbpedia.org/ontology/City",
     "baseIri" : "http://dbpedia.org/ontology",
@@ -691,8 +721,8 @@
       "en" : "large and permanent human settlement."
     },
     "attributes" : [ "external" ],
-    "id" : "30",
-    "superClasses" : [ "28" ]
+    "id" : "32",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#Illeism",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -712,8 +742,8 @@
     "comment" : {
       "en" : "Illeism refers to the practice of referring to oneself in the third person"
     },
-    "id" : "67",
-    "superClasses" : [ "5" ]
+    "id" : "73",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval",
     "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
@@ -734,7 +764,7 @@
       "en" : "It refers to any Region in a dimensional space that aims at representing time. It should be used when you want to talk about time as an object having some characteristics."
     },
     "attributes" : [ "external" ],
-    "id" : "83"
+    "id" : "53"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#RethoricalQuestion",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -751,12 +781,12 @@
       "IRI-based" : "RethoricalQuestion",
       "en" : "Rethorical Question"
     },
-    "subClasses" : [ "36" ],
+    "subClasses" : [ "29" ],
     "comment" : {
       "en" : "Rhetorical question refers to a question, asked in order to make a statement, that does not expect an answer"
     },
-    "id" : "37",
-    "superClasses" : [ "5" ]
+    "id" : "30",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "http://live.dbpedia.org/ontology/President",
     "baseIri" : "http://live.dbpedia.org/ontology",
@@ -777,8 +807,8 @@
       "en" : "Leader of a country or a division or part of a country, typically a republic, a democracy, or a dictatorship."
     },
     "attributes" : [ "external" ],
-    "id" : "16",
-    "superClasses" : [ "13" ]
+    "id" : "14",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#InauguralSpeech",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -790,8 +820,8 @@
     "comment" : {
       "en" : "It refers to the speech given during the inuguration of an elected leader, informing the people of their intention as a leader"
     },
-    "id" : "66",
-    "superClasses" : [ "7" ]
+    "id" : "60",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#PressConference",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -811,8 +841,8 @@
     "comment" : {
       "en" : "It refers to a meeting at which a person or organization makes a public statement and reporters can ask questions"
     },
-    "id" : "59",
-    "superClasses" : [ "7" ]
+    "id" : "64",
+    "superClasses" : [ "4" ]
   }, {
     "iri" : "http://purl.org/dc/terms/Agent",
     "baseIri" : "http://purl.org/dc/terms",
@@ -829,12 +859,12 @@
       "IRI-based" : "Agent",
       "en" : "Agent"
     },
-    "subClasses" : [ "2", "14" ],
+    "subClasses" : [ "27", "12" ],
     "comment" : {
       "en" : "A resource that acts or has the power to act"
     },
     "attributes" : [ "external" ],
-    "id" : "8"
+    "id" : "5"
   }, {
     "iri" : "http://dbpedia.org/ontology/PopultedPlace",
     "baseIri" : "http://dbpedia.org/ontology",
@@ -851,13 +881,13 @@
       "IRI-based" : "PopultedPlace",
       "undefined" : "Populated Place"
     },
-    "subClasses" : [ "30", "27" ],
+    "subClasses" : [ "32", "24" ],
     "comment" : {
       "en" : "place or area with clustered or scattered buildings and a permanent human population (city, settlement, town, or village) referenced with geographic coordinates"
     },
     "attributes" : [ "external" ],
-    "id" : "28",
-    "superClasses" : [ "61" ]
+    "id" : "25",
+    "superClasses" : [ "62" ]
   }, {
     "iri" : "http://xmlns.com/foaf/spec/#term_Document",
     "baseIri" : "http://xmlns.com/foaf/spec/",
@@ -878,8 +908,8 @@
       "en" : "The Document class represents those things which are, broadly conceived, 'documents'."
     },
     "attributes" : [ "external" ],
-    "id" : "12",
-    "superClasses" : [ "11" ]
+    "id" : "10",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#Polarity",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -891,22 +921,18 @@
     "comment" : {
       "en" : "Polarity refers to the value"
     },
-    "id" : "34",
-    "superClasses" : [ "10" ]
+    "id" : "22",
+    "superClasses" : [ "2" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "92",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
+    "instances" : 0,
+    "union" : [ "5", "51", "4" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "99"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "20",
-    "label" : {
-      "IRI-based" : "integer"
-    }
+    "instances" : 0,
+    "union" : [ "5", "51", "4" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "100"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#Topic",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -918,42 +944,33 @@
     "comment" : {
       "en" : "Topic refers to the retrieved topic of a single speech act"
     },
-    "id" : "50",
-    "superClasses" : [ "43" ]
+    "id" : "40",
+    "superClasses" : [ "36" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "5", "51", "4" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "101"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "56",
+    "id" : "102",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "89",
+    "id" : "20",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "integer"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "91",
+    "id" : "55",
     "label" : {
       "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "94",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "95",
-    "label" : {
-      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -963,10 +980,17 @@
       "IRI-based" : "string"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
     "instances" : 0,
-    "union" : [ "8", "1", "12" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "23"
+    "union" : [ "5", "51", "4" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "104"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#FoulLanguage",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -986,8 +1010,8 @@
     "comment" : {
       "en" : "Foul language refers to when a speech or other language is offensive, rude, or shocking"
     },
-    "id" : "71",
-    "superClasses" : [ "5" ]
+    "id" : "72",
+    "superClasses" : [ "17" ]
   }, {
     "iri" : "https://popwords.github.io/asap.owl#SpeechAct",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -996,12 +1020,12 @@
       "IRI-based" : "SpeechAct",
       "en" : "Speech Act"
     },
-    "subClasses" : [ "66", "64", "59" ],
+    "subClasses" : [ "60", "68", "64" ],
     "comment" : {
       "en" : "an utterance considered as an action, particularly with regard to its intention, purpose, or effect."
     },
-    "id" : "7",
-    "superClasses" : [ "11" ]
+    "id" : "4",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://dbpedia.org/ontology/VicePrimeMinister",
     "baseIri" : "http://dbpedia.org/ontology",
@@ -1022,20 +1046,17 @@
       "en" : "It refers to a government minister who can take the position of acting prime minister when the prime minister is temporarily absent"
     },
     "attributes" : [ "external" ],
-    "id" : "17",
-    "superClasses" : [ "13" ]
+    "id" : "15",
+    "superClasses" : [ "11" ]
   } ],
   "property" : [ {
     "id" : "0",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "3",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "6",
+    "id" : "3",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "9",
+    "id" : "7",
     "type" : "owl:objectProperty"
   }, {
     "id" : "18",
@@ -1044,16 +1065,13 @@
     "id" : "21",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "22",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "24",
+    "id" : "23",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "26",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "29",
+    "id" : "28",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "31",
@@ -1062,7 +1080,13 @@
     "id" : "33",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "38",
@@ -1071,74 +1095,56 @@
     "id" : "39",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "40",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "41",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "42",
+    "id" : "43",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "44",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "45",
+    "id" : "46",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "47",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "48",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "49",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "52",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "53",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "54",
+    "id" : "6",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "55",
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "60",
-    "type" : "owl:objectProperty"
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "63",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "65",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "72",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "73",
+    "id" : "67",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "74",
+    "id" : "70",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "75",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "76",
+    "id" : "71",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "77",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "78",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "79",
     "type" : "rdfs:SubClassOf"
@@ -1150,108 +1156,127 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "82",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "84",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "85",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "86",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
     "type" : "owl:objectProperty"
   }, {
     "id" : "88",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "90",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "97",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "98",
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "99",
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "100",
+    "id" : "110",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "101",
+    "id" : "111",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "102",
+    "id" : "112",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "103",
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "104",
+    "id" : "114",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "http://purl.org/spar/pro/relatesToOrganization",
-    "baseIri" : "http://purl.org/spar/pro",
     "range" : "2",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://purl.org/spar/pro/relatesToOrganization",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "relatesToOrganization",
-      "en" : "relates to organization"
-    },
     "domain" : "1",
-    "comment" : {
-      "en" : "It relates the Political Role to a certain political organization"
-    },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "0"
   }, {
-    "range" : "5",
-    "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "3"
-  }, {
     "iri" : "https://popwords.github.io/asap.owl#deliveredBy",
+    "inverse" : "6",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "8",
+    "range" : "5",
     "label" : {
       "IRI-based" : "deliveredBy",
       "en" : "delivered by"
     },
-    "domain" : "7",
+    "domain" : "4",
     "comment" : {
       "en" : "It relates the Speech Act with its Agent"
     },
     "attributes" : [ "object" ],
-    "id" : "6"
+    "id" : "3"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#hasSentiment",
+    "inverse" : "8",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "10",
+    "range" : "2",
     "label" : {
       "IRI-based" : "hasSentiment",
       "en" : "has sentiment"
     },
-    "domain" : "7",
+    "domain" : "4",
     "comment" : {
       "en" : "It relates the sentiment value with its speech act"
     },
     "attributes" : [ "object" ],
-    "id" : "9"
+    "id" : "7"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#hasNumberOfUniqueWords",
     "baseIri" : "https://popwords.github.io/asap.owl",
@@ -1267,256 +1292,294 @@
     "attributes" : [ "datatype" ],
     "id" : "18"
   }, {
-    "range" : "14",
-    "domain" : "13",
+    "range" : "2",
+    "domain" : "22",
     "attributes" : [ "anonymous", "object" ],
     "id" : "21"
   }, {
-    "iri" : "https://popwords.github.io/asap.owl#relatesToSpeechAct",
-    "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "relatesToSpeechAct",
-      "en" : "relates to speech act"
-    },
-    "domain" : "23",
-    "comment" : {
-      "en" : "It relates some important entities (Agent, Document, Political Role In Time) to the speech act itself"
-    },
-    "attributes" : [ "object" ],
-    "id" : "22"
-  }, {
-    "range" : "2",
-    "domain" : "25",
+    "range" : "25",
+    "domain" : "24",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "24"
+    "id" : "23"
   }, {
-    "range" : "28",
+    "range" : "5",
     "domain" : "27",
     "attributes" : [ "anonymous", "object" ],
     "id" : "26"
   }, {
-    "range" : "28",
-    "domain" : "30",
+    "range" : "30",
+    "domain" : "29",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "29"
+    "id" : "28"
   }, {
-    "range" : "10",
+    "range" : "25",
     "domain" : "32",
     "attributes" : [ "anonymous", "object" ],
     "id" : "31"
   }, {
-    "range" : "10",
-    "domain" : "34",
+    "range" : "5",
+    "domain" : "12",
     "attributes" : [ "anonymous", "object" ],
     "id" : "33"
   }, {
-    "range" : "37",
-    "domain" : "36",
+    "range" : "11",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "36",
+    "domain" : "2",
     "attributes" : [ "anonymous", "object" ],
     "id" : "35"
   }, {
-    "range" : "13",
-    "domain" : "17",
+    "range" : "11",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "11",
+    "domain" : "14",
     "attributes" : [ "anonymous", "object" ],
     "id" : "38"
   }, {
-    "range" : "8",
-    "domain" : "14",
+    "range" : "36",
+    "domain" : "40",
     "attributes" : [ "anonymous", "object" ],
     "id" : "39"
   }, {
-    "range" : "8",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "40"
-  }, {
-    "range" : "13",
-    "domain" : "15",
+    "range" : "36",
+    "domain" : "42",
     "attributes" : [ "anonymous", "object" ],
     "id" : "41"
   }, {
-    "range" : "43",
-    "domain" : "10",
+    "range" : "36",
+    "domain" : "17",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "42"
+    "id" : "43"
   }, {
-    "range" : "13",
-    "domain" : "16",
+    "range" : "9",
+    "domain" : "10",
     "attributes" : [ "anonymous", "object" ],
     "id" : "44"
   }, {
-    "range" : "43",
-    "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "45"
-  }, {
-    "range" : "43",
+    "range" : "36",
     "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "9",
+    "domain" : "4",
     "attributes" : [ "anonymous", "object" ],
     "id" : "47"
   }, {
-    "range" : "43",
-    "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "48"
-  }, {
-    "range" : "43",
-    "domain" : "50",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "49"
-  }, {
-    "range" : "11",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "52"
-  }, {
-    "range" : "11",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "53"
-  }, {
-    "iri" : "http://purl.org/spar/pro/relatesToDocument",
-    "baseIri" : "http://purl.org/spar/pro",
-    "range" : "12",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "en",
-        "value" : "http://purl.org/spar/pro/relatesToDocument",
-        "type" : "label"
-      } ]
-    },
+    "iri" : "https://popwords.github.io/asap.owl#isAgentOfDelivery",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "4",
     "label" : {
-      "IRI-based" : "relatesToDocument",
-      "en" : "relates to doc"
+      "IRI-based" : "isAgentOfDelivery",
+      "undefined" : "is agent of delivery"
     },
-    "domain" : "7",
+    "domain" : "5",
     "comment" : {
-      "en" : "It relates the Speech Act with the document in which it is contained the transcription"
+      "undefined" : "relates the agent of delivery of a speech act to a speech act"
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "54"
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#isTimeOfDelivery",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isTimeOfDelivery",
+      "undefined" : "is time of delivery"
+    },
+    "domain" : "53",
+    "comment" : {
+      "undefined" : "relates the time of delivery of a speech act to a speech act"
+    },
+    "attributes" : [ "object" ],
+    "id" : "52"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#hasPolarityValue",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "56",
+    "range" : "55",
     "label" : {
       "IRI-based" : "hasPolarityValue",
       "en" : "has polarity value"
     },
-    "domain" : "34",
+    "domain" : "22",
     "comment" : {
       "en" : "Refers to the decimal value of the polarity related to a specific speech act"
     },
     "attributes" : [ "datatype" ],
-    "id" : "55"
+    "id" : "54"
   }, {
-    "range" : "7",
-    "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "58"
-  }, {
-    "iri" : "https://popwords.github.io/asap.owl#deliveredAt",
+    "iri" : "https://popwords.github.io/asap.owl#isLexicalComplexityOf",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "61",
+    "range" : "4",
     "label" : {
-      "IRI-based" : "deliveredAt",
-      "en" : "delivered at"
+      "IRI-based" : "isLexicalComplexityOf",
+      "undefined" : "is lexical complexity of"
     },
-    "domain" : "7",
+    "domain" : "19",
     "comment" : {
-      "en" : "It relates the Speech Act with the place of deliverance"
+      "undefined" : "Relates the lexical complexity of a speech act to the speech act"
     },
     "attributes" : [ "object" ],
-    "id" : "60"
+    "id" : "58"
   }, {
-    "range" : "7",
+    "range" : "4",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "62",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "4",
     "domain" : "64",
     "attributes" : [ "anonymous", "object" ],
     "id" : "63"
   }, {
-    "range" : "7",
-    "domain" : "66",
-    "attributes" : [ "anonymous", "object" ],
+    "iri" : "https://popwords.github.io/asap.owl#deliveredAt",
+    "inverse" : "66",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "deliveredAt",
+      "en" : "delivered at"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "It relates the Speech Act with the place of deliverance"
+    },
+    "attributes" : [ "object" ],
     "id" : "65"
   }, {
+    "range" : "4",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "17",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "17",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
     "iri" : "https://popwords.github.io/asap.owl#hasTopWord",
+    "inverse" : "78",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "46",
+    "range" : "42",
     "label" : {
       "IRI-based" : "hasTopWord",
       "en" : "has top word"
     },
-    "domain" : "7",
+    "domain" : "4",
     "comment" : {
       "en" : "It relates a speech act with its top words"
     },
     "attributes" : [ "object" ],
-    "id" : "72"
-  }, {
-    "range" : "61",
-    "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "73"
-  }, {
-    "range" : "5",
-    "domain" : "70",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "74"
-  }, {
-    "range" : "5",
-    "domain" : "37",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "75"
-  }, {
-    "range" : "5",
-    "domain" : "57",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "76"
-  }, {
-    "range" : "5",
-    "domain" : "71",
-    "attributes" : [ "anonymous", "object" ],
     "id" : "77"
   }, {
-    "range" : "5",
-    "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "78"
-  }, {
-    "range" : "5",
-    "domain" : "62",
+    "range" : "17",
+    "domain" : "76",
     "attributes" : [ "anonymous", "object" ],
     "id" : "79"
   }, {
-    "range" : "5",
-    "domain" : "69",
+    "range" : "17",
+    "domain" : "74",
     "attributes" : [ "anonymous", "object" ],
     "id" : "80"
   }, {
-    "range" : "5",
-    "domain" : "68",
+    "range" : "17",
+    "domain" : "73",
     "attributes" : [ "anonymous", "object" ],
     "id" : "81"
   }, {
-    "iri" : "https://popwords.github.io/asap.owl#hasSubjectivity",
+    "range" : "17",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "17",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "27",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "17",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#isPlaceOfDelivery",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "32",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isPlaceOfDelivery",
+      "undefined" : "is place of delivery"
+    },
+    "domain" : "62",
+    "comment" : {
+      "undefined" : "relates the place of delivery of a speech act to a speech act"
+    },
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#hasSubjectivity",
+    "inverse" : "89",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "1",
     "label" : {
       "IRI-based" : "hasSubjectivity",
       "en" : "has subjectivity"
     },
-    "domain" : "7",
+    "domain" : "4",
     "comment" : {
       "en" : "It relates the speech act to che subjectivity of the text"
     },
     "attributes" : [ "object" ],
-    "id" : "82"
+    "id" : "88"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#isSubjectivityOf",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isSubjectivityOf",
+      "undefined" : "is subjectivity of"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Relates the subjectivity of a speech act to the speech act"
+    },
+    "attributes" : [ "object" ],
+    "id" : "89"
   }, {
     "iri" : "http://purl.org/spar/pro/holdsRoleInTime",
+    "inverse" : "91",
     "baseIri" : "http://purl.org/spar/pro",
-    "range" : "1",
+    "range" : "51",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1529,87 +1592,116 @@
       "IRI-based" : "holdsRoleInTime",
       "undefined" : "holds role in time"
     },
-    "domain" : "8",
+    "domain" : "5",
     "comment" : {
-      "en" : "A property relating an agent to a role that the agent holds."
+      "undefined" : "Relates an agent to a political role held in a certain period of time"
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "84"
+    "attributes" : [ "external", "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#isTopWordIn",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isTopWordIn",
+      "undefined" : "is top word in"
+    },
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "Relates a top word in a speech act to the speech act"
+    },
+    "attributes" : [ "object" ],
+    "id" : "78"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#hasTopic",
-    "inverse" : "86",
+    "inverse" : "93",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "50",
+    "range" : "40",
     "label" : {
       "IRI-based" : "hasTopic",
       "en" : "has topic"
     },
-    "domain" : "7",
+    "domain" : "4",
     "comment" : {
       "en" : "It relates a speech act with its topic"
     },
     "attributes" : [ "object" ],
-    "id" : "85"
+    "id" : "92"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#isPresentIn",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "7",
+    "range" : "4",
     "label" : {
       "IRI-based" : "isPresentIn",
       "en" : "is present in"
     },
-    "domain" : "50",
+    "domain" : "40",
     "comment" : {
       "en" : "It relates a topic to the speech act in which it is present"
     },
     "attributes" : [ "object" ],
-    "id" : "86"
+    "id" : "93"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#isEmployedIn",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "7",
+    "range" : "4",
     "label" : {
       "IRI-based" : "isEmployedIn",
       "en" : "is employed in"
     },
-    "domain" : "5",
+    "domain" : "17",
     "comment" : {
       "en" : "This property relates a rhetorical figure with a particular speech act in which it is present."
     },
     "attributes" : [ "object" ],
-    "id" : "87"
+    "id" : "94"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#hasRepresentativeWords",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "89",
+    "range" : "96",
     "label" : {
       "IRI-based" : "hasRepresentativeWords",
       "en" : "has representative words"
     },
-    "domain" : "50",
+    "domain" : "40",
     "comment" : {
       "en" : "The words able to describe the semantic space of a toic"
     },
     "attributes" : [ "datatype" ],
-    "id" : "88"
+    "id" : "95"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#hasSubjectivityValue",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "91",
+    "range" : "98",
     "label" : {
       "IRI-based" : "hasSubjectivityValue",
       "en" : "has subjectivity value"
     },
-    "domain" : "32",
+    "domain" : "1",
     "comment" : {
       "en" : "Refers to the decimal value of the subjectivity related to a specific speech act"
     },
     "attributes" : [ "datatype" ],
-    "id" : "90"
+    "id" : "97"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#isRelatedTo",
+    "inverse" : "105",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "isRelatedTo",
+      "undefined" : "is related to"
+    },
+    "domain" : "104",
+    "comment" : {
+      "undefined" : "Relates one elment to another"
+    },
+    "attributes" : [ "object" ],
+    "id" : "103"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#hasDaleChallScore",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "92",
+    "range" : "102",
     "label" : {
       "IRI-based" : "hasDaleChallScore",
       "en" : "has Dale Chall score"
@@ -1619,110 +1711,154 @@
       "en" : "It relates the speech act to the decimal value of the Dale Chall readability formula"
     },
     "attributes" : [ "datatype" ],
-    "id" : "93"
+    "id" : "106"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#relatesTo",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "relatesTo",
+      "undefined" : "relates to"
+    },
+    "domain" : "100",
+    "comment" : {
+      "undefined" : "one element is related to another"
+    },
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#isHeldBy",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "isHeldBy",
+      "undefined" : "is held by"
+    },
+    "domain" : "51",
+    "comment" : {
+      "undefined" : "relates a political role in time to the agent that holds or has held it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "91"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#hasTopTenCouples",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "94",
+    "range" : "48",
     "label" : {
       "IRI-based" : "hasTopTenCouples",
       "en" : "has top ten couples"
     },
-    "domain" : "46",
+    "domain" : "42",
     "comment" : {
       "en" : "It refers to the ten most recurrent couples of words of a speech act"
     },
     "attributes" : [ "datatype" ],
-    "id" : "97"
+    "id" : "107"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#textualReference",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "51",
+    "range" : "45",
     "label" : {
       "IRI-based" : "textualReference",
       "en" : "has textual embodiment"
     },
-    "domain" : "5",
+    "domain" : "17",
     "comment" : {
       "en" : "Relates a concept to a text that includes its textual string reference"
     },
     "attributes" : [ "datatype" ],
-    "id" : "98"
+    "id" : "108"
   }, {
-    "range" : "11",
-    "domain" : "8",
+    "range" : "9",
+    "domain" : "5",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "99"
+    "id" : "109"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#hasTopTenWords",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "96",
+    "range" : "49",
     "label" : {
       "IRI-based" : "hasTopTenWords",
       "en" : "has top ten words"
     },
-    "domain" : "46",
+    "domain" : "42",
     "comment" : {
       "en" : "It refers to the ten most recurrent words of a speech act"
     },
     "attributes" : [ "datatype" ],
-    "id" : "100"
+    "id" : "110"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#deliveredWhen",
+    "inverse" : "52",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "83",
+    "range" : "53",
     "label" : {
       "IRI-based" : "deliveredWhen",
       "en" : "delivered when"
     },
-    "domain" : "7",
+    "domain" : "4",
     "comment" : {
       "en" : "It relates the Speech Act with the interval of time it has been delivered"
     },
     "attributes" : [ "object" ],
-    "id" : "101"
+    "id" : "111"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#hasRhetoricalFigure",
-    "inverse" : "87",
+    "inverse" : "94",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "5",
+    "range" : "17",
     "label" : {
       "IRI-based" : "hasRhetoricalFigure",
       "en" : "has rhetorical figure"
     },
-    "domain" : "7",
+    "domain" : "4",
     "comment" : {
       "en" : "This property relates a literary text that contains a rhetorical figure."
     },
     "attributes" : [ "object" ],
-    "id" : "102"
+    "id" : "112"
+  }, {
+    "iri" : "https://popwords.github.io/asap.owl#isSentimentOf",
+    "baseIri" : "https://popwords.github.io/asap.owl",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isSentimentOf",
+      "undefined" : "is sentiment of"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relates the sentiment of a speech act to the speech act"
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#hasTopTenTriples",
     "baseIri" : "https://popwords.github.io/asap.owl",
-    "range" : "95",
+    "range" : "50",
     "label" : {
       "IRI-based" : "hasTopTenTriples",
       "en" : "has top ten triples"
     },
-    "domain" : "46",
+    "domain" : "42",
     "comment" : {
       "en" : "It refers to the ten most recurrent triples of words of a speech act"
     },
     "attributes" : [ "datatype" ],
-    "id" : "103"
+    "id" : "113"
   }, {
     "iri" : "https://popwords.github.io/asap.owl#hasLexicalComplexity",
+    "inverse" : "58",
     "baseIri" : "https://popwords.github.io/asap.owl",
     "range" : "19",
     "label" : {
       "IRI-based" : "hasLexicalComplexity",
       "en" : "has lexical complexity"
     },
-    "domain" : "7",
+    "domain" : "4",
     "comment" : {
       "en" : "It relates a speech act with its lexical complexity"
     },
     "attributes" : [ "object" ],
-    "id" : "104"
+    "id" : "114"
   } ]
 }

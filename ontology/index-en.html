@@ -6,11 +6,11 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://popwords.github.io/asap.owl","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://popwords.github.io/asap.owl","name":"ASAP Ontology - Analyze Speech Acts by Politicians", "headline":"Document describing the ontology https://popwords.github.io/asap.owl", "datePublished":"Mon Nov 25 00:47:12 CET 2019", "version":"1.0.0", "author":[{"@type":"Person","name":"Andrea Poltronieri"},{"@type":"Person","name":"Delfina Sol Pandiani"},{"@type":"Person","name":"Maria Chiara Frangipane"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://popwords.github.io/asap.owl","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://popwords.github.io/asap.owl","name":"ASAP Ontology - Analyze Speech Acts by Politicians", "headline":"Document describing the ontology https://popwords.github.io/asap.owl", "datePublished":"Mon Nov 25 14:43:46 CET 2019", "version":"1.0.0", "author":[{"@type":"Person","name":"Andrea Poltronieri"},{"@type":"Person","name":"Delfina Sol Pandiani"},{"@type":"Person","name":"Maria Chiara Frangipane"}]}</script>
 
-<script src="resources/jquery.js"></script>
-<script src="resources/marked.min.js"></script>
-    <script>
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -40,13 +40,13 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t);
+	  $("#toc").html(t); 
 }
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- };
-   </script>
-  </head>
+ }; 
+   </script> 
+  </head> 
 
 <body>
 <div class="container">
@@ -64,7 +64,7 @@ function loadTOC(){
 <dd>Andrea Poltronieri</dd><dd>Delfina Sol Pandiani</dd><dd>Maria Chiara Frangipane</dd>
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
-</dd><dt>Visualization:</dt><dd><a href="http://www.visualdataweb.de/webvowl/#iri=https://popwords.github.io/asap.owl" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <dt>Cite as:</dt>
 <dd>Andrea Poltronieri,Delfina Sol Pandiani,Maria Chiara Frangipane. ASAP Ontology - Analyze Speech Acts by Politicians. Revision: 1.0.0. Retrieved from: https://popwords.github.io/asap.owl</dd>
 </dl>
@@ -78,7 +78,7 @@ function loadTOC(){
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
 This is a place holder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
 </div>
-<div id="toc"></div>
+<div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -107,7 +107,7 @@ This is a place holder text for the introduction. The introduction should briefl
 </div>
 </div>
 </div>
-
+  
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">ASAP Ontology - Analyze Speech Acts by Politicians: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -275,20 +275,46 @@ This ontology has the following classes and properties.</span>
       <a href="#http://purl.org/spar/pro/holdsRoleInTime" title="http://purl.org/spar/pro/holdsRoleInTime">holds role in time</a>
    </li>
    <li>
+      <a href="#isAgentOfDelivery"
+         title="https://popwords.github.io/asap.owl#isAgentOfDelivery">is agent of delivery</a>
+   </li>
+   <li>
       <a href="#isEmployedIn" title="https://popwords.github.io/asap.owl#isEmployedIn">is employed in</a>
+   </li>
+   <li>
+      <a href="#isHeldBy" title="https://popwords.github.io/asap.owl#isHeldBy">is held by</a>
+   </li>
+   <li>
+      <a href="#isLexicalComplexityOf"
+         title="https://popwords.github.io/asap.owl#isLexicalComplexityOf">is lexical complexity of</a>
+   </li>
+   <li>
+      <a href="#isPlaceOfDelivery"
+         title="https://popwords.github.io/asap.owl#isPlaceOfDelivery">is place of delivery</a>
    </li>
    <li>
       <a href="#isPresentIn" title="https://popwords.github.io/asap.owl#isPresentIn">is present in</a>
    </li>
    <li>
-      <a href="#http://purl.org/spar/pro/relatesToDocument" title="http://purl.org/spar/pro/relatesToDocument">relates to doc</a>
+      <a href="#isRelatedTo" title="https://popwords.github.io/asap.owl#isRelatedTo">is related to</a>
    </li>
    <li>
-      <a href="#http://purl.org/spar/pro/relatesToOrganization" title="http://purl.org/spar/pro/relatesToOrganization">relates to organization</a>
+      <a href="#isSentimentOf"
+         title="https://popwords.github.io/asap.owl#isSentimentOf">is sentiment of</a>
    </li>
    <li>
-      <a href="#relatesToSpeechAct"
-         title="https://popwords.github.io/asap.owl#relatesToSpeechAct">relates to speech act</a>
+      <a href="#isSubjectivityOf"
+         title="https://popwords.github.io/asap.owl#isSubjectivityOf">is subjectivity of</a>
+   </li>
+   <li>
+      <a href="#isTimeOfDelivery"
+         title="https://popwords.github.io/asap.owl#isTimeOfDelivery">is time of delivery</a>
+   </li>
+   <li>
+      <a href="#isTopWordIn" title="https://popwords.github.io/asap.owl#isTopWordIn">is top word in</a>
+   </li>
+   <li>
+      <a href="#relatesTo" title="https://popwords.github.io/asap.owl#relatesTo">relates to</a>
    </li>
 </ul><h4>Data Properties</h4><ul class="hlist">
    <li>
@@ -343,9 +369,9 @@ This ontology has the following classes and properties.</span>
          <span>title</span>
       </a>
    </li>
-</ul><iframe align="center" width="100%" height ="500px" src="http://www.visualdataweb.de/webvowl/#iri=https://popwords.github.io/asap.owl"></iframe>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
 </div>
-
+  
 
 <!--DESCRIPTION SECTION-->
     <div id="description"><h2 id="desc" class="list">ASAP Ontology - Analyze Speech Acts by Politicians: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -353,7 +379,7 @@ This ontology has the following classes and properties.</span>
 This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
 
 </div>
-
+   
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross reference for ASAP Ontology - Analyze Speech Acts by Politicians classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -510,11 +536,14 @@ This section provides details for each class and property defined by ASAP Ontolo
          <dt>is in domain of</dt>
          <dd>
             <a href="#http://purl.org/spar/pro/holdsRoleInTime" title="http://purl.org/spar/pro/holdsRoleInTime">holds role in time</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isAgentOfDelivery"
+               title="https://popwords.github.io/asap.owl#isAgentOfDelivery">is agent of delivery</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#deliveredBy" title="https://popwords.github.io/asap.owl#deliveredBy">delivered by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isHeldBy" title="https://popwords.github.io/asap.owl#isHeldBy">is held by</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -620,11 +649,6 @@ This section provides details for each class and property defined by ASAP Ontolo
          <dd>
             <a href="#http://purl.org/vocab/frbr/core#Expression" title="http://purl.org/vocab/frbr/core#Expression">Expression</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#http://purl.org/spar/pro/relatesToDocument" title="http://purl.org/spar/pro/relatesToDocument">relates to doc</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -739,7 +763,9 @@ This section provides details for each class and property defined by ASAP Ontolo
                title="https://popwords.github.io/asap.owl#hasDaleChallScore">has Dale Chall score</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasNumberOfUniqueWords"
                title="https://popwords.github.io/asap.owl#hasNumberOfUniqueWords">has number of unique words</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isLexicalComplexityOf"
+               title="https://popwords.github.io/asap.owl#isLexicalComplexityOf">is lexical complexity of</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -833,11 +859,6 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
             <a href="#http://dbpedia.org/ontology/PoliticalParty" title="http://dbpedia.org/ontology/PoliticalParty">Political Party</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#http://purl.org/spar/pro/relatesToOrganization" title="http://purl.org/spar/pro/relatesToOrganization">relates to organization</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
       </dl>
    </div>
    <div class="entity" id="Paradox">
@@ -925,6 +946,12 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
             <a href="#http://dbpedia.org/ontology/PopultedPlace" title="http://dbpedia.org/ontology/PopultedPlace">Populated Place</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isPlaceOfDelivery"
+               title="https://popwords.github.io/asap.owl#isPlaceOfDelivery">is place of delivery</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#deliveredAt" title="https://popwords.github.io/asap.owl#deliveredAt">delivered at</a>
@@ -991,7 +1018,7 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://purl.org/spar/pro/relatesToOrganization" title="http://purl.org/spar/pro/relatesToOrganization">relates to organization</a>
+            <a href="#isHeldBy" title="https://popwords.github.io/asap.owl#isHeldBy">is held by</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -1233,6 +1260,12 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
                title="https://popwords.github.io/asap.owl#Subjectivity">Subjectivity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isSentimentOf"
+               title="https://popwords.github.io/asap.owl#isSentimentOf">is sentiment of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#hasSentiment" title="https://popwords.github.io/asap.owl#hasSentiment">has sentiment</a>
@@ -1299,15 +1332,25 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
                title="https://popwords.github.io/asap.owl#hasSubjectivity">has subjectivity</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasTopWord" title="https://popwords.github.io/asap.owl#hasTopWord">has top word</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasTopic" title="https://popwords.github.io/asap.owl#hasTopic">has topic</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/spar/pro/relatesToDocument" title="http://purl.org/spar/pro/relatesToDocument">relates to doc</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#isEmployedIn" title="https://popwords.github.io/asap.owl#isEmployedIn">is employed in</a>
+            <a href="#isAgentOfDelivery"
+               title="https://popwords.github.io/asap.owl#isAgentOfDelivery">is agent of delivery</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isEmployedIn" title="https://popwords.github.io/asap.owl#isEmployedIn">is employed in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isLexicalComplexityOf"
+               title="https://popwords.github.io/asap.owl#isLexicalComplexityOf">is lexical complexity of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfDelivery"
+               title="https://popwords.github.io/asap.owl#isPlaceOfDelivery">is place of delivery</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isPresentIn" title="https://popwords.github.io/asap.owl#isPresentIn">is present in</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#relatesToSpeechAct"
-               title="https://popwords.github.io/asap.owl#relatesToSpeechAct">relates to speech act</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isSentimentOf"
+               title="https://popwords.github.io/asap.owl#isSentimentOf">is sentiment of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isSubjectivityOf"
+               title="https://popwords.github.io/asap.owl#isSubjectivityOf">is subjectivity of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isTimeOfDelivery"
+               title="https://popwords.github.io/asap.owl#isTimeOfDelivery">is time of delivery</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isTopWordIn" title="https://popwords.github.io/asap.owl#isTopWordIn">is top word in</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1332,7 +1375,9 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
          <dd>
             <a href="#hasSubjectivityValue"
                title="https://popwords.github.io/asap.owl#hasSubjectivityValue">has subjectivity value</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isSubjectivityOf"
+               title="https://popwords.github.io/asap.owl#isSubjectivityOf">is subjectivity of</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -1357,6 +1402,12 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
          <dd>https://popwords.github.io/asap.owl</dd>
       </dl>
       <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isTimeOfDelivery"
+               title="https://popwords.github.io/asap.owl#isTimeOfDelivery">is time of delivery</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#deliveredWhen"
@@ -1389,7 +1440,8 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
                title="https://popwords.github.io/asap.owl#hasTopTenTriples">has top ten triples</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasTopTenWords"
                title="https://popwords.github.io/asap.owl#hasTopTenWords">has top ten words</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isTopWordIn" title="https://popwords.github.io/asap.owl#isTopWordIn">is top word in</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -1506,20 +1558,46 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
          <a href="#http://purl.org/spar/pro/holdsRoleInTime" title="http://purl.org/spar/pro/holdsRoleInTime">holds role in time</a>
       </li>
       <li>
+         <a href="#isAgentOfDelivery"
+            title="https://popwords.github.io/asap.owl#isAgentOfDelivery">is agent of delivery</a>
+      </li>
+      <li>
          <a href="#isEmployedIn" title="https://popwords.github.io/asap.owl#isEmployedIn">is employed in</a>
+      </li>
+      <li>
+         <a href="#isHeldBy" title="https://popwords.github.io/asap.owl#isHeldBy">is held by</a>
+      </li>
+      <li>
+         <a href="#isLexicalComplexityOf"
+            title="https://popwords.github.io/asap.owl#isLexicalComplexityOf">is lexical complexity of</a>
+      </li>
+      <li>
+         <a href="#isPlaceOfDelivery"
+            title="https://popwords.github.io/asap.owl#isPlaceOfDelivery">is place of delivery</a>
       </li>
       <li>
          <a href="#isPresentIn" title="https://popwords.github.io/asap.owl#isPresentIn">is present in</a>
       </li>
       <li>
-         <a href="#http://purl.org/spar/pro/relatesToDocument" title="http://purl.org/spar/pro/relatesToDocument">relates to doc</a>
+         <a href="#isRelatedTo" title="https://popwords.github.io/asap.owl#isRelatedTo">is related to</a>
       </li>
       <li>
-         <a href="#http://purl.org/spar/pro/relatesToOrganization" title="http://purl.org/spar/pro/relatesToOrganization">relates to organization</a>
+         <a href="#isSentimentOf"
+            title="https://popwords.github.io/asap.owl#isSentimentOf">is sentiment of</a>
       </li>
       <li>
-         <a href="#relatesToSpeechAct"
-            title="https://popwords.github.io/asap.owl#relatesToSpeechAct">relates to speech act</a>
+         <a href="#isSubjectivityOf"
+            title="https://popwords.github.io/asap.owl#isSubjectivityOf">is subjectivity of</a>
+      </li>
+      <li>
+         <a href="#isTimeOfDelivery"
+            title="https://popwords.github.io/asap.owl#isTimeOfDelivery">is time of delivery</a>
+      </li>
+      <li>
+         <a href="#isTopWordIn" title="https://popwords.github.io/asap.owl#isTopWordIn">is top word in</a>
+      </li>
+      <li>
+         <a href="#relatesTo" title="https://popwords.github.io/asap.owl#relatesTo">relates to</a>
       </li>
    </ul>
    <div class="entity" id="deliveredAt">
@@ -1543,6 +1621,12 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
             <dd>
                <a href="#http://dbpedia.org/ontology/Place" title="http://dbpedia.org/ontology/Place">Place</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isPlaceOfDelivery"
+                  title="https://popwords.github.io/asap.owl#isPlaceOfDelivery">is place of delivery</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1568,6 +1652,12 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
             <dd>
                <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isAgentOfDelivery"
+                  title="https://popwords.github.io/asap.owl#isAgentOfDelivery">is agent of delivery</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1595,6 +1685,12 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
                   title="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval">Time Interval</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isTimeOfDelivery"
+                  title="https://popwords.github.io/asap.owl#isTimeOfDelivery">is time of delivery</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
          </dl>
       </div>
    </div>
@@ -1620,6 +1716,12 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
                <a href="#LexicalComplexity"
                   title="https://popwords.github.io/asap.owl#LexicalComplexity">Lexical Complexity</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isLexicalComplexityOf"
+                  title="https://popwords.github.io/asap.owl#isLexicalComplexityOf">is lexical complexity of</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1677,6 +1779,12 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
                <a href="#Sentiment" title="https://popwords.github.io/asap.owl#Sentiment">Sentiment</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isSentimentOf"
+                  title="https://popwords.github.io/asap.owl#isSentimentOf">is sentiment of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
          </dl>
       </div>
    </div>
@@ -1703,6 +1811,12 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
                   title="https://popwords.github.io/asap.owl#Subjectivity">Subjectivity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isSubjectivityOf"
+                  title="https://popwords.github.io/asap.owl#isSubjectivityOf">is subjectivity of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
          </dl>
       </div>
    </div>
@@ -1727,6 +1841,11 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
             <dd>
                <a href="#TopWord" title="https://popwords.github.io/asap.owl#TopWord">Top Word</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isTopWordIn" title="https://popwords.github.io/asap.owl#isTopWordIn">is top word in</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1769,7 +1888,7 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
       <p>
          <strong>IRI:</strong> http://purl.org/spar/pro/holdsRoleInTime</p>
       <div class="comment">
-         <span class="markdown">A property relating an agent to a role that the agent holds.</span>
+         <span class="markdown">Relates an agent to a political role held in a certain period of time</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1787,6 +1906,41 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
                <a href="#PoliticalRoleInTime"
                   title="https://popwords.github.io/asap.owl#PoliticalRoleInTime">Political Role In Time</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isHeldBy" title="https://popwords.github.io/asap.owl#isHeldBy">is held by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isAgentOfDelivery">
+      <h3>is agent of delivery<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#isAgentOfDelivery</p>
+      <div class="comment">
+         <span class="markdown">relates the agent of delivery of a speech act to a speech act</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#deliveredBy" title="https://popwords.github.io/asap.owl#deliveredBy">delivered by</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -1823,6 +1977,99 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
          </dl>
       </div>
    </div>
+   <div class="entity" id="isHeldBy">
+      <h3>is held by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#isHeldBy</p>
+      <div class="comment">
+         <span class="markdown">relates a political role in time to the agent that holds or has held it</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PoliticalRoleInTime"
+                  title="https://popwords.github.io/asap.owl#PoliticalRoleInTime">Political Role In Time</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://purl.org/spar/pro/holdsRoleInTime" title="http://purl.org/spar/pro/holdsRoleInTime">holds role in time</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isLexicalComplexityOf">
+      <h3>is lexical complexity of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#isLexicalComplexityOf</p>
+      <div class="comment">
+         <span class="markdown">Relates the lexical complexity of a speech act to the speech act</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#LexicalComplexity"
+                  title="https://popwords.github.io/asap.owl#LexicalComplexity">Lexical Complexity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasLexicalComplexity"
+                  title="https://popwords.github.io/asap.owl#hasLexicalComplexity">has lexical complexity</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPlaceOfDelivery">
+      <h3>is place of delivery<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#isPlaceOfDelivery</p>
+      <div class="comment">
+         <span class="markdown">relates the place of delivery of a speech act to a speech act</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://dbpedia.org/ontology/Place" title="http://dbpedia.org/ontology/Place">Place</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#deliveredAt" title="https://popwords.github.io/asap.owl#deliveredAt">delivered at</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="isPresentIn">
       <h3>is present in<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1853,93 +2100,214 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://purl.org/spar/pro/relatesToDocument">
-      <h3>relates to doc<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="isRelatedTo">
+      <h3>is related to<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://purl.org/spar/pro/relatesToDocument</p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#isRelatedTo</p>
       <div class="comment">
-         <span class="markdown">It relates the Speech Act with the document in which it is contained the transcription</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>https://popwords.github.io/asap.owl</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://xmlns.com/foaf/spec/#term_Document" title="http://xmlns.com/foaf/spec/#term_Document">Document</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://purl.org/spar/pro/relatesToOrganization">
-      <h3>relates to organization<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://purl.org/spar/pro/relatesToOrganization</p>
-      <div class="comment">
-         <span class="markdown">It relates the Political Role to a certain political organization</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>https://popwords.github.io/asap.owl</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#PoliticalRoleInTime"
-                  title="https://popwords.github.io/asap.owl#PoliticalRoleInTime">Political Role In Time</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://xmlns.com/foaf/spec/#term_Organization" title="http://xmlns.com/foaf/spec/#term_Organization">Organization</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="relatesToSpeechAct">
-      <h3>relates to speech act<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://popwords.github.io/asap.owl#relatesToSpeechAct</p>
-      <div class="comment">
-         <span class="markdown">It relates some important entities (Agent, Document, Political Role In Time) to the speech act itself</span>
+         <span class="markdown">Relates one elment to another</span>
       </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
                <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
-               <a href="#http://xmlns.com/foaf/spec/#term_Document" title="http://xmlns.com/foaf/spec/#term_Document">Document</a>
-               <sup class="type-c" title="class">c</sup>
-               <span class="logic">or</span>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#PoliticalRoleInTime"
                   title="https://popwords.github.io/asap.owl#PoliticalRoleInTime">Political Role In Time</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#PoliticalRoleInTime"
+                  title="https://popwords.github.io/asap.owl#PoliticalRoleInTime">Political Role In Time</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#relatesTo" title="https://popwords.github.io/asap.owl#relatesTo">relates to</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isSentimentOf">
+      <h3>is sentiment of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#isSentimentOf</p>
+      <div class="comment">
+         <span class="markdown">Relates the sentiment of a speech act to the speech act</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Sentiment" title="https://popwords.github.io/asap.owl#Sentiment">Sentiment</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasSentiment" title="https://popwords.github.io/asap.owl#hasSentiment">has sentiment</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isSubjectivityOf">
+      <h3>is subjectivity of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#isSubjectivityOf</p>
+      <div class="comment">
+         <span class="markdown">Relates the subjectivity of a speech act to the speech act</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Subjectivity"
+                  title="https://popwords.github.io/asap.owl#Subjectivity">Subjectivity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasSubjectivity"
+                  title="https://popwords.github.io/asap.owl#hasSubjectivity">has subjectivity</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isTimeOfDelivery">
+      <h3>is time of delivery<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#isTimeOfDelivery</p>
+      <div class="comment">
+         <span class="markdown">relates the time of delivery of a speech act to a speech act</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"
+                  title="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval">Time Interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#deliveredWhen"
+                  title="https://popwords.github.io/asap.owl#deliveredWhen">delivered when</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isTopWordIn">
+      <h3>is top word in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#isTopWordIn</p>
+      <div class="comment">
+         <span class="markdown">Relates a top word in a speech act to the speech act</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#TopWord" title="https://popwords.github.io/asap.owl#TopWord">Top Word</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasTopWord" title="https://popwords.github.io/asap.owl#hasTopWord">has top word</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatesTo">
+      <h3>relates to<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://popwords.github.io/asap.owl#relatesTo</p>
+      <div class="comment">
+         <span class="markdown">one element is related to another</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#PoliticalRoleInTime"
+                  title="https://popwords.github.io/asap.owl#PoliticalRoleInTime">Political Role In Time</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/Agent" title="http://purl.org/dc/terms/Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#PoliticalRoleInTime"
+                  title="https://popwords.github.io/asap.owl#PoliticalRoleInTime">Political Role In Time</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#SpeechAct" title="https://popwords.github.io/asap.owl#SpeechAct">Speech Act</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isRelatedTo" title="https://popwords.github.io/asap.owl#isRelatedTo">is related to</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -2257,7 +2625,7 @@ e.g. a Manichean and moralistic juxtaposition between the ‘‘good people’�
 </div>
 </div>
 </div>
-
+    
 
 <!--REFERENCES SECTION-->
   <div id="references">
