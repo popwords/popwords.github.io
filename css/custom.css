@@ -218,11 +218,12 @@ iframe {
   height: 150vh;
   width: 100vw;
   background-color: white;
-  overflow: hidden;
 }
 
 .topicIframe  {
   width: 90vw;
+  overflow: hidden;
+
 }
 
 .examplespeech {
